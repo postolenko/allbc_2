@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>ALLBC</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -29,12 +30,17 @@
 						<div class="main_nav_wrapp" id="resp_nav">
 							<div class="inlines_1">
 								<div>
-									<div class="dropdown_box dr city_dr">
-										<div class="dropdown_title dr_title">
+									<div class="dropdown_box dr city_dr checkout_dr">
+										<div class="dropdown_title dr_title checkout_val">
 											<p>Івано-Франківськ</p>
 										</div>
 										<div class="dropdown_content dr_content">
-											
+											<div class="checkout_list">
+												<p>Івано-Франківськ</p>
+												<p>Киев</p>
+												<p>Одесса</p>
+												<p>Львов</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -73,13 +79,15 @@
 								</a>
 							</div>
 							<div>
-								<div class="dropdown_box dr lang_drp">
-									<div class="dropdown_title dr_title">
+								<div class="dropdown_box dr lang_drp checkout_dr">
+									<div class="dropdown_title dr_title checkout_val">
 										<p>ENG</p>
 									</div>
 									<div class="dropdown_content dr_content">
-										<p>ENG</p>
-										<p>RUS</p>
+										<div class="checkout_list">
+											<p>ENG</p>
+											<p>RUS</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -131,12 +139,17 @@
 								<div>
 									<div class="inputs_online">
 										<div>
-											<div class="dropdown_box_2 dr">
-												<div class="dropdown_title_2 dr_title">
+											<div class="dropdown_box_2 dr checkout_dr">
+												<div class="dropdown_title_2 dr_title checkout_val">
 													<p>Аренда</p>
 												</div>
 												<div class="dropdown_content_2 dr_content">
-													<p>Продажа</p>
+													<div class="checkout_list">
+														<p>Аренда</p>
+														<p>Продажа</p>
+														<p>Новостройки</p>
+														<p>Коворкинги</p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -146,7 +159,67 @@
 													<p>Площадь</p>
 												</div>
 												<div class="dropdown_content_2 dr_content">
-													
+													<div class="bars_range_wrapp">
+														<div class="bars">
+															<!-- bar это цена, data-count-val - количество объектов по этой цене -->
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "21"></div>
+															<div class="bar" data-count-val = "32"></div>
+															<div class="bar" data-count-val = "34"></div>
+															<div class="bar" data-count-val = "45"></div>
+															<div class="bar" data-count-val = "41"></div>
+															<div class="bar" data-count-val = "35"></div>
+															<div class="bar" data-count-val = "29"></div>
+															<div class="bar" data-count-val = "26"></div>
+															<div class="bar" data-count-val = "44"></div>
+															<div class="bar" data-count-val = "38"></div>
+															<div class="bar" data-count-val = "32"></div>
+															<div class="bar" data-count-val = "25"></div>
+															<div class="bar" data-count-val = "38"></div>
+															<div class="bar" data-count-val = "42"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+														</div>
+														<div class="range_slider_wrapp">
+															<div id="range_slider_2"></div>
+														</div>
+													</div>
+													<div class="range_inputs">
+														<div class="range_input_wrapp range_input_wrapp_2">
+															<div>
+																<p>от</p>
+															</div>
+															<div>
+																<input type="number" placeholder="99999" id="input-number_1" />
+															</div>
+															<div>
+																<p>м<span class="sq_2">2</span></p>
+															</div>
+														</div>
+														<div class="range_input_wrapp range_input_wrapp_2">
+															<div>
+																<p>до</p>
+															</div>
+															<div>
+																<input type="number" placeholder="99999" id="input-number_2" />
+															</div>
+															<div>
+																<p>м<span class="sq_2">2</span></p>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -156,7 +229,81 @@
 													<p>Цена</p>
 												</div>
 												<div class="dropdown_content_2 dr_content">
-													
+													<div class="price_dr_wrapp">
+														<div>
+															<h3>Формат цены</h3>
+														</div>
+														<div>
+															<div class="dropdown_box_4 dr checkout_dr">
+																<div class="dr_title_4 dr_title checkout_val">
+																	<p>$/м²/мec</p>
+																</div>
+																<div class="dr_conten_4 dr_content">
+																	<div class="checkout_list">
+																		<p>$/м²/мec</p>
+																		<p>$/мec</p>
+																		<p>₴/м²/мec</p>
+																		<p>₴/мec</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="bars_range_wrapp">
+														<div class="bars">
+															<!-- bar это цена, data-count-val - количество объектов по этой цене -->
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "21"></div>
+															<div class="bar" data-count-val = "32"></div>
+															<div class="bar" data-count-val = "34"></div>
+															<div class="bar" data-count-val = "45"></div>
+															<div class="bar" data-count-val = "41"></div>
+															<div class="bar" data-count-val = "35"></div>
+															<div class="bar" data-count-val = "29"></div>
+															<div class="bar" data-count-val = "26"></div>
+															<div class="bar" data-count-val = "44"></div>
+															<div class="bar" data-count-val = "38"></div>
+															<div class="bar" data-count-val = "32"></div>
+															<div class="bar" data-count-val = "25"></div>
+															<div class="bar" data-count-val = "38"></div>
+															<div class="bar" data-count-val = "42"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+															<div class="bar" data-count-val = "0"></div>
+														</div>
+														<div class="range_slider_wrapp">
+															<div id="range_slider_4"></div>
+														</div>
+													</div>
+													<div class="range_inputs">
+														<div class="range_input_wrapp">
+															<div>
+																<p>от</p>
+															</div>
+															<div>
+																<input type="number" placeholder="99999" id="input-number_5" />
+															</div>
+														</div>
+														<div class="range_input_wrapp">
+															<div>
+																<p>до</p>
+															</div>
+															<div>
+																<input type="number" placeholder="99999" id="input-number_6" />
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -294,7 +441,7 @@
 							<div class="lists_box_content">
 								<div class="item">
 									<div>
-										<p>Аренда офиса в БЦ класса А</p>
+										<a href="#">Аренда офиса в БЦ класса А</a>
 									</div>
 									<div>
 										<p class="blue_tag">1 234</p>
@@ -302,7 +449,7 @@
 								</div>
 								<div class="item">
 									<div>
-										<p>Аренда офиса в БЦ класса B</p>
+										<a href="#">Аренда офиса в БЦ класса B</a>
 									</div>
 									<div>
 										<p class="blue_tag">234</p>
@@ -310,7 +457,7 @@
 								</div>
 								<div class="item">
 									<div>
-										<p>Аренда офиса в БЦ класса C</p>
+										<a href="#">Аренда офиса в БЦ класса C</a>
 									</div>
 									<div>
 										<p class="blue_tag">134</p>
@@ -318,22 +465,19 @@
 								</div>
 								<div class="item">
 									<div>
-										<p>Аренда офиса в административных зданих(АЗ)</p>
+										<a href="#">Аренда офиса в административных зданих(АЗ)</a>
 									</div>
 									<div>
 										<p class="blue_tag">124</p>
 									</div>
 								</div>
 							</div>
-							<div class="dropdown_box_3 dr">
-								<div class="dropdown_title_3 dr_title">
-									<p>Еще</p>
-								</div>
-								<div class="dropdown_content_3 dr_content">
+							<div class="dropdown_box_3 dr_2">
+								<div class="dropdown_content_3 dr_2_content">
 									<div class="lists_box_content">
 										<div class="item">
 											<div>
-												<p>Аренда офиса в БЦ класса А</p>
+												<a href="#">Аренда офиса в БЦ класса А</a>
 											</div>
 											<div>
 												<p class="blue_tag">1 234</p>
@@ -341,7 +485,7 @@
 										</div>
 										<div class="item">
 											<div>
-												<p>Аренда офиса в БЦ класса B</p>
+												<a href="#">Аренда офиса в БЦ класса B</a>
 											</div>
 											<div>
 												<p class="blue_tag">234</p>
@@ -349,7 +493,7 @@
 										</div>
 										<div class="item">
 											<div>
-												<p>Аренда офиса в БЦ класса C</p>
+												<a href="#">Аренда офиса в БЦ класса C</a>
 											</div>
 											<div>
 												<p class="blue_tag">134</p>
@@ -357,7 +501,7 @@
 										</div>
 										<div class="item">
 											<div>
-												<p>Аренда офиса в административных зданих(АЗ)</p>
+												<a href="#">Аренда офиса в административных зданих(АЗ)</a>
 											</div>
 											<div>
 												<p class="blue_tag">124</p>
@@ -365,6 +509,10 @@
 										</div>
 									</div>
 								</div>
+								<div class="dropdown_title_3 dr_2_title">
+									<p>Еще</p>
+									<p class="hide">Скрыть</p>
+								</div>								
 							</div>
 						</div>
 						<div class="lists_box">
@@ -374,7 +522,7 @@
 							<div class="lists_box_content">
 								<div class="item">
 									<div>
-										<p>Продажа офиса</p>
+										<a href="#">Продажа офиса</a>
 									</div>
 									<div>
 										<p class="blue_tag">1 234</p>
@@ -382,7 +530,7 @@
 								</div>
 								<div class="item">
 									<div>
-										<p>Продажа офиса в БЦ</p>
+										<a href="#">Продажа офиса в БЦ</a>
 									</div>
 									<div>
 										<p class="blue_tag">234</p>
@@ -390,7 +538,7 @@
 								</div>
 								<div class="item">
 									<div>
-										<p>Продажа офиса в ЖК</p>
+										<a href="#">Продажа офиса в ЖК</a>
 									</div>
 									<div>
 										<p class="blue_tag">134</p>
@@ -398,22 +546,19 @@
 								</div>
 								<div class="item">
 									<div>
-										<p>Купить помещение 100 кв.м</p>
+										<a href="#">Купить помещение 100 кв.м</a>
 									</div>
 									<div>
 										<p class="blue_tag">124</p>
 									</div>
 								</div>
 							</div>
-							<div class="dropdown_box_3 dr">
-								<div class="dropdown_title_3 dr_title">
-									<p>Еще</p>
-								</div>
-								<div class="dropdown_content_3 dr_content">
+							<div class="dropdown_box_3 dr_2">
+								<div class="dropdown_content_3 dr_2_content">
 									<div class="lists_box_content">
 										<div class="item">
 											<div>
-												<p>Продажа офиса</p>
+												<a href="#">Продажа офиса</a>
 											</div>
 											<div>
 												<p class="blue_tag">1 234</p>
@@ -421,7 +566,7 @@
 										</div>
 										<div class="item">
 											<div>
-												<p>Продажа офиса в БЦ</p>
+												<a href="#">Продажа офиса в БЦ</a>
 											</div>
 											<div>
 												<p class="blue_tag">234</p>
@@ -429,7 +574,7 @@
 										</div>
 										<div class="item">
 											<div>
-												<p>Продажа офиса в ЖК</p>
+												<a href="#">Продажа офиса в ЖК</a>
 											</div>
 											<div>
 												<p class="blue_tag">134</p>
@@ -437,7 +582,7 @@
 										</div>
 										<div class="item">
 											<div>
-												<p>Купить помещение 100 кв.м</p>
+												<a href="#">Купить помещение 100 кв.м</a>
 											</div>
 											<div>
 												<p class="blue_tag">124</p>
@@ -445,6 +590,10 @@
 										</div>
 									</div>
 								</div>
+								<div class="dropdown_title_3 dr_2_title">
+									<p>Еще</p>
+									<p class="hide">Скрыть</p>
+								</div>								
 							</div>
 						</div>
 					</div>
@@ -2189,10 +2338,13 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/wnumb.js"></script>
+	<script src="vendors/js/nouislider.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>

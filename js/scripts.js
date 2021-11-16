@@ -1,3 +1,51 @@
+function getBarsChart() {
+    if($(".bars").length > 0) {
+        $(".bars").each(function() {
+            if( $(this).is(":visible") ) {
+                var heightArr = [];
+                bar = $(this).find(".bar");
+                // barsLength = bar.length;
+                bar.each(function() {
+                    heightVal = parseInt($(this).attr("data-count-val"));
+                    heightArr.push(heightVal);
+                });
+                maxHeight = Math.max.apply(null, heightArr);
+                chartHeight = $(this).height();
+                // chartWidth = $(this).width();
+                heightModul = chartHeight/maxHeight;      
+                bar.each(function() {
+                    heightVal = parseInt($(this).attr("data-count-val"));
+                    $(this).css({
+                        "height" : ( heightVal ) + "px"
+                        // "width" : chartWidth / barsLength + "px"
+                    });
+                });
+                barsCharts = $(this).closest(".bars_range_wrapp");
+                handleLower = barsCharts.find(".noUi-handle-lower");
+                handleUpperr = barsCharts.find(".noUi-handle-upper");
+                leftCoord = handleLower.offset().left;
+                $(this).find(".bar").each(function() {
+                    if(handleUpperr.length > 0) {
+                        rightCoord = handleUpperr.offset().left;
+                        if( $(this).offset().left > leftCoord && $(this).offset().left < rightCoord ) {
+                            $(this).removeClass("disable");
+                        } else {
+                            $(this).addClass("disable");
+                        }
+                    } else {
+                        if( $(this).offset().left < leftCoord) {
+                            $(this).removeClass("disable");
+                        } else {
+                            $(this).addClass("disable");
+                        }
+                    }                    
+                });
+            }
+        });
+    }
+}
+
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -5,14 +53,12 @@ g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 
-$(window).load(function() {
-
-
-
+$(window).on("load", function() {
+    getBarsChart();
 });
 
 $(window).resize(function() {
-
+  getBarsChart();
 
 
 });
@@ -25,4 +71,197 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
     // $(".gallery_thumbs .gallery_thumb:nth-child(4n+4)").addClass("four");
+
+    $(".dr_title").on("click", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".dr");
+      parent.toggleClass("active");
+    });
+
+    $(this).keydown(function(eventObject){
+      if (eventObject.which == 27) {
+        $(".dr").removeClass("active");
+      }
+    });
+
+    $(document).mouseup(function(e) {
+      hide_element = $(".dr");
+      if (!hide_element.is(e.target)
+          && hide_element.has(e.target).length === 0) {
+          hide_element.removeClass("active");
+        }
+    });
+
+    // ------------
+
+    $(".dr_2_title").on("click", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".dr_2");
+      dr = parent.find(".dr_2_content");
+      if(dr.is(":hidden")) {
+        dr.slideDown(300);
+        parent.addClass("active");
+      } else {
+        dr.slideUp(300);
+        parent.removeClass("active");
+      }
+    });
+
+    // ------------
+
+    if( document.getElementById("range_slider_2") ) {
+      priceSlider2 = document.getElementById("range_slider_2");
+      noUiSlider.create(priceSlider2, {
+        start: [ 1000, 50000 ],
+        range: {
+            'min': [ 0 ],
+            'max': [ 100000 ]
+        },
+        connect: true,
+          format: wNumb({
+              decimals: 0
+          })
+      });
+      priceSlider2.noUiSlider.on('update', function( values, handle ) {
+          minVal = parseInt( values[0] );
+          maxVal = parseInt( values[1] );
+          $("#input-number_1").val(minVal);
+          $("#input-number_2").val(maxVal);
+          leftRange = minVal;
+          rightRange = maxVal;
+          handleLower = $("#range_slider_2").find(".noUi-handle-lower");
+          handleUpperr = $("#range_slider_2").find(".noUi-handle-upper");
+          leftCoord = handleLower.offset().left;
+          rightCoord = handleUpperr.offset().left;
+          barsCharts = handleLower.closest(".bars_range_wrapp");
+          barsCharts.find(".bars .bar").each(function() {
+              if( $(this).offset().left > leftCoord && $(this).offset().left < rightCoord ) {
+                  $(this).removeClass("disable");
+              } else {
+                  $(this).addClass("disable");
+              }
+          });
+          $("[data-filters-index='filters_3'] .minVal2").html(leftRange);
+          $("[data-filters-index='filters_3'] .maxVal2").html(rightRange);
+          $(".price_resp").html($("#price_sel").html());
+          // $(".price_values").text($("#price_sel").text()[0] + " " + $("#input-number_1").val()+" - "+ $("#input-number_2").val());
+      });
+      priceSlider2.noUiSlider.on('set', function( values, handle ) {
+          setTimeout(function() {           
+              handleLower = $("#range_slider_2").find(".noUi-handle-lower");
+              handleUpperr = $("#range_slider_2").find(".noUi-handle-upper");
+              leftCoord = handleLower.offset().left;
+              rightCoord = handleUpperr.offset().left;
+              barsCharts = handleLower.closest(".bars_range_wrapp");
+              barsCharts.find(".bars .bar").each(function() {
+                  if( $(this).offset().left > leftCoord && $(this).offset().left < rightCoord ) {
+                      $(this).removeClass("disable");
+                  } else {
+                      $(this).addClass("disable");
+                  }
+              });
+          }, 500);
+          $("[data-filters-index='filters_3'] .minVal2").html(minVal);
+          $("[data-filters-index='filters_3'] .maxVal2").html(maxVal);
+          $(".price_resp").html($("#price_sel").html());
+          $(".price_values").text($("#price_sel").text()[0] + " " + $("#input-number_1").val()+" - "+ $("#input-number_2").val());
+      });
+      $("#input-number_1").keyup(function() {
+          activeInputVal = parseInt( $(this).val() );
+          if( activeInputVal < parseInt( $("#input-number_2").val() ) ) {
+              leftRange = parseInt( $(this).val() );
+              priceSlider2.noUiSlider.set([leftRange, null]);
+          }
+      });
+      $("#input-number_2").keyup(function() {
+        activeInputVal = parseInt( $(this).val() );
+        if( activeInputVal > parseInt( $("#input-number_1").val() ) ) {
+            rightRange = parseInt( $(this).val() );
+            priceSlider2.noUiSlider.set([null, rightRange]);
+        }
+      });
+    }
+
+    if( document.getElementById("range_slider_4") ) {
+      priceSlider4 = document.getElementById("range_slider_4");
+      noUiSlider.create(priceSlider4, {
+        start: [ 1000, 3500 ],
+        range: {
+            'min': [  0 ],
+            'max': [ 8906 ]
+        },
+        connect: true,
+          format: wNumb({
+              decimals: 0
+          })
+      });
+      inputNumberMin = document.getElementById("input-number_5");
+      inputNumberMax = document.getElementById("input-number_6");
+
+      priceSlider4.noUiSlider.on('update', function( values, handle ) {
+          minVal = parseInt( values[0] );
+          maxVal = parseInt( values[1] );
+          leftRange = maxVal;
+          rightRange = maxVal;
+          $("#input-number_5").val(minVal);
+          $("#input-number_6").val(maxVal);
+          handleLower = $("#range_slider_4").find(".noUi-handle-lower");
+          handleUpperr = $("#range_slider_4").find(".noUi-handle-upper");
+          leftCoord = handleLower.offset().left;
+          rightCoord = handleUpperr.offset().left;
+          barsCharts = handleLower.closest(".bars_range_wrapp");
+          barsCharts.find(".bars .bar").each(function() {
+              if( $(this).offset().left > leftCoord && $(this).offset().left < rightCoord ) {
+                  $(this).removeClass("disable");
+              } else {
+                  $(this).addClass("disable");
+              }
+          });
+          $("[data-filters-index='filters_4'] .minVal").html(minVal);
+          $("[data-filters-index='filters_4'] .maxVal").html(maxVal);   
+      });
+
+      priceSlider4.noUiSlider.on('set', function( values, handle ) {
+          setTimeout(function() { 
+              handleLower = $("#range_slider_4").find(".noUi-handle-lower");
+              handleUpperr = $("#range_slider_4").find(".noUi-handle-upper");
+              leftCoord = handleLower.offset().left;
+              rightCoord = handleUpperr.offset().left;
+              barsCharts = handleLower.closest(".bars_range_wrapp");
+              barsCharts.find(".bars .bar").each(function() {
+                  if( $(this).offset().left > leftCoord && $(this).offset().left < rightCoord ) {
+                      $(this).removeClass("disable");
+                  } else {
+                      $(this).addClass("disable");
+                  }
+              });
+          }, 500);
+      });
+
+      $("#input-number_5").keyup(function() {
+          activeInputVal = parseInt( $(this).val() );
+          if( activeInputVal < parseInt( $("#input-number_6").val() ) ) {
+              leftRange = parseInt( $(this).val() );
+              priceSlider4.noUiSlider.set([leftRange, null]);
+          }
+      });
+      $("#input-number_6").keyup(function() {
+        activeInputVal = parseInt( $(this).val() );
+        if( activeInputVal > parseInt( $("#input-number_5").val() ) ) {
+            rightRange = parseInt( $(this).val() );
+            priceSlider4.noUiSlider.set([null, rightRange]);
+        }
+      });
+    }
+
+    // --------
+
+    $(".checkout_list p").on("click", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".checkout_dr");
+      val = $(this).text();
+      parent.find(".checkout_val p").text(val);
+      parent.removeClass("active");
+    });
+
 });
