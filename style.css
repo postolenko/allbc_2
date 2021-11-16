@@ -969,8 +969,8 @@ textarea:focus {
 .bar {
     width: 6px;
     border: 1px solid #ffffff;
-    background: linear-gradient(180deg, #86C446 0%, #05ADE4 100%);
-    background: -webkit-linear-gradient(180deg, #86C446 0%, #05ADE4 100%);
+    background: linear-gradient(-90deg, #86C446 0%, #05ADE4 90%);
+    background: -webkit-linear-gradient(-90deg, #86C446 0%, #05ADE4 90%);
 }
 
 .bar.disable {

@@ -75,7 +75,15 @@ $(document).ready(function() {
     $(".dr_title").on("click", function(e) {
       e.preventDefault();
       parent = $(this).closest(".dr");
-      parent.toggleClass("active");
+      if(!parent.hasClass("active")) {
+        if(parent.closest(".dr.active").length == 0) {
+          $(".dr").removeClass("active");
+        }
+        parent.addClass("active");
+        getBarsChart();
+      } else {
+        parent.removeClass("active");
+      }
     });
 
     $(this).keydown(function(eventObject){
