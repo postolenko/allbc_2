@@ -356,6 +356,14 @@ textarea:focus {
     text-align: left;
 }
 
+.visible_1024 {
+    display: none;
+}
+
+.visible_600 {
+    display: none;
+}
+
 /*-- Slick --*/
 
 .slick-arrow {
@@ -441,24 +449,46 @@ textarea:focus {
     vertical-align: top;
     cursor: pointer;
     margin: 4px;
+    line-height: 8px;
 }
 
 .slick-dots li button {
     font-size: 0;
     line-height: 0;
-    width: 16px;
-    height: 16px;
+    width: 8px;
+    height: 8px;
     cursor: pointer;
     background: transparent;
     position: relative;
-    border: 2px solid #006df0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    border: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #FFB999;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: width;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: width;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: width;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: width;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 .slick-dots li.slick-active button {
-    background: #006df0;
+    width: 18px;
+    background: #FF4F00;
 }
 
 /*-- /Slick --*/
@@ -548,7 +578,7 @@ textarea:focus {
 
 .header_site_row > .col_2 {
     width: calc(58% - 110px);
-    padding: 0 10px 0 24px;
+    padding: 26px 10px 0 24px;
 }
 
 .header_site_row > .col_3 {
@@ -834,6 +864,8 @@ textarea:focus {
     display: -webkit-inline-flex;
     align-items: center;
     -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
     min-height: 40px;
     padding: 6px 18px 8px 18px;
     background: rgba(255, 255, 255, .4);
@@ -929,7 +961,7 @@ textarea:focus {
     -webkit-border-radius: 6px;
     position: absolute;
     top: 100%;
-    left: -200vw;
+    left: -300vw;
     opacity: 0;
     margin-top: 0;
     z-index: 3;
@@ -978,14 +1010,18 @@ textarea:focus {
     background-color: #d8d8d8;
 }
 
+.res_drp_city {
+    width: 127px;
+}
+
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
     /*display: inline-block;*/
     display: none;
     vertical-align: top;
-    width: 45px;
-    height: 37px;
+    width: 24px;
+    height: 24px;
     background: transparent;
     cursor: pointer;
     position: relative;
@@ -996,10 +1032,10 @@ textarea:focus {
 
 .respmenubtn span {
     display: block;
-    width: 27px;
+    width: 18px;
     height: 2px;
-    background: #466896;
-    margin: 0 auto 7px auto;
+    background: #fff;
+    margin: 0 auto 5px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1031,7 +1067,7 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #FF5722;
 }
 
 .respmenubtn.active span {
@@ -1039,7 +1075,7 @@ textarea:focus {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #e9ba5f;
+    background: #FF5722;
 }
 
 .respmenubtn.active span:last-child {
@@ -1139,7 +1175,7 @@ textarea:focus {
     padding-left: 6px;
 }
 
-.inputs_online {
+.inputs_inline {
     display: flex;
     display: -webkit-flex;
     background: #fff;
@@ -1150,12 +1186,12 @@ textarea:focus {
     -webkit-border-radius: 6px;
 }
 
-.inputs_online > div {
+.inputs_inline > div {
     padding: 0 20px;
     position: relative;
 }
 
-.inputs_online > div:after {
+.inputs_inline > div:after {
     display: block;
     content: "";
     width: 1px;
@@ -1166,23 +1202,23 @@ textarea:focus {
     right: 0;
 }
 
-.inputs_online > div:last-child:after {
+.inputs_inline > div:last-child:after {
     display: none;
 }
 
-.inputs_online > div:nth-child(1) {
+.inputs_inline > div:nth-child(1) {
     width: 21%;
 }
 
-.inputs_online > div:nth-child(2) {
+.inputs_inline > div:nth-child(2) {
     width: 17%;
 }
 
-.inputs_online > div:nth-child(3) {
+.inputs_inline > div:nth-child(3) {
     width: 17%;
 }
 
-.inputs_online > div:nth-child(4) {
+.inputs_inline > div:nth-child(4) {
     padding: 0 25px;
     width: 45%;
 }
@@ -2385,6 +2421,8 @@ textarea:focus {
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
     min-height: 396px;
     margin: 76px 0 31px 0;
     padding: 10px 33px;
@@ -2969,12 +3007,16 @@ textarea:focus {
     padding-left: 10px;
 }
 
+.two_cols_2 > .left_col > div {
+    width: 100%;
+}
+
 .banner_2 {
     display: flex;
     display: -webkit-flex;
     align-items: flex-end;
     -webkit-align-items: flex-end;
-    min-height: 408px;
+    min-height: 410px;
     background-color: #C4C4C4;
     background-position: center;
     background-size: cover;
@@ -2983,11 +3025,6 @@ textarea:focus {
     filter: drop-shadow(0 0 1px rgba(12, 26, 75, .24));
     border-radius: 6px;
     -webkit-border-radius: 6px;
-}
-
-.two_cols_2 > .left_col .banner_2 {
-    flex: 1 0;
-    height: 100%;
 }
 
 .banner_2_content {
@@ -3007,14 +3044,14 @@ textarea:focus {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: -6px -10px;
+    margin: -4px -10px;
 }
 
 .thumb_4 {
     display: flex;
     display: -webkit-flex;
     background: #FFF;
-    min-height: 132px;
+    min-height: 131px;
     box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
     -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
     border-radius: 6px;
@@ -3048,7 +3085,7 @@ textarea:focus {
 
 .thumbnails_4 .thumb_4 {
     width: calc(50% - 20px);
-    margin: 6px 10px;
+    margin: 4px 10px;
 }
 
 .thumb_4 > div:nth-child(1) {

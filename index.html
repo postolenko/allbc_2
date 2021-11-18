@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>ALLBC</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </head>
 
 <body>
@@ -23,36 +23,39 @@
 		<div class="header_site">
 			<div class="row">
 				<div class="header_site_row">
+					<button class="respmenubtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 					<div class="col_1">
 						<a href="#" class="logo">a<span class="green">l</span><span class="blue">l</span>bc</a>
 					</div>
-					<div class="col_2">
-						<div class="main_nav_wrapp" id="resp_nav">
-							<div class="inlines_1">
-								<div>
-									<div class="dropdown_box dr city_dr checkout_dr">
-										<div class="dropdown_title dr_title checkout_val">
+					<div class="col_2">						
+						<div class="inlines_1">
+							<div>
+								<div class="dropdown_box dr city_dr checkout_dr">
+									<div class="dropdown_title dr_title checkout_val">
+										<p>Івано-Франківськ</p>
+									</div>
+									<div class="dropdown_content dr_content">
+										<div class="checkout_list">
 											<p>Івано-Франківськ</p>
-										</div>
-										<div class="dropdown_content dr_content">
-											<div class="checkout_list">
-												<p>Івано-Франківськ</p>
-												<p>Киев</p>
-												<p>Одесса</p>
-												<p>Львов</p>
-											</div>
+											<p>Киев</p>
+											<p>Одесса</p>
+											<p>Львов</p>
 										</div>
 									</div>
 								</div>
-								<div>
-									<ul class="main_nav">
-										<li><a href="#">Аренда</a></li>
-										<li><a href="#">Продажа</a></li>
-										<li><a href="#">Новостройки</a></li>
-										<li><a href="#">Коворкинги</a></li>
-									</ul>
-								</div>
-							</div>							
+							</div>
+							<div>
+								<ul class="main_nav">
+									<li><a href="#">Аренда</a></li>
+									<li><a href="#">Продажа</a></li>
+									<li><a href="#">Новостройки</a></li>
+									<li><a href="#">Коворкинги</a></li>
+								</ul>
+							</div>						
 						</div>
 					</div>
 					<div class="col_3">
@@ -95,7 +98,7 @@
 					</div>
 					<div class="col_4">
 						<div class="inlines_3">
-							<div>
+							<div class="novisible_900">
 								<a href="#" class="red_pill">
 									<div class="icon_wrapp">
 										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,11 +113,6 @@
 							</div>
 						</div>
 					</div>
-					<button class="respmenubtn">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
 				</div>
 			</div>
 		</div>								
@@ -130,6 +128,21 @@
 		<section class="promo_sect">
 			<div class="promo_box" style="background-image: url(img/promo_img.jpg);">
 				<div class="row row_2">
+					<div class="visible_600 res_drp_city">
+						<div class="dropdown_box dr city_dr checkout_dr">
+							<div class="dropdown_title dr_title checkout_val">
+								<p>Івано-Франківськ</p>
+							</div>
+							<div class="dropdown_content dr_content">
+								<div class="checkout_list">
+									<p>Івано-Франківськ</p>
+									<p>Киев</p>
+									<p>Одесса</p>
+									<p>Львов</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="promo_title_wrapp">
 						<h1>Лише <span class="orange">актуальні</span> офіси в твоєму місті</h1>
 					</div>
@@ -137,8 +150,8 @@
 						<form>
 							<div class="search_box">
 								<div>
-									<div class="inputs_online">
-										<div>
+									<div class="inputs_inline">
+										<div class="input_inline">
 											<div class="dropdown_box_2 dr checkout_dr">
 												<div class="dropdown_title_2 dr_title checkout_val">
 													<p>Аренда</p>
@@ -147,13 +160,11 @@
 													<div class="checkout_list">
 														<p>Аренда</p>
 														<p>Продажа</p>
-														<p>Новостройки</p>
-														<p>Коворкинги</p>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div>
+										<div class="input_inline">
 											<div class="dropdown_box_2 dr">
 												<div class="dropdown_title_2 dr_title">
 													<p>Площадь</p>
@@ -161,7 +172,6 @@
 												<div class="dropdown_content_2 dr_content">
 													<div class="bars_range_wrapp">
 														<div class="bars">
-															<!-- bar это цена, data-count-val - количество объектов по этой цене -->
 															<div class="bar" data-count-val = "0"></div>
 															<div class="bar" data-count-val = "0"></div>
 															<div class="bar" data-count-val = "0"></div>
@@ -223,7 +233,7 @@
 												</div>
 											</div>
 										</div>
-										<div>
+										<div class="input_inline">
 											<div class="dropdown_box_2 dr">
 												<div class="dropdown_title_2 dr_title">
 													<p>Цена</p>
@@ -251,7 +261,6 @@
 													</div>
 													<div class="bars_range_wrapp">
 														<div class="bars">
-															<!-- bar это цена, data-count-val - количество объектов по этой цене -->
 															<div class="bar" data-count-val = "0"></div>
 															<div class="bar" data-count-val = "0"></div>
 															<div class="bar" data-count-val = "0"></div>
@@ -307,7 +316,7 @@
 												</div>
 											</div>
 										</div>
-										<div>
+										<div class="input_inline">
 											<div class="search_input">
 												<input type="text" name="searc_text" placeholder="Город, адрес, метро, район, ж/д, шоссе или ЖК" />
 											</div>
@@ -320,24 +329,26 @@
 							</div>
 						</form>
 					</div>
-					<div class="offices_val">
-						<div>
-							<div class="offices_val_thumb">
-								<div>
-									<p>75 040</p>
-								</div>
-								<div>
-									<p>Свободных<br /> офисов</p>
+					<div class="overflow_wrapp">
+						<div class="offices_val">
+							<div>
+								<div class="offices_val_thumb">
+									<div>
+										<p>75 040</p>
+									</div>
+									<div>
+										<p>Свободных<br /> офисов</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div>
-							<div class="offices_val_thumb blue">
-								<div>
-									<p>2 508</p>
-								</div>
-								<div>
-									<p>Бизнесс центров<br /> в Киеве</p>
+							<div>
+								<div class="offices_val_thumb blue">
+									<div>
+										<p>2 508</p>
+									</div>
+									<div>
+										<p>Бизнесс центров<br /> в Киеве</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -614,14 +625,14 @@
 								<h2>Рекомендованные БЦ</h2>
 							</div>
 							<div class="right_col">
-								<div class="item_2">
+								<a href="#" class="item_2">
 									<div>
 										<p>Посмотреть еще</p>
 									</div>
 									<div>
 										<div class="blue_tag_2">20</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 						<div class="object_cards">
@@ -930,9 +941,13 @@
 					<div class="right_col">
 						<div class="banner">
 							<img class="banner_img" src="img/banner_img.jpg" alt="" />
-							<div>
-								<p>Здесь может быть Ваш офис</p>
-								<a href="#" class="orange_pill orange_pill_2">Добавить офис</a>
+							<div class="banner_inner">
+								<div>
+									<p>Здесь может быть Ваш офис</p>
+								</div>
+								<div>
+									<a href="#" class="orange_pill orange_pill_2">Добавить офис</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -962,7 +977,307 @@
 									<li><a href="#" class="filter_tag">Новостройки</a></li>
 								</ul>
 							</div>
-							<div class="object_cards">
+							<div class="object_cards object_cards_slider">
+								<div class="object_card">
+									<div class="object_card_links">
+										<a href="#" class="icon_link_2">
+											<img src="img/hearth.svg" alt="" />
+										</a>
+									</div>
+									<a href="#" class="object_card_inner">
+										<div class="img_box">
+											<img class="object_card_img" src="img/obj_img.jpg" alt="" />
+											<div class="img_box_header">
+												<div class="obj_type_tag">B</div>
+											</div>
+											<div class="img_box_footer">
+												<div>
+													<h3>BC “Victory Plaza”</h3>
+												</div>
+												<div>
+													<div class="count_offices_tab">
+														<p class="num">12</p>
+														<p>офисов</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="object_card_descript">
+											<div class="top_row_2">
+												<div class="thumb_2">
+													<div>
+														<img src="img/pin.svg" alt="" />
+													</div>
+													<div>
+														<p>г. Ивано-Франковск, р-н Центральный</p>
+														<p class="p_2">ул. Эспланадная 1</p>
+													</div>
+												</div>
+												<div class="inlines_4">
+													<div>
+														<div class="thumb_3">
+															<div>
+																<img src="img/metro_blue.svg" alt="" />
+															</div>
+															<div>
+																<p>пл. Л. Толстого — 800м</p>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="thumb_3">
+															<div>
+																<img src="img/walker.svg" alt="" />
+															</div>
+															<div>
+																<p>≈10 мин</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="bottom_row_2">
+												<div class="table_1">
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>30 m<span class="sq">2</span></h3>
+															<p>49.1k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>44 m<span class="sq">2</span></h3>
+															<p>54.8k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>400 m<span class="sq">2</span></h3>
+															<p>600k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>2250 m<span class="sq">2</span></h3>
+															<p>3m ₽</p>
+														</div>
+													</div>
+												</div>
+												<div class="inlines_5">
+													<div>
+														<div class="tag_1 pink">+ OPEX 5$/m2/мес</div>
+													</div>
+													<div>
+														<div class="tag_1 blue">+ НДС</div>
+													</div>
+													<div>
+														<div class="tag_1 violet">+ R/U - 10%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="object_card">
+									<div class="object_card_links">
+										<a href="#" class="icon_link_2">
+											<img src="img/hearth.svg" alt="" />
+										</a>
+									</div>
+									<a href="#" class="object_card_inner">
+										<div class="img_box">
+											<img class="object_card_img" src="img/obj_img.jpg" alt="" />
+											<div class="img_box_header">
+												<div class="obj_type_tag">B</div>
+											</div>
+											<div class="img_box_footer">
+												<div>
+													<h3>BC “Victory Plaza”</h3>
+												</div>
+												<div>
+													<div class="count_offices_tab">
+														<p class="num">12</p>
+														<p>офисов</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="object_card_descript">
+											<div class="top_row_2">
+												<div class="thumb_2">
+													<div>
+														<img src="img/pin.svg" alt="" />
+													</div>
+													<div>
+														<p>г. Ивано-Франковск, р-н Центральный</p>
+														<p class="p_2">ул. Эспланадная 1</p>
+													</div>
+												</div>
+												<div class="inlines_4">
+													<div>
+														<div class="thumb_3">
+															<div>
+																<img src="img/metro_blue.svg" alt="" />
+															</div>
+															<div>
+																<p>пл. Л. Толстого — 800м</p>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="thumb_3">
+															<div>
+																<img src="img/walker.svg" alt="" />
+															</div>
+															<div>
+																<p>≈10 мин</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="bottom_row_2">
+												<div class="table_1">
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>30 m<span class="sq">2</span></h3>
+															<p>49.1k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>44 m<span class="sq">2</span></h3>
+															<p>54.8k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>400 m<span class="sq">2</span></h3>
+															<p>600k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>2250 m<span class="sq">2</span></h3>
+															<p>3m ₽</p>
+														</div>
+													</div>
+												</div>
+												<div class="inlines_5">
+													<div>
+														<div class="tag_1 pink">+ OPEX 5$/m2/мес</div>
+													</div>
+													<div>
+														<div class="tag_1 blue">+ НДС</div>
+													</div>
+													<div>
+														<div class="tag_1 violet">+ R/U - 10%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="object_card">
+									<div class="object_card_links">
+										<a href="#" class="icon_link_2">
+											<img src="img/hearth.svg" alt="" />
+										</a>
+									</div>
+									<a href="#" class="object_card_inner">
+										<div class="img_box">
+											<img class="object_card_img" src="img/obj_img.jpg" alt="" />
+											<div class="img_box_header">
+												<div class="obj_type_tag">B</div>
+											</div>
+											<div class="img_box_footer">
+												<div>
+													<h3>BC “Victory Plaza”</h3>
+												</div>
+												<div>
+													<div class="count_offices_tab">
+														<p class="num">12</p>
+														<p>офисов</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="object_card_descript">
+											<div class="top_row_2">
+												<div class="thumb_2">
+													<div>
+														<img src="img/pin.svg" alt="" />
+													</div>
+													<div>
+														<p>г. Ивано-Франковск, р-н Центральный</p>
+														<p class="p_2">ул. Эспланадная 1</p>
+													</div>
+												</div>
+												<div class="inlines_4">
+													<div>
+														<div class="thumb_3">
+															<div>
+																<img src="img/metro_blue.svg" alt="" />
+															</div>
+															<div>
+																<p>пл. Л. Толстого — 800м</p>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="thumb_3">
+															<div>
+																<img src="img/walker.svg" alt="" />
+															</div>
+															<div>
+																<p>≈10 мин</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="bottom_row_2">
+												<div class="table_1">
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>30 m<span class="sq">2</span></h3>
+															<p>49.1k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>44 m<span class="sq">2</span></h3>
+															<p>54.8k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>400 m<span class="sq">2</span></h3>
+															<p>600k ₽</p>
+														</div>
+													</div>
+													<div class="cell">
+														<div class="price_thumb">
+															<h3>2250 m<span class="sq">2</span></h3>
+															<p>3m ₽</p>
+														</div>
+													</div>
+												</div>
+												<div class="inlines_5">
+													<div>
+														<div class="tag_1 pink">+ OPEX 5$/m2/мес</div>
+													</div>
+													<div>
+														<div class="tag_1 blue">+ НДС</div>
+													</div>
+													<div>
+														<div class="tag_1 violet">+ R/U - 10%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
 								<div class="object_card">
 									<div class="object_card_links">
 										<a href="#" class="icon_link_2">
@@ -1279,7 +1594,7 @@
 									<li><a href="#" class="filter_tag">Коворкинги</a></li>
 								</ul>
 							</div>
-							<div class="object_cards">
+							<div class="object_cards object_cards_slider">
 								<div class="object_card">
 									<div class="object_card_links">
 										<a href="#" class="icon_link_2">
@@ -1584,7 +1899,7 @@
 						</div>
 					</div>
 					<div class="right_col">
-						<div class="persons_box">
+						<div class="persons_box novisible_1024">
 							<div class="persons_box_header">
 								<div>
 									<h3>Брокеры</h3>
@@ -1638,7 +1953,7 @@
 								<a href="#" class="green_pill">Заказать консультацию</a>
 							</div>
 						</div>
-						<div class="persons_box">
+						<div class="persons_box novisible_1024">
 							<div class="persons_box_header">
 								<div>
 									<h3>Застройщики</h3>
@@ -1689,7 +2004,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="persons_box">
+						<div class="persons_box novisible_1024">
 							<div class="persons_box_header">
 								<div>
 									<h3>Собственники</h3>
@@ -1740,7 +2055,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="subscribe_box">
 							<img class="subscribe_box_img" src="img/subscribe_img.jpg" alt="" />
 							<div class="subscribe_box_content">
@@ -1763,7 +2077,256 @@
 								</div>
 							</div>
 						</div>
-
+					</div>
+				</div>
+				<div class="resp_slider_wrapp visible_1024">
+					<!-- <div class="scroll_resp_wrapp"> -->
+						<!-- <div class="scroll_resp"> -->
+							<ul class="resp_slider_filter" data-respslider-filters = "respslider_1">
+								<li><a href="#" class="filter_tag filter_tag_2">Брокеры</a></li>
+								<li><a href="#" class="filter_tag filter_tag_2">Застройщики</a></li>
+								<li><a href="#" class="filter_tag filter_tag_2">Собственники</a></li>
+							</ul>
+						<!-- </div> -->
+					<!-- </div> -->
+					<div class="resp_slider" data-respslider = "respslider_1">
+						<div class="slide">
+							<div class="items_thumbs">
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+							</div>
+							<div class="green_pill_3_wrapp">
+								<a href="#" class="green_pill green_pill_3">Заказать консультацию</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="items_thumbs">
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+							</div>
+							<div class="green_pill_3_wrapp">
+								<a href="#" class="green_pill green_pill_3">Заказать консультацию</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="items_thumbs">
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+								<div class="item_thumb_wrapp">
+									<a href="#" class="item_thumb">
+										<div class="img_box">
+											<img src="img/item_img.jpg" alt="" />
+										</div>
+										<h3>Александр Имамов</h3>
+										<p>5 предложений</p>
+									</a>
+								</div>
+							</div>
+							<div class="green_pill_3_wrapp">
+								<a href="#" class="green_pill green_pill_3">Заказать консультацию</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1823,11 +2386,13 @@
 				</div>
 				<div class="two_cols_2">
 					<div class="left_col">
-						<a href="#" class="banner_2" style="background-image: url(img/banner_2_img.jpg)">
-							<div class="banner_2_content">
-								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-							</div>
-						</a>
+						<div>
+							<a href="#" class="banner_2" style="background-image: url(img/banner_2_img.jpg)">
+								<div class="banner_2_content">
+									<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+								</div>
+							</a>
+						</div>
 					</div>
 					<div class="right_col">
 						<div class="thumbnails_4">
@@ -1907,7 +2472,7 @@
 
 		<!-- Section 7 - Main Page -->
 
-		<section class="sect_7 grey_bg">
+		<section class="sect_7 grey_bg novisible_900">
 			<div class="row">
 				<div class="seo_box">
 					<div class="seo_box_title">
@@ -2336,13 +2901,13 @@
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css"> -->
 	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>
+	<!-- <script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
+	<!-- <script src="vendors/js/jquery.fancybox.js"></script> -->
 	<script src="vendors/js/wnumb.js"></script>
 	<script src="vendors/js/nouislider.min.js"></script>
 	<script src="js/scripts.js"></script>
