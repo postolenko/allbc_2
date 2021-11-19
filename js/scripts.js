@@ -325,6 +325,12 @@ $(document).ready(function() {
       }
     });
 
+    $("#closeRespNav").on("click", function(e) {
+      e.preventDefault();
+      $("#resp_nav").fadeOut(300);
+      $(".respmenubtn").removeClass("active");
+    });
+
     // ---------
 
     if( $(".resp_slider").length > 0 ) {
