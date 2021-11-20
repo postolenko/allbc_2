@@ -13,16 +13,15 @@
 
 	.header_site_row > .col_2 {
 	    width: calc(58% - 85px);
-	    padding: 24px 5px 0 18px;
 	}
 
 	.header_site_row > .col_3 {
-	    width: 17%;
-	    padding: 0 5px;
+	    width: 19%;
+	    padding: 0;
 	}
 
 	.header_site_row > .col_4 {
-	    width: 25%;
+	    width: 23%;
 	    padding: 0 0 0 5px;
 	}
 
@@ -34,8 +33,22 @@
 	    font-size: 13px;
 	}
 
+	.icon_link {
+	    display: block;
+	    min-width: 27px;
+	    padding: 24px 5px 14px 5px;
+	}
+
+	.lang_drp {
+	    width: 70px;
+	}
+
+	.lang_drp .dropdown_title {
+	    padding: 24px 8px 22px 8px;
+	}
+
 	.inlines_2 {
-	    margin: 21px -5px 0 -5px;
+	    margin: 0 -5px 0 -5px;
 	}
 
 	.inlines_2 > div {
@@ -64,6 +77,22 @@
 }
 
 @media only screen and (max-width: 1240px) {
+
+	/*-- Header --*/
+
+	.main_nav > li > a {
+	    padding: 26px 10px 25px 10px;
+	}
+
+	.inlines_2 {
+	    margin: 0 -2px 0 -2px;
+	}
+
+	.inlines_2 > div {
+	    padding: 0 2px;
+	}
+
+	/*-- /Header --*/
 
 	/*-- Section 7 - Main Page --*/
 
@@ -123,7 +152,6 @@
 
 	.header_site_row > .col_2 {
 		width: calc(41% - 85px);
-		padding-top: 23px;
 	}
 
 	.header_site_row > .col_3 {
@@ -612,9 +640,17 @@
 	/*-- Header --*/
 
 	.header_site {
-		min-height: 56px;
-		padding-bottom: 0;
-		background: rgba(255, 255, 255, .05);
+	    width: 100%;
+	    min-height: 56px;
+	    padding-bottom: 0;
+	    background: rgba(255, 255, 255, .05);
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	}
+
+	#header.bg .header_site {
+		background: #2A3842;
 	}
 
 	.header_site_row > .col_2 {
@@ -631,6 +667,18 @@
 
 	.inlines_3 {
 	    margin: 7px -5px 5px -5px;
+	}
+
+	.city_dr .dropdown_title {
+	    padding: 23px 15px 16px 15px;
+	}
+
+	.dropdown_title:after {
+	    top: 27px;
+	}
+
+	.city_dr_2 .dr_title {
+	    padding: 12px 23px 11px 10px;
 	}
 
 	/*-- /Header --*/
