@@ -1758,6 +1758,30 @@ textarea:focus {
     font-size: 14px;
     line-height: 140%;
     color: #FF4F00;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_orange_pill:hover {
+    background: #FF4F00;
+    color: #fff;
 }
 
 .transparent_orange_pill svg {
@@ -1766,8 +1790,35 @@ textarea:focus {
     max-height: 15px;
 }
 
+.transparent_orange_pill svg path {
+    -webkit-transition-property: fill;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: fill;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: fill;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: fill;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: fill;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_orange_pill:hover svg path {
+    fill: #fff;
+}
+
 .search_input.search_input_2 {
     margin-top: 13px;
+    position: relative;
     padding: 8px 15px 8px 58px;
     box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
     -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
@@ -1776,8 +1827,17 @@ textarea:focus {
 }
 
 .search_input.search_input_2:before {
+    display: block;
+    position: absolute;
     top: 10px;
     left: 19px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(img/black_glass.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .pills_wrapp {
@@ -1826,6 +1886,30 @@ textarea:focus {
     font-size: 14px;
     line-height: 140%;
     color: #121212;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.white_pill_3:hover {
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 11px -1px rgba(50, 50, 71, .3);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 11px -1px rgba(50, 50, 71, .3);
 }
 
 .white_pill_3 svg {
@@ -2164,6 +2248,31 @@ textarea:focus {
     font-size: 14px;
     line-height: 140%;
     color: #FFF;
+    -webkit-transition-property: box-shadow, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.orange_pill:hover {
+    background-color: #ff9900;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
 }
 
 .search_box > div:nth-child(2) .orange_pill {
@@ -3008,11 +3117,35 @@ textarea:focus {
 }
 
 .item_2 p {
+    border-bottom: 1px solid transparent;
     padding: 1px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
     color: #000;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.item_2:hover p {
+    border-bottom: 1px solid #000;
 }
 
 .blue_tag_2 {
@@ -3576,6 +3709,31 @@ textarea:focus {
     font-size: 12px;
     line-height: 140%;
     color: #FFF;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.more_link:hover {
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
 }
 
 .more_link:after {
@@ -3670,6 +3828,31 @@ textarea:focus {
     font-size: 14px;
     line-height: 140%;
     color: #FFF;
+    -webkit-transition-property: box-shadow, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.green_pill:hover {
+    background: #a3e94e;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
 }
 
 .more_link.black {
@@ -3801,7 +3984,7 @@ textarea:focus {
     width: 100%;
     border: none;
     cursor: pointer;
-    padding: 9px 15px 10px 15px;
+    padding: 10px 15px 9px 15px;
     align-items: center;
     -webkit-align-items: center;
     justify-content: center;
@@ -3813,6 +3996,31 @@ textarea:focus {
     font-size: 12px;
     line-height: 140%;
     color: #FFF;
+    -webkit-transition-property: box-shadow, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.blue_pill:hover {
+    background: #07c1ff;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
 }
 
 .blue_pill img {
@@ -4440,6 +4648,41 @@ footer {
     height: 32px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
+    position: relative;
+    top: 0;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.soc_list li a:link,
+.soc_list li a:visited {
+    top: 0;
+}
+
+.soc_list li a:active,
+.soc_list li a.active {
+    top: 4px;
+}
+
+.soc_list li a:hover {
+    top: 4px;
 }
 
 .soc_list li a img {
