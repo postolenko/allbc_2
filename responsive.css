@@ -859,6 +859,19 @@
 
 @media only screen and (max-width: 660px) {
 
+	/*-- Section 3 - Main Page --*/
+
+	.object_cards {
+	    margin: 0;
+	}
+
+	.object_cards .object_card {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 3 - Main Page --*/
+
 	/*-- Section 4 - Main Page --*/
 
 	.object_cards_slider .slick-slide {
@@ -873,23 +886,6 @@
 	}
 
 	/*-- /Section 4 - Main Page --*/
-
-}
-
-@media only screen and (max-width: 660px) {
-
-	/*-- Section 3 - Main Page --*/
-
-	.object_cards {
-	    margin: 0;
-	}
-
-	.object_cards .object_card {
-	    width: 100%;
-	    margin: 10px 0;
-	}
-
-	/*-- /Section 3 - Main Page --*/
 
 }
 
@@ -963,13 +959,13 @@
 	    width: calc(100% - 8px);
 	}
 
-	.orange_pill {
-	    padding: 10px 15px;
+	.inputs_inline.drParent > div:nth-child(odd) .dr.active .dropdown_content_2 {
+	    left: auto;
+	    right: -17px;
 	}
 
-	.inputs_inline > div:nth-child(odd) .dr.active .dropdown_content_2 {
-	    left: auto;
-	    right: -15px;
+	.orange_pill {
+	    padding: 10px 15px;
 	}
 
 	.offices_val {
