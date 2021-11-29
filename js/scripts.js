@@ -410,4 +410,19 @@ $(document).ready(function() {
       menu.offset({left: -(bodyWidth * 3)});
     });
 
+    // --------
+
+    $("[data-sl-btn]").on("click", function(e) {
+      e.preventDefault();
+      sl = $("[data-slidedown = '"+$(this).attr("data-sl-btn")+"']");
+      if(sl.is(":hidden")) {
+        sl.slideDown(300);
+        $(this).addClass("active");
+      } else {
+        sl.slideUp(300);
+        $(this).removeClass("active");
+      }
+
+    });
+
 });
