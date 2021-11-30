@@ -655,7 +655,7 @@
 
 		<!-- Section 2 - Catalog Page -->
 
-		<section>
+		<section class="overflow_hidden">
 			<div class="row">
 
 				<!-- Bradcrumbs -->
@@ -730,6 +730,17 @@
 					</div>
 				</div>
 
+				<div class="tags_wrapp">
+					<div class="tag_grey">Класс А<button type="button" class="close_tag"></button></div>
+					<div class="tag_grey">Суб аренда<button type="button" class="close_tag"></button></div>
+					<div class="tag_grey">Офисная отделка<button type="button" class="close_tag"></button></div>
+					<div class="tag_grey">С мебелью<button type="button" class="close_tag"></button></div>
+					<div class="tag_grey">Класс А<button type="button" class="close_tag"></button></div>
+					<div class="tag_grey">Суб аренда<button type="button" class="close_tag"></button></div>
+					<div class="tag_grey">Офисная отделка<button type="button" class="close_tag"></button></div>
+					<div class="tag_grey">С мебелью<button type="button" class="close_tag"></button></div>
+				</div>
+
 				<div class="search_res_wrapp">
 					<div>
 						<p>Найдено <span>432 213</span> обьектов</p>
@@ -753,7 +764,7 @@
 								</a>
 							</div>
 							<div>
-								<a href="#" class="white_pill_4_2">
+								<a href="#" class="white_pill_4_2" id="showMap">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M17.873 1.66797L17.7248 1.69575L12.7793 3.6128L7.22268 1.66797L1.99942 3.42758C1.80493 3.49241 1.66602 3.65911 1.66602 3.87211V17.8749C1.66602 18.1342 1.86976 18.338 2.12907 18.338L2.27725 18.3102L7.22268 16.3931L12.7793 18.338L18.0026 16.5784C18.1971 16.5135 18.336 16.3468 18.336 16.1338V2.13102C18.336 1.87171 18.1323 1.66797 17.873 1.66797ZM12.7793 16.4857L7.22268 14.5317V3.52019L12.7793 5.47429V16.4857Z" fill="#141F27"/>
 									</svg>
@@ -817,12 +828,44 @@
 								<div class="blue_tag">1000</div>
 							</div>
 						</a>
-						<a href="#" class="more_link_3">Еще</a>
+						<a href="#" class="class_item hidden" data-hidden-elems = "hidden_1">
+							<div>
+								<p>Класс OSZ</p>
+							</div>
+							<div>
+								<div class="blue_tag">1000</div>
+							</div>
+						</a>
+						<a href="#" class="class_item hidden" data-hidden-elems = "hidden_1">
+							<div>
+								<p>Класс OSZ</p>
+							</div>
+							<div>
+								<div class="blue_tag">1000</div>
+							</div>
+						</a>
+						<a href="#" class="class_item hidden" data-hidden-elems = "hidden_1">
+							<div>
+								<p>Класс OSZ</p>
+							</div>
+							<div>
+								<div class="blue_tag">1000</div>
+							</div>
+						</a>
+						<a href="#" class="class_item hidden" data-hidden-elems = "hidden_1">
+							<div>
+								<p>Класс OSZ</p>
+							</div>
+							<div>
+								<div class="blue_tag">1000</div>
+							</div>
+						</a>
+						<a href="#" class="more_link_3" data-show-elems = "hidden_1">Еще</a>
 					</div>
 				</div>
 
 
-				<div class="two_cols_templ">
+				<div class="two_cols_templ" id="mapTempl">
 					<div class="left_col">
 						<div class="caatalog_thumbs">
 							<div class="catalog_thumb">
@@ -833,14 +876,20 @@
 												<div class="grad_tag">
 													<p>От собственника</p>
 												</div>
-												<div class="object_slider_big">
-													<!-- <div class="slide" style="background-image: url(img/ )"></div> -->
-													<!-- <div class="slide" style="background-image: url(img/ )"></div> -->
-													<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+												<div class="object_slider_big" data-slider-big = "object_slider_1">
+													<div>
+														<div class="slide" style="background-image: url(img/sl_miniature.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
 												</div>									
 											</div>
 											<div>
-												<div class="object_slider_miniatures">
+												<div class="object_slider_miniatures" data-slider-miniature = "object_slider_1">
 													<div class="slide">
 														<div class="miniature_thumb">
 															<img src="img/sl_miniature.jpg" alt="" />
@@ -857,10 +906,35 @@
 														</div>
 													</div>
 												</div>
-												<a href="#" class="miniature_thumb_more">
+												<a href="#" class="miniature_thumb_more" data-gallery-btn = "object_slider_1">
 													<p>Еще фото</p>
 													<img src="img/sl_miniature_2.jpg" alt="" />
 												</a>
+											</div>
+										</div>
+										<div class="resp_btns">
+											<div class="inlines_6 inlines_6_2">
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M10.0012 3.77415C11.9587 2.01665 14.9837 2.07498 16.8695 3.96415C18.7545 5.85415 18.8195 8.86415 17.0662 10.8275L9.9995 17.9042L2.9345 10.8275C1.18116 8.86415 1.247 5.84915 3.13116 3.96415C5.01866 2.07748 8.03783 2.01415 10.0012 3.77415ZM15.6895 5.14165C14.4395 3.88998 12.4228 3.83915 11.1145 5.01415L10.002 6.01248L8.88866 5.01498C7.57616 3.83832 5.56366 3.88998 4.31033 5.14332C3.06866 6.38498 3.00616 8.37248 4.15033 9.68582L10.0003 15.545L15.8503 9.68665C16.9953 8.37248 16.9328 6.38748 15.6895 5.14165Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M5.37949 15.8333L1.66699 18.75V3.33333C1.66699 3.11232 1.75479 2.90036 1.91107 2.74408C2.06735 2.5878 2.27931 2.5 2.50033 2.5H17.5003C17.7213 2.5 17.9333 2.5878 18.0896 2.74408C18.2459 2.90036 18.3337 3.11232 18.3337 3.33333V15C18.3337 15.221 18.2459 15.433 18.0896 15.5893C17.9333 15.7455 17.7213 15.8333 17.5003 15.8333H5.37949ZM4.80283 14.1667H16.667V4.16667H3.33366V15.3208L4.80283 14.1667ZM9.16699 8.33333H10.8337V10H9.16699V8.33333ZM5.83366 8.33333H7.50033V10H5.83366V8.33333ZM12.5003 8.33333H14.167V10H12.5003V8.33333Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3" data-sl-btn = "sl_1">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17.873 1.66797L17.7248 1.69575L12.7793 3.6128L7.22268 1.66797L1.99942 3.42758C1.80493 3.49241 1.66602 3.65911 1.66602 3.87211V17.8749C1.66602 18.1342 1.86976 18.338 2.12907 18.338L2.27725 18.3102L7.22268 16.3931L12.7793 18.338L18.0026 16.5784C18.1971 16.5135 18.336 16.3468 18.336 16.1338V2.13102C18.336 1.87171 18.1323 1.66797 17.873 1.66797ZM12.7793 16.4857L7.22268 14.5317V3.52019L12.7793 5.47429V16.4857Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -881,18 +955,18 @@
 													</div>
 												</div>
 											</div>
-											<div class="inlines_5_2">
+											<div class="inlines_5">
 												<div>
-													<p class="tag_2">Арендная ставка 15$/m2/мес </p>
+													<div class="tag_1 blue">Арендная ставка 15$/m2/мес</div>
 												</div>
 												<div>
-													<p class="tag_2">+ OPEX 5$/m2/мес</p>
+													<div class="tag_1 pink">+ OPEX 5$/m2/мес</div>
 												</div>
 												<div>
-													<p class="tag_2">+ НДС</p>
+													<div class="tag_1 green">+ НДС</div>
 												</div>
 												<div>
-													<p class="tag_2">+ R/U - 10%</p>
+													<div class="tag_1 grey">+ R/U - 10%</div>
 												</div>
 											</div>
 											<div class="object_name_wrapp">
@@ -929,7 +1003,7 @@
 												</div>
 											</div>
 											<div class="catalog_thumb_descript">
-												<p>Plaza Botanica это новый знаковый проект от надежного девелопера ГК "Пионер", расположенный в 1 минуте от метро "Ботанический сад"и 6 км от ТТК. Проект оснащен современными инженерными системами и находится в развитой зоне инфраструктуры: рядом торгово-развлека...</p>
+												<p>Plaza Botanica это новый знаковый проект от надежного девелопера ГК "Пионер"...</p>
 											</div>
 										</div>
 										<div class="catalog_thumb_footer">
@@ -965,7 +1039,18 @@
 								<div class="slide_map_box" data-slidedown = "sl_1">
 									<img src="img/map_sl.jpg" alt="" />
 								</div>
+								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+								</div>
 							</div>
+
 							<div class="catalog_thumb">
 								<div class="catalog_thumb_inner">
 									<div>
@@ -974,14 +1059,20 @@
 												<div class="grad_tag">
 													<p>От собственника</p>
 												</div>
-												<div class="object_slider_big">
-													<!-- <div class="slide" style="background-image: url(img/ )"></div> -->
-													<!-- <div class="slide" style="background-image: url(img/ )"></div> -->
-													<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+												<div class="object_slider_big" data-slider-big = "object_slider_1">
+													<div>
+														<div class="slide" style="background-image: url(img/sl_miniature.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
 												</div>									
 											</div>
 											<div>
-												<div class="object_slider_miniatures">
+												<div class="object_slider_miniatures" data-slider-miniature = "object_slider_1">
 													<div class="slide">
 														<div class="miniature_thumb">
 															<img src="img/sl_miniature.jpg" alt="" />
@@ -998,10 +1089,35 @@
 														</div>
 													</div>
 												</div>
-												<a href="#" class="miniature_thumb_more">
+												<a href="#" class="miniature_thumb_more" data-gallery-btn = "object_slider_1">
 													<p>Еще фото</p>
 													<img src="img/sl_miniature_2.jpg" alt="" />
 												</a>
+											</div>
+										</div>
+										<div class="resp_btns">
+											<div class="inlines_6 inlines_6_2">
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M10.0012 3.77415C11.9587 2.01665 14.9837 2.07498 16.8695 3.96415C18.7545 5.85415 18.8195 8.86415 17.0662 10.8275L9.9995 17.9042L2.9345 10.8275C1.18116 8.86415 1.247 5.84915 3.13116 3.96415C5.01866 2.07748 8.03783 2.01415 10.0012 3.77415ZM15.6895 5.14165C14.4395 3.88998 12.4228 3.83915 11.1145 5.01415L10.002 6.01248L8.88866 5.01498C7.57616 3.83832 5.56366 3.88998 4.31033 5.14332C3.06866 6.38498 3.00616 8.37248 4.15033 9.68582L10.0003 15.545L15.8503 9.68665C16.9953 8.37248 16.9328 6.38748 15.6895 5.14165Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M5.37949 15.8333L1.66699 18.75V3.33333C1.66699 3.11232 1.75479 2.90036 1.91107 2.74408C2.06735 2.5878 2.27931 2.5 2.50033 2.5H17.5003C17.7213 2.5 17.9333 2.5878 18.0896 2.74408C18.2459 2.90036 18.3337 3.11232 18.3337 3.33333V15C18.3337 15.221 18.2459 15.433 18.0896 15.5893C17.9333 15.7455 17.7213 15.8333 17.5003 15.8333H5.37949ZM4.80283 14.1667H16.667V4.16667H3.33366V15.3208L4.80283 14.1667ZM9.16699 8.33333H10.8337V10H9.16699V8.33333ZM5.83366 8.33333H7.50033V10H5.83366V8.33333ZM12.5003 8.33333H14.167V10H12.5003V8.33333Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3" data-sl-btn = "sl_2">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17.873 1.66797L17.7248 1.69575L12.7793 3.6128L7.22268 1.66797L1.99942 3.42758C1.80493 3.49241 1.66602 3.65911 1.66602 3.87211V17.8749C1.66602 18.1342 1.86976 18.338 2.12907 18.338L2.27725 18.3102L7.22268 16.3931L12.7793 18.338L18.0026 16.5784C18.1971 16.5135 18.336 16.3468 18.336 16.1338V2.13102C18.336 1.87171 18.1323 1.66797 17.873 1.66797ZM12.7793 16.4857L7.22268 14.5317V3.52019L12.7793 5.47429V16.4857Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -1022,18 +1138,18 @@
 													</div>
 												</div>
 											</div>
-											<div class="inlines_5_2">
+											<div class="inlines_5">
 												<div>
-													<p class="tag_2">Арендная ставка 15$/m2/мес </p>
+													<div class="tag_1 blue">Арендная ставка 15$/m2/мес</div>
 												</div>
 												<div>
-													<p class="tag_2">+ OPEX 5$/m2/мес</p>
+													<div class="tag_1 pink">+ OPEX 5$/m2/мес</div>
 												</div>
 												<div>
-													<p class="tag_2">+ НДС</p>
+													<div class="tag_1 green">+ НДС</div>
 												</div>
 												<div>
-													<p class="tag_2">+ R/U - 10%</p>
+													<div class="tag_1 grey">+ R/U - 10%</div>
 												</div>
 											</div>
 											<div class="object_name_wrapp">
@@ -1070,7 +1186,7 @@
 												</div>
 											</div>
 											<div class="catalog_thumb_descript">
-												<p>Plaza Botanica это новый знаковый проект от надежного девелопера ГК "Пионер", расположенный в 1 минуте от метро "Ботанический сад"и 6 км от ТТК. Проект оснащен современными инженерными системами и находится в развитой зоне инфраструктуры: рядом торгово-развлека...</p>
+												<p>Plaza Botanica это новый знаковый проект от надежного девелопера ГК "Пионер"...</p>
 											</div>
 										</div>
 										<div class="catalog_thumb_footer">
@@ -1106,10 +1222,22 @@
 								<div class="slide_map_box" data-slidedown = "sl_2">
 									<img src="img/map_sl.jpg" alt="" />
 								</div>
+								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+								</div>
 							</div>
+
 							<a href="#" class="promo_banner" style="background-image: url(img/)">
 								<p>Рекламный блок</p>
 							</a>
+
 							<div class="catalog_thumb">
 								<div class="catalog_thumb_inner">
 									<div>
@@ -1118,14 +1246,20 @@
 												<div class="grad_tag">
 													<p>От собственника</p>
 												</div>
-												<div class="object_slider_big">
-													<!-- <div class="slide" style="background-image: url(img/ )"></div> -->
-													<!-- <div class="slide" style="background-image: url(img/ )"></div> -->
-													<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+												<div class="object_slider_big" data-slider-big = "object_slider_1">
+													<div>
+														<div class="slide" style="background-image: url(img/sl_miniature.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
 												</div>									
 											</div>
 											<div>
-												<div class="object_slider_miniatures">
+												<div class="object_slider_miniatures" data-slider-miniature = "object_slider_1">
 													<div class="slide">
 														<div class="miniature_thumb">
 															<img src="img/sl_miniature.jpg" alt="" />
@@ -1142,10 +1276,35 @@
 														</div>
 													</div>
 												</div>
-												<a href="#" class="miniature_thumb_more">
+												<a href="#" class="miniature_thumb_more" data-gallery-btn = "object_slider_1">
 													<p>Еще фото</p>
 													<img src="img/sl_miniature_2.jpg" alt="" />
 												</a>
+											</div>
+										</div>
+										<div class="resp_btns">
+											<div class="inlines_6 inlines_6_2">
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M10.0012 3.77415C11.9587 2.01665 14.9837 2.07498 16.8695 3.96415C18.7545 5.85415 18.8195 8.86415 17.0662 10.8275L9.9995 17.9042L2.9345 10.8275C1.18116 8.86415 1.247 5.84915 3.13116 3.96415C5.01866 2.07748 8.03783 2.01415 10.0012 3.77415ZM15.6895 5.14165C14.4395 3.88998 12.4228 3.83915 11.1145 5.01415L10.002 6.01248L8.88866 5.01498C7.57616 3.83832 5.56366 3.88998 4.31033 5.14332C3.06866 6.38498 3.00616 8.37248 4.15033 9.68582L10.0003 15.545L15.8503 9.68665C16.9953 8.37248 16.9328 6.38748 15.6895 5.14165Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M5.37949 15.8333L1.66699 18.75V3.33333C1.66699 3.11232 1.75479 2.90036 1.91107 2.74408C2.06735 2.5878 2.27931 2.5 2.50033 2.5H17.5003C17.7213 2.5 17.9333 2.5878 18.0896 2.74408C18.2459 2.90036 18.3337 3.11232 18.3337 3.33333V15C18.3337 15.221 18.2459 15.433 18.0896 15.5893C17.9333 15.7455 17.7213 15.8333 17.5003 15.8333H5.37949ZM4.80283 14.1667H16.667V4.16667H3.33366V15.3208L4.80283 14.1667ZM9.16699 8.33333H10.8337V10H9.16699V8.33333ZM5.83366 8.33333H7.50033V10H5.83366V8.33333ZM12.5003 8.33333H14.167V10H12.5003V8.33333Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3" data-sl-btn = "sl_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17.873 1.66797L17.7248 1.69575L12.7793 3.6128L7.22268 1.66797L1.99942 3.42758C1.80493 3.49241 1.66602 3.65911 1.66602 3.87211V17.8749C1.66602 18.1342 1.86976 18.338 2.12907 18.338L2.27725 18.3102L7.22268 16.3931L12.7793 18.338L18.0026 16.5784C18.1971 16.5135 18.336 16.3468 18.336 16.1338V2.13102C18.336 1.87171 18.1323 1.66797 17.873 1.66797ZM12.7793 16.4857L7.22268 14.5317V3.52019L12.7793 5.47429V16.4857Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -1166,18 +1325,18 @@
 													</div>
 												</div>
 											</div>
-											<div class="inlines_5_2">
+											<div class="inlines_5">
 												<div>
-													<p class="tag_2">Арендная ставка 15$/m2/мес </p>
+													<div class="tag_1 blue">Арендная ставка 15$/m2/мес</div>
 												</div>
 												<div>
-													<p class="tag_2">+ OPEX 5$/m2/мес</p>
+													<div class="tag_1 pink">+ OPEX 5$/m2/мес</div>
 												</div>
 												<div>
-													<p class="tag_2">+ НДС</p>
+													<div class="tag_1 green">+ НДС</div>
 												</div>
 												<div>
-													<p class="tag_2">+ R/U - 10%</p>
+													<div class="tag_1 grey">+ R/U - 10%</div>
 												</div>
 											</div>
 											<div class="object_name_wrapp">
@@ -1214,7 +1373,7 @@
 												</div>
 											</div>
 											<div class="catalog_thumb_descript">
-												<p>Plaza Botanica это новый знаковый проект от надежного девелопера ГК "Пионер", расположенный в 1 минуте от метро "Ботанический сад"и 6 км от ТТК. Проект оснащен современными инженерными системами и находится в развитой зоне инфраструктуры: рядом торгово-развлека...</p>
+												<p>Plaza Botanica это новый знаковый проект от надежного девелопера ГК "Пионер"...</p>
 											</div>
 										</div>
 										<div class="catalog_thumb_footer">
@@ -1250,11 +1409,210 @@
 								<div class="slide_map_box" data-slidedown = "sl_3">
 									<img src="img/map_sl.jpg" alt="" />
 								</div>
+								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+								</div>
 							</div>
+
+							<div class="catalog_thumb">
+								<div class="catalog_thumb_inner">
+									<div>
+										<div class="object_slider">
+											<div>
+												<div class="grad_tag">
+													<p>От собственника</p>
+												</div>
+												<div class="object_slider_big" data-slider-big = "object_slider_1">
+													<div>
+														<div class="slide" style="background-image: url(img/sl_miniature.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
+													<div>
+														<div class="slide" style="background-image: url(img/slide_1_big.jpg)"></div>
+													</div>
+												</div>									
+											</div>
+											<div>
+												<div class="object_slider_miniatures" data-slider-miniature = "object_slider_1">
+													<div class="slide">
+														<div class="miniature_thumb">
+															<img src="img/sl_miniature.jpg" alt="" />
+														</div>
+													</div>
+													<div class="slide">
+														<div class="miniature_thumb">
+															<img src="img/sl_miniature_2.jpg" alt="" />
+														</div>
+													</div>
+													<div class="slide">
+														<div class="miniature_thumb">
+															<img src="img/sl_miniature_2.jpg" alt="" />
+														</div>
+													</div>
+												</div>
+												<a href="#" class="miniature_thumb_more" data-gallery-btn = "object_slider_1">
+													<p>Еще фото</p>
+													<img src="img/sl_miniature_2.jpg" alt="" />
+												</a>
+											</div>
+										</div>
+										<div class="resp_btns">
+											<div class="inlines_6 inlines_6_2">
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M10.0012 3.77415C11.9587 2.01665 14.9837 2.07498 16.8695 3.96415C18.7545 5.85415 18.8195 8.86415 17.0662 10.8275L9.9995 17.9042L2.9345 10.8275C1.18116 8.86415 1.247 5.84915 3.13116 3.96415C5.01866 2.07748 8.03783 2.01415 10.0012 3.77415ZM15.6895 5.14165C14.4395 3.88998 12.4228 3.83915 11.1145 5.01415L10.002 6.01248L8.88866 5.01498C7.57616 3.83832 5.56366 3.88998 4.31033 5.14332C3.06866 6.38498 3.00616 8.37248 4.15033 9.68582L10.0003 15.545L15.8503 9.68665C16.9953 8.37248 16.9328 6.38748 15.6895 5.14165Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M5.37949 15.8333L1.66699 18.75V3.33333C1.66699 3.11232 1.75479 2.90036 1.91107 2.74408C2.06735 2.5878 2.27931 2.5 2.50033 2.5H17.5003C17.7213 2.5 17.9333 2.5878 18.0896 2.74408C18.2459 2.90036 18.3337 3.11232 18.3337 3.33333V15C18.3337 15.221 18.2459 15.433 18.0896 15.5893C17.9333 15.7455 17.7213 15.8333 17.5003 15.8333H5.37949ZM4.80283 14.1667H16.667V4.16667H3.33366V15.3208L4.80283 14.1667ZM9.16699 8.33333H10.8337V10H9.16699V8.33333ZM5.83366 8.33333H7.50033V10H5.83366V8.33333ZM12.5003 8.33333H14.167V10H12.5003V8.33333Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2 white_pill_4_3" data-sl-btn = "sl_4">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17.873 1.66797L17.7248 1.69575L12.7793 3.6128L7.22268 1.66797L1.99942 3.42758C1.80493 3.49241 1.66602 3.65911 1.66602 3.87211V17.8749C1.66602 18.1342 1.86976 18.338 2.12907 18.338L2.27725 18.3102L7.22268 16.3931L12.7793 18.338L18.0026 16.5784C18.1971 16.5135 18.336 16.3468 18.336 16.1338V2.13102C18.336 1.87171 18.1323 1.66797 17.873 1.66797ZM12.7793 16.4857L7.22268 14.5317V3.52019L12.7793 5.47429V16.4857Z" fill="#141F27"/>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="catalog_thumb_content">
+											<div class="catalog_thumb_header">
+												<div>
+													<a href="#" class="catalog_thumb_title">Аренда офиса 532 кв.м, 6 эт., all in 10 374 $/мес</a>
+												</div>
+												<div>
+													<div class="time">
+														<div>
+															<p>10 часов назад</p>
+														</div>
+														<div>
+															<button type="button" class="dots_btn"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="inlines_5">
+												<div>
+													<div class="tag_1 blue">Арендная ставка 15$/m2/мес</div>
+												</div>
+												<div>
+													<div class="tag_1 pink">+ OPEX 5$/m2/мес</div>
+												</div>
+												<div>
+													<div class="tag_1 green">+ НДС</div>
+												</div>
+												<div>
+													<div class="tag_1 grey">+ R/U - 10%</div>
+												</div>
+											</div>
+											<div class="object_name_wrapp">
+												<div>
+													<a href="#" class="object_name_title">БЦ «Plaza Botanica (Плаза Ботаника)»</a>
+												</div>
+												<div>
+													<p class="class_p">Класс B</p>
+												</div>
+											</div>
+											<div class="location_wrapp">
+												<p>Москва, СВАО, р-н Ростокино, м. Ботанический сад, улица 1-я Леонова, 18</p>
+											</div>
+											<div class="inlines_6">
+												<div>
+													<div class="loc_thumb">
+														<div>
+															<img src="img/blue_metro_2.svg" alt="" />
+														</div>
+														<div>
+															<p>пл. Л. Толстого — 800м</p>
+														</div>
+													</div>
+												</div>
+												<div>
+													<div class="loc_thumb loc_thumb_2">
+														<div>
+															<img src="img/walker_2.svg" alt="" />
+														</div>
+														<div>
+															<p>≈10 мин</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="catalog_thumb_descript">
+												<p>Plaza Botanica это новый знаковый проект от надежного девелопера ГК "Пионер"...</p>
+											</div>
+										</div>
+										<div class="catalog_thumb_footer">
+											<div class="inlines_6">
+												<div>
+													<a href="#" class="white_pill_4_2">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M10.0012 3.77415C11.9587 2.01665 14.9837 2.07498 16.8695 3.96415C18.7545 5.85415 18.8195 8.86415 17.0662 10.8275L9.9995 17.9042L2.9345 10.8275C1.18116 8.86415 1.247 5.84915 3.13116 3.96415C5.01866 2.07748 8.03783 2.01415 10.0012 3.77415ZM15.6895 5.14165C14.4395 3.88998 12.4228 3.83915 11.1145 5.01415L10.002 6.01248L8.88866 5.01498C7.57616 3.83832 5.56366 3.88998 4.31033 5.14332C3.06866 6.38498 3.00616 8.37248 4.15033 9.68582L10.0003 15.545L15.8503 9.68665C16.9953 8.37248 16.9328 6.38748 15.6895 5.14165Z" fill="#141F27"/>
+														</svg>
+														<span>В избранное</span>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M5.37949 15.8333L1.66699 18.75V3.33333C1.66699 3.11232 1.75479 2.90036 1.91107 2.74408C2.06735 2.5878 2.27931 2.5 2.50033 2.5H17.5003C17.7213 2.5 17.9333 2.5878 18.0896 2.74408C18.2459 2.90036 18.3337 3.11232 18.3337 3.33333V15C18.3337 15.221 18.2459 15.433 18.0896 15.5893C17.9333 15.7455 17.7213 15.8333 17.5003 15.8333H5.37949ZM4.80283 14.1667H16.667V4.16667H3.33366V15.3208L4.80283 14.1667ZM9.16699 8.33333H10.8337V10H9.16699V8.33333ZM5.83366 8.33333H7.50033V10H5.83366V8.33333ZM12.5003 8.33333H14.167V10H12.5003V8.33333Z" fill="#141F27"/>
+														</svg>
+														<span>Добавить комментарий</span>
+													</a>
+												</div>
+												<div>
+													<a href="#" class="white_pill_4_2" data-sl-btn = "sl_4">
+														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17.873 1.66797L17.7248 1.69575L12.7793 3.6128L7.22268 1.66797L1.99942 3.42758C1.80493 3.49241 1.66602 3.65911 1.66602 3.87211V17.8749C1.66602 18.1342 1.86976 18.338 2.12907 18.338L2.27725 18.3102L7.22268 16.3931L12.7793 18.338L18.0026 16.5784C18.1971 16.5135 18.336 16.3468 18.336 16.1338V2.13102C18.336 1.87171 18.1323 1.66797 17.873 1.66797ZM12.7793 16.4857L7.22268 14.5317V3.52019L12.7793 5.47429V16.4857Z" fill="#141F27"/>
+														</svg>
+														<span>На карте</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide_map_box" data-slidedown = "sl_4">
+									<img src="img/map_sl.jpg" alt="" />
+								</div>
+								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
+								</div>
+							</div>
+							
 						</div>
 					</div>
-					<img class="map_fixed" src="img/map_right.jpg" alt="" />
-				</div>
+					<div class="right_col object_map" id="mapWrapp">
+						<div class="map_scroll">
+							<img class="map_fixed objectMap" src="img/map_right.jpg" alt="" />
+						</div>
+					</div>
+					<div class="bottom_coord"></div>
+				</div>				
 
 				<div class="pagination_wrapp">
 					<ul class="pagination">
@@ -1291,25 +1649,27 @@
 		<section>
 			<div class="row">
 				<div class="subscribe_box_2">
-					<div class="subscribe_header">
-						<h3>Subscribe on news & updates</h3>
-						<p>Always be in the center of events</p>
-					</div>
-					<form>
-						<div class="subscribe_form_2">
-							<div>
-								<div class="input_wrapp_2">
-									<input type="email" placeholder="Email" />
+					<div>
+						<div class="subscribe_header">
+							<h3>Subscribe on news & updates</h3>
+							<p>Always be in the center of events</p>
+						</div>
+						<form>
+							<div class="subscribe_form_2">
+								<div>
+									<div class="input_wrapp_2">
+										<input type="email" placeholder="Email" />
+									</div>
+								</div>
+								<div>
+									<button type="submit" class="subscribe_btn green_pill green_pill_3">Подписаться</button>
+								</div>
+								<div>
+									<a href="#" class="subscribe_btn blue_pill">Назначить чат-бота Telegram <img src="img/telegram.svg" alt="" /></a>
 								</div>
 							</div>
-							<div>
-								<button type="submit" class="green_pill green_pill_3">Подписаться</button>
-							</div>
-							<div>
-								<a href="#" class="blue_pill">Назначить чат-бота Telegram <img src="img/telegram.svg" alt="" /></a>
-							</div>
-						</div>
-					</form>
+						</form>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -1523,12 +1883,12 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css"> -->
+	<link rel="stylesheet" type="text/css" href="vendors/css/fancybox.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
 	<!-- <script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
-	<!-- <script src="vendors/js/jquery.fancybox.js"></script> -->
+	<script src="vendors/js/fancybox.umd.js"></script>
 	<script src="vendors/js/wnumb.js"></script>
 	<script src="vendors/js/nouislider.min.js"></script>
 	<script src="js/scripts.js"></script>

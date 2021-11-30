@@ -101,6 +101,73 @@ function getDropdownWidth() {
   }
 }
 
+function getMapParams() {
+    if( $(".object_map").length > 0 && bodyWidth > 767) {
+        // if($(".filter_nav").length> 0) {
+            // filtersCoord = $(".filter_nav").offset().top + $(".filter_nav").height();
+        // } else {
+            filtersCoord = $(document).scrollTop();
+        // }        
+        mapCoord = $(".object_map").offset().top;
+        if(filtersCoord >= mapCoord) {            
+            $(".map_scroll").addClass("fixed");
+            $(".map_scroll").css({
+                "top" : $(".filter_nav").height() + "px"
+            });
+            if($("#mapTempl").hasClass("mapTempl2")) {
+                $(".map_scroll").css({
+                    "width" : $(window).width() - ( $("#mapTempl .left_col").offset().left + $("#mapTempl .left_col").outerWidth() ) + "px"
+                });
+            }
+            mapScrollBootmCoord = filtersCoord + $(".map_scroll").height();
+            bottomCoord = $(".bottom_coord").offset().top;
+            if( mapScrollBootmCoord >= bottomCoord ) {
+                $(".map_scroll").addClass("bottom_position");
+            } else {
+                $(".map_scroll").removeClass("bottom_position");
+            }
+        } else {
+            $(".map_scroll").removeClass("fixed");
+            $(".map_scroll").css({
+                "top" : 0
+            });
+            if($("#mapTempl").hasClass("mapTempl2")) {
+                $(".map_scroll").css({
+                    "width" : "100%"
+                });
+            }
+        }
+    }
+}
+
+function getObjectSlider(vertical) {
+  $("[data-slider-big]").each(function() {
+    sl = $(this).attr("data-slider-big");
+    bigSlider = $(this);
+    miniatureSlider = $("[data-slider-miniature = '"+sl+"']");
+    bigSlider.not(".slick-initialized").slick({
+      dots: false,
+      arrows: false,
+      speed: 1200,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      asNavFor: miniatureSlider
+    });
+    miniatureSlider.not(".slick-initialized").slick({
+      dots: false,
+      arrows: false,
+      speed: 1200,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      fade: false,
+      asNavFor: bigSlider,
+      focusOnSelect: true,
+      vertical : vertical
+    });
+  });
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -119,10 +186,12 @@ $(window).resize(function() {
   getObjectCardsSlider();
   getHeaderParams();
   getDropdownWidth();
+  getMapParams();
 });
 
 $(document).scroll(function() {
-  getHeaderParams()
+  getHeaderParams();
+  getMapParams();
 });
 
 $(document).ready(function() {
@@ -422,7 +491,56 @@ $(document).ready(function() {
         sl.slideUp(300);
         $(this).removeClass("active");
       }
+    });
 
+    // ---------
+
+    if( $(".object_slider_big").length > 0 ) {
+      getObjectSlider(true);
+    }
+
+    // ---------
+
+    $("#showMap").on("click", function(e) {
+      e.preventDefault();
+      $("#mapTempl").toggleClass("mapVisible");
+      if($("#mapTempl").hasClass("mapVisible")) {
+          $("[data-slider-big]").slick('unslick');
+          $("[data-slider-miniature]").slick('unslick');
+          getObjectSlider(false);
+      } else {
+          $("[data-slider-big]").slick('unslick');
+          $("[data-slider-miniature]").slick('unslick');
+          getObjectSlider(true);
+      }
+    });     
+
+    // $("[data-gallery-btn]").on("click", function(e) {
+    $(document).on("click", "[data-gallery-btn]", function(e) {
+      e.preventDefault();
+      galleryName = $(this).attr("data-gallery-btn");
+      gallery = $("[data-gallery = '"+galleryName+"']");
+      index = parseInt($("[data-slider-big = '"+galleryName+"'] .slick-active").attr("data-slick-index"));
+      currentSlide = gallery.find("a").eq(index);
+      currentSlide.trigger("click");
+      console.log(index +"  "+ galleryName +"  "+ currentSlide);
+    });
+
+    // ---------
+
+    $(".close_tag").on("click", function(e) {
+      e.preventDefault();
+      parent = $(this).closest(".tag_grey");
+      parent.remove();
+    });
+
+    // ---------
+
+    $("[data-show-elems]").on("click", function(e) {
+      e.preventDefault();
+      elems = $("[data-hidden-elems = '"+$(this).attr("data-show-elems")+"']");
+      elems.removeClass("hidden");
+      $(this).remove();
     });
 
 });
