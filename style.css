@@ -5457,6 +5457,10 @@ textarea:focus {
     -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, .18);
 }
 
+.two_cols_templ.mapVisible .promo_banner {
+    display: none;
+}
+
 .promo_banner p {
     font-weight: 600;
     font-size: 16px;
