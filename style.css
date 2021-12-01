@@ -694,6 +694,10 @@ textarea:focus {
     background: rgba(160, 205, 105, .1);
 }
 
+.main_nav > li:hover > a {
+    background: rgba(160, 205, 105, .1);
+}
+
 .main_nav > li > a:after {
     display: block;
     content: "";
@@ -739,6 +743,10 @@ textarea:focus {
 }
 
 .main_nav > li > a:hover:after {
+    opacity: 1;
+}
+
+.main_nav > li:hover > a:after {
     opacity: 1;
 }
 
