@@ -168,6 +168,14 @@ function getObjectSlider(vertical) {
   });
 }
 
+function getFixedHeaderParams() {
+  if($(document).scrollTop() > $("#header").height()) {
+    $("#witeHeader").addClass("visible");
+  } else {
+    $("#witeHeader").removeClass("visible");
+  }
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -187,16 +195,19 @@ $(window).resize(function() {
   getHeaderParams();
   getDropdownWidth();
   getMapParams();
+  getFixedHeaderParams();
 });
 
 $(document).scroll(function() {
   getHeaderParams();
   getMapParams();
+  getFixedHeaderParams();
 });
 
 $(document).ready(function() {
   getHeaderParams();
   getDropdownWidth();
+  getFixedHeaderParams();
     // $(".gallery_thumbs .gallery_thumb:nth-child(4n+4)").addClass("four");
 
     $(".dr_title").on("click", function(e) {

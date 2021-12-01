@@ -1490,6 +1490,136 @@ textarea:focus {
 
 /* ----- /Responsive Menu Button ------ */
 
+/*-- White Header --*/
+
+.white_header {
+    background-color: #FFF;
+    width: 100%;
+    z-index: 6;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    padding-bottom: 0;
+    box-shadow: 0 4px 8px rgba(42, 56, 66, .1);
+    -webkit-box-shadow: 0 4px 8px rgba(42, 56, 66, .1);
+    -webkit-transition-property: top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.white_header.visible {
+    top: 0;
+}
+
+.logo_2 {
+    color: #000;
+}
+
+.dr.dark .dropdown_title p {
+    color: #121212;
+}
+
+.dr.dark .dropdown_title:after {
+    background-image: url(img/black_arrow_down_2.svg);
+}
+
+.main_nav.dark > li > a {
+    color: #121212;
+}
+
+.lang_drp.dark .dropdown_title p {
+    color: #121212;
+}
+
+.red_pill_2 {
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.red_pill_2:link,
+.red_pill_2:visited {
+    background: #FF5722;
+}
+
+.red_pill_2:active,
+.red_pill_2.active,
+.red_pill_2:hover {
+    -webkit-box-shadow: 0 2px 7px 0 rgba(255,87,34,.4);
+    -moz-box-shadow: 0 2px 7px 0 rgba(255,87,34,.4);
+    box-shadow: 0 2px 7px 0 rgba(255,87,34,.4);
+}
+
+.grey_pill {
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.grey_pill:link,
+.grey_pill:visited {
+    background: rgba(236, 236, 236, .4);
+    color: #121212;
+}
+
+.grey_pill:active,
+.grey_pill.active,
+.grey_pill:hover {
+    -webkit-box-shadow: 0 2px 7px 0 rgba(204,204,204,.4);
+    -moz-box-shadow: 0 2px 7px 0 rgba(204,204,204,.4);
+    box-shadow: 0 2px 7px 0 rgba(204,204,204,.4);
+}
+
+/*-- /White Header --*/
+
 /*-- Resp Menu --*/
 
 .resp_menu {
@@ -2289,10 +2419,6 @@ textarea:focus {
     margin-bottom: 40px;
 }
 
-.offices_val > div {
-
-}
-
 .offices_val_thumb {
     display: inline-flex;
     display: -webkit-inline-flex;
@@ -2389,10 +2515,6 @@ textarea:focus {
     font-size: 14px;
     line-height: 140%;
     color: #FFF;
-}
-
-.promo_info_box {
-
 }
 
 .promo_info_box h3 {
