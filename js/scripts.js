@@ -543,4 +543,16 @@ $(document).ready(function() {
       $(this).remove();
     });
 
+    // ---------
+
+    new Chartist.Pie('#chart', {
+      series: [35, 40, 33, 140, 80]
+    }, {
+      donut: true,
+      donutWidth: 35,
+      startAngle: 90,
+      total: 360,
+      showLabel: false
+    });
+
 });

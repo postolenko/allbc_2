@@ -4322,10 +4322,44 @@ textarea:focus {
 }
 
 .breadcrumbs li a {
+    border: 1px solid transparent;
     font-weight: 500;
     font-size: 12px;
     line-height: 140%;
     color: #141F27;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.breadcrumbs li a:link,
+.breadcrumbs li a:visited {
+    border: 1px solid transparent;
+}
+
+.breadcrumbs li a:active,
+.breadcrumbs li a.active {
+    border: 1px solid #2A3842;
+}
+
+.breadcrumbs li a:hover {
+    border: 1px solid #2A3842;
 }
 
 .breadcrumbs li:last-child a {
@@ -5715,10 +5749,6 @@ textarea:focus {
 
 }
 
-.input_wrapp_2 {
-
-}
-
 .input_wrapp_2 input {
     display: block;
     width: 100%;
@@ -5741,12 +5771,219 @@ textarea:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
     min-height: 40px;
     min-width: 190px;
     padding: 10px 33px 10px 33px;
 }
 
 /*-- /Section 3 - Catalog Page --*/
+
+/*-- Section 4 - Catalog Page --*/
+
+.chart_wrapp {
+    background: #FFF;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    box-shadow: 0 0 1px rgba(27, 27, 27, .24), 0 3px 8px rgba(52, 52, 52, .05);
+    -webkit-box-shadow: 0 0 1px rgba(27, 27, 27, .24), 0 3px 8px rgba(52, 52, 52, .05);
+    margin: 20px 0 41px 0;
+    padding: 21px 33px 21px 33px;
+}
+
+.chart_header {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.chart_header > div:nth-child(1) {
+    width: 30%;
+    padding-right: 10px;
+}
+
+.chart_header > div:nth-child(2) {
+    width: 70%;
+    padding-left: 10px;
+}
+
+.chart_header h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A3842;
+}
+
+.marks_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding-right: 22px;
+}
+
+.marks_wrapp > div {
+    padding: 0 33px;
+}
+
+.mark_item {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.mark_item > div:nth-child(1) {
+    width: 28px;
+    padding-top: 5px;
+}
+
+.mark_item > div:nth-child(2) {
+    width: auto;
+}
+
+.mark_color {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.mark_item p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #454545;
+}
+
+.chart_box {
+    display: flex;
+    display: -webkit-flex;
+    max-width: 820px;
+    margin: 28px auto 12px auto;
+}
+
+.chart_box > .left_col {
+    width: 365px;
+}
+
+.chart_box > .right_col {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    width: calc(100% - 365px);
+    padding-top: 41px;
+}
+
+.chartID_wrapp {
+    position: relative;
+}
+
+.chartID {
+    width: 368px;
+    height: 368px;
+}
+
+.chartID_val {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 47px;
+    color: #546E7A;
+}
+
+.chartID .ct-series-a .ct-slice-donut {
+    stroke: #81C784;
+}
+
+.chartID .ct-series-b .ct-slice-donut {
+    stroke: #7986CB;
+}
+
+.chartID .ct-series-c .ct-slice-donut {
+    stroke: #F06292;
+}
+
+.chartID .ct-series-d .ct-slice-donut {
+    stroke: #64B5F6;
+}
+
+.chartID .ct-series-e .ct-slice-donut {
+    stroke: #FFD54F;
+}
+
+.chart_table {
+    width: 100%;
+    max-width: 343px;
+}
+
+.chart_table_row {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.chart_table .chart_table_row {
+    padding: 7px 12px 7px 12px;
+    border-bottom: 1px solid #EEE;
+}
+
+.chart_table .chart_table_row .cell {
+    padding: 0 5px;
+}
+
+.chart_table .chart_table_row .cell:nth-child(1) {
+    width: calc(100% - 145px);
+}
+
+.chart_table .chart_table_row .cell:nth-child(2) {
+    width: 60px;
+    text-align: right;
+}
+
+.chart_table .chart_table_row .cell:nth-child(3) {
+    width: 85px;
+    text-align: right;
+}
+
+.chart_table .chart_table_row.chart_table_header {
+    border-bottom: 2px solid #EEE;
+    padding-bottom: 9px;
+}
+
+.chart_table h3 {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    color: #919699;
+}
+
+.chart_table p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #37474F;
+}
+
+.city_item {
+
+}
+
+.city_item img {
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px 10px 0 0;
+}
+
+
+/*-- /Section 4 - Catalog Page --*/
+
 
 
 /*-------------------------------------------*/
