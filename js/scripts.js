@@ -508,10 +508,12 @@ $(document).ready(function() {
           $("[data-slider-big]").slick('unslick');
           $("[data-slider-miniature]").slick('unslick');
           getObjectSlider(false);
+          $(this).addClass("active");
       } else {
           $("[data-slider-big]").slick('unslick');
           $("[data-slider-miniature]").slick('unslick');
           getObjectSlider(true);
+          $(this).removeClass("active");
       }
     });     
 
