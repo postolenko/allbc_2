@@ -557,4 +557,32 @@ $(document).ready(function() {
       showLabel: false
     });
 
+    // ---------
+
+    var chChildrens;
+
+    $(".main_checkbox input").on("change", function() {
+        parentBlock = $(this).closest(".checkboxes_array");
+        chChildrens = parentBlock.find(".ch_childrens input");
+        if($(this).is(":checked")) {
+            chChildrens.prop("checked", true);
+        } else {
+            chChildrens.prop("checked", false);
+        }
+    });
+
+    $(".ch_childrens input").on("change", function() {
+        parentBlock = $(this).closest(".checkboxes_array");
+        chChildrens = parentBlock.find(".ch_childrens input");
+        mainCheckbox = parentBlock.find(".main_checkbox input");
+        chChildrens.each(function() {
+            if(!$(this).is(":checked")) {
+                mainCheckbox.prop("checked", false);
+                return false;
+            } else {
+                mainCheckbox.prop("checked", true);
+            }
+        });
+    });
+
 });
