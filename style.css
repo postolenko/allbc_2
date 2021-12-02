@@ -5068,7 +5068,6 @@ label.main_checkbox.green {
 }
 
 #mapTempl.mapVisible .map_scroll.fixed.bottom_position {
-    /*width: 50vw;*/
     width: calc(50vw - 10px);
     position: absolute !important;
     top: unset !important;
@@ -5078,18 +5077,21 @@ label.main_checkbox.green {
 }
 
 #mapTempl.mapVisible .map_scroll.fixed {
-    /*width: 50vw;*/
     width: calc(50vw - 10px);
 }
 
 .map_scroll {
     display: block;
-    /*width: 50vw;*/
     width: calc(50vw - 10px);
     height: 100vh;
     position: absolute;
     top: 0;
     left: 100vw;
+}
+
+.objectMap {
+    border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
 }
 
 #mapTempl.mapVisible .map_scroll {
@@ -5101,10 +5103,6 @@ label.main_checkbox.green {
     bottom: 0;
     left: 0;
 }
-
-/*.caatalog_thumbs {
-    margin: 0 0 22px 0;
-}*/
 
 .catalog_thumb {
     background: #FFF;
@@ -5891,6 +5889,27 @@ label.main_checkbox.green {
 
 .white_pill_4_2.white_pill_4_3 svg {
     margin-right: 0;
+}
+
+.map_btns {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 12px 15px 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.map_btns > div {
+    padding: 4px;
+}
+
+.orange_pill_2_2 {
+    min-height: 40px;
+    font-size: 12px;
 }
 
 /*-- /Section 2 - Catalog Page --*/
