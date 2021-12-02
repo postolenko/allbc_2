@@ -6205,20 +6205,41 @@ label.main_checkbox.green {
     color: #37474F;
 }
 
-.city_item {
-
-}
-
 .city_item img {
     display: inline-block;
     vertical-align: top;
     margin: 3px 10px 0 0;
 }
 
-
 /*-- /Section 4 - Catalog Page --*/
 
+/*-- Section 5 - Catalog Page --*/
 
+.grey_bg {
+    background-color: #F7F7F7;
+}
+
+.about_article {
+    padding: 45px 0 53px 0;
+}
+
+.about_article h2 {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.about_article p {
+    padding: 10px 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    color: #121212;
+}
+
+/*-- /Section 5 - Catalog Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
