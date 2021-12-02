@@ -173,28 +173,30 @@ function getFixedHeaderParams() {
 }
 
 function getFiltersScrollParams() {
-  if($("#witeHeader").length > 0) {
-    topCoord = $("#filtersFixedWrapp").offset().top - $("#witeHeader").height();
-  } else {
-    topCoord = $("#filtersFixedWrapp").offset().top;
-  }
-  if($(document).scrollTop() > topCoord) {
-    $("#filtersFixedWrapp").height($("#filtersFixed").height());
-    $("#filtersFixed").addClass("fixed");
+  if($("#filtersFixedWrapp").length > 0) {
     if($("#witeHeader").length > 0) {
-      $("#filtersFixed").css({
-        "top" : $("#witeHeader").height() + "px"
-      });
+      topCoord = $("#filtersFixedWrapp").offset().top - $("#witeHeader").height();
+    } else {
+      topCoord = $("#filtersFixedWrapp").offset().top;
     }
-  } else {
-    $("#filtersFixed").removeClass("fixed");
-    $("#filtersFixedWrapp").css({
-      "height" : "auto"
-    });
-    if($("#witeHeader").length > 0) {
-      $("#filtersFixed").css({
-        "top" : 0
+    if($(document).scrollTop() > topCoord) {
+      $("#filtersFixedWrapp").height($("#filtersFixed").height());
+      $("#filtersFixed").addClass("fixed");
+      if($("#witeHeader").length > 0) {
+        $("#filtersFixed").css({
+          "top" : $("#witeHeader").height() + "px"
+        });
+      }
+    } else {
+      $("#filtersFixed").removeClass("fixed");
+      $("#filtersFixedWrapp").css({
+        "height" : "auto"
       });
+      if($("#witeHeader").length > 0) {
+        $("#filtersFixed").css({
+          "top" : 0
+        });
+      }
     }
   }
 }
@@ -584,15 +586,17 @@ $(document).ready(function() {
 
     // ---------
 
-    new Chartist.Pie('#chart', {
-      series: [35, 40, 33, 140, 80]
-    }, {
-      donut: true,
-      donutWidth: 35,
-      startAngle: 90,
-      total: 360,
-      showLabel: false
-    });
+    if($("#chart").length > 0) {
+      new Chartist.Pie('#chart', {
+        series: [35, 40, 33, 140, 80]
+      }, {
+        donut: true,
+        donutWidth: 35,
+        startAngle: 90,
+        total: 360,
+        showLabel: false
+      });
+    }
 
     // ---------
 
