@@ -74,6 +74,68 @@
 
 /*-- /Section 3 - Main Page --*/
 
+/*-- Section 2 - Catalog Page --*/
+
+	.filters_wrapp {
+	    margin: 1px -2px;
+	}
+
+	.filters_wrapp > div {
+	    padding: 2px;
+	}
+
+	.filter_dr_title {
+	    padding: 5px 30px 5px 10px;
+	}
+
+	.filter_dr_title:after {
+	    right: 8px;
+	}
+
+	.filter_dr_title p {
+	    font-size: 14px;
+	}
+
+	.more_link_2 {
+		margin: 10px 7px 9px 7px;
+	    font-size: 14px;
+	}
+
+	.white_pill_4 {
+		padding: 5px 10px 5px 10px;
+	    font-size: 14px;
+	}
+
+	.orange_pill_2 {
+		display: inline-flex;
+		display: -webkit-inline-flex;
+		justify-content: center;
+		-webkit-justify-content: center;
+		align-items: center;
+		-webkit-align-items: center;
+		min-height: 40px;
+	    font-size: 14px;
+	    line-height: 1;
+	}
+
+	.tags_wrapp {
+	    margin: 0 -3px;
+	}
+
+	.tags_wrapp .tag_grey {
+	    margin: 3px;
+	}
+
+	.tag_grey {
+	    padding: 8px 30px 7px 10px;
+	}
+
+	.tag_grey .close_tag {
+	    right: 11px;
+	}
+
+/*-- Section 2 - Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 1240px) {
@@ -206,12 +268,32 @@
 
 	/*-- Section 2 - Catalog Page --*/
 
+	.filter_dr_title {
+	    padding: 5px 20px 5px 10px;
+	}
+
+	.filter_dr_title:after {
+	    right: 4px;
+	}
+
 	.subscribe_box_2 > div {
 	    max-width: 738px;
 	}
 
 	.subscribe_form_2 > div:nth-child(1) {
 	    min-width: 300px;
+	}
+
+	.orange_pill_2 {
+	    padding: 9px 10px;
+	}
+
+	.tag_grey {
+	    padding: 8px 20px 7px 10px;
+	}
+
+	.tag_grey .close_tag {
+	    right: 6px;
 	}
 
 	/*-- /Section 2 - Catalog Page --*/

@@ -4487,6 +4487,8 @@ textarea:focus {
 .filters_wrapp {
     display: flex;
     display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     margin: 1px -3px;
 }
 
