@@ -446,7 +446,15 @@ textarea:focus {
 
 /*-- /Slick --*/
 
+.visible_1000 {
+    display: none;
+}
+
 .visible_767 {
+    display: none;
+}
+
+.visible_700 {
     display: none;
 }
 
@@ -1455,6 +1463,10 @@ textarea:focus {
     margin: 0 auto;
 }
 
+.white_header .respmenubtn span {
+    background: #000;
+}
+
 .respmenubtn:active {
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-tap-highlight-color: transparent;
@@ -1498,7 +1510,7 @@ textarea:focus {
 
 /*-- White Header --*/
 
-.white_header {
+.header_site.white_header {
     background-color: #FFF;
     width: 100%;
     z-index: 6;
@@ -3563,10 +3575,6 @@ textarea:focus {
     padding: 6px 0;
 }
 
-.h2_wrapp_2 h2 {
-
-}
-
 .filter_tags_wrapp {
     padding: 2px 0;
 }
@@ -3631,6 +3639,34 @@ textarea:focus {
 .filter_tag:hover {
     background: rgba(255, 79, 0, 1);
     color: #fff;
+}
+
+.filters_btns {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.filters_btns > div {
+    padding: 6px;
+}
+
+.filters_btns a,
+.filters_btns button {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    min-height: 40px;
+}
+
+.blue_pill.blue_pill_2 {
+    font-size: 14px;
 }
 
 .persons_box {
@@ -4469,7 +4505,6 @@ textarea:focus {
 
 .filters_fixed {
     padding: 10px 0;
-    /*outline: 1px solid red;*/
 }
 
 .filters_fixed.fixed {
@@ -4482,6 +4517,10 @@ textarea:focus {
     left: 0;
     box-shadow: 0 4px 8px rgb(42 56 66 / 10%);
     -webkit-box-shadow: 0 4px 8px rgb(42 56 66 / 10%);
+}
+
+.resp_filter_nav {
+    display: none;
 }
 
 .filters_wrapp {
@@ -4666,6 +4705,7 @@ label.main_checkbox.green {
     -webkit-align-items: center;
     justify-content: center;
     -webkit-justify-content: center;
+    cursor: pointer;
     min-height: 40px;
     background: #fff;
     padding: 5px 15px 5px 15px;
@@ -4673,6 +4713,7 @@ label.main_checkbox.green {
     border-radius: 6px;
     -webkit-border-radius: 6px;
     position: relative;
+    font-family: "Inter";
     font-weight: 600;
     font-size: 16px;
     line-height: 1;
@@ -5688,6 +5729,11 @@ label.main_checkbox.green {
     -webkit-transform: translate(-50%, 0);
 }
 
+.catalog_thumb_gallery {
+    height: 0;
+    overflow: hidden;
+}
+
 .promo_banner {
     display: flex;
     display: -webkit-flex;
@@ -6622,7 +6668,7 @@ body.fixed {
 
 .inner_scroll > div {
     height: calc(100vh - 100px);
-    padding: 15px 25px 80px 25px;
+    padding: 21px 20px 80px 20px;
 }
 
 .close_popup {
@@ -6634,13 +6680,6 @@ body.fixed {
     background-color: transparent;
     background-image: url(img/close_popup.svg);
     background-size: contain;
-}
-
-.popup_content .close_popup {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 2;
 }
 
 .inner_scroll .mCSB_scrollTools {
@@ -6806,9 +6845,13 @@ body.fixed {
 }
 
 .filter_submit_btn_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     width: 100%;
     text-align: center;
-    padding: 12px 15px 12px 15px;
+    padding: 2px 15px 2px 15px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -6828,9 +6871,47 @@ body.fixed {
     z-index: 1;
 }
 
-.filter_submit_btn_wrapp > button,
-.filter_submit_btn_wrapp > a {
-    display: inline-flex;
-    z-index: 3;
+.filter_submit_btn_wrapp > .left_col {
+    width: 50%;
+    padding: 10px 5px;
+    display: none;
     position: relative;
+    z-index: 2;
+}
+
+.filter_submit_btn_wrapp > .right_col {
+    width: 100%;
+    padding: 10px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.filter_submit_btn_wrapp button,
+.filter_submit_btn_wrapp a {
+    display: inline-flex;
+}
+
+.popup_title {
+    background-color: #fff;
+    text-align: center;
+    width: calc(100% - 20px);
+    padding: 16px 0 14px 0;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.popup_title h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    color: #141F27;
+}
+
+.popup_content_2 .close_popup {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
 }
