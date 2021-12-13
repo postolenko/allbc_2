@@ -221,6 +221,12 @@ $(window).on("load", function() {
   if($(".inner_scroll").length > 0) {
     $(".inner_scroll").mCustomScrollbar();
   }
+  if($(".inner_scroll_2").length > 0) {
+    $(".inner_scroll_2").mCustomScrollbar();
+  }
+  if($(".inner_scroll_3").length > 0) {
+    $(".inner_scroll_3").mCustomScrollbar();
+  }
 });
 
 $(window).resize(function() {
@@ -697,8 +703,10 @@ $(document).ready(function() {
     }
   });
 
-  var im = new Inputmask("+380 (99)-999-99-99");
-  im.mask($("input[type = 'tel']"));
+  if($("input[type = 'tel']").length > 0) {
+    var im = new Inputmask("+380 (99)-999-99-99");
+    im.mask($("input[type = 'tel']"));
+  }
 
   // ---------
 
@@ -713,5 +721,10 @@ $(document).ready(function() {
       $(this).removeClass("active");
     }
   });
+
+  // ---------
+
+  
+  
 
 });
