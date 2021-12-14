@@ -7472,7 +7472,7 @@ body.fixed {
 
 /*-- Subscribe Popup --*/
 
-.popup_content_3 {
+.popup_content_4 {
     max-width: 746px;
     background: #FFF;
     box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
@@ -7495,7 +7495,7 @@ body.fixed {
     opacity: .5;
 }
 
-.popup_content_3 .close_popup_2 {
+.popup_content_4 .close_popup_2 {
     position: absolute;
     top: 39px;
     right: 37px;

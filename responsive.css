@@ -1561,6 +1561,28 @@
 
 	/*-- /Map Popup --*/
 
+	/*-- Subscribe Popup --*/
+
+	.subscribe_popup_templ {
+	    padding: 0 50px 0 30px;
+	}
+
+	.subscribe_popup_templ > div:nth-child(1) {
+		display: none;
+	}
+
+	.subscribe_popup_templ > div:nth-child(2) {
+	    width: 100%;
+	    padding: 15px 0 21px 0;
+	}
+
+	.popup_content_4 .close_popup_2 {
+	    top: 15px;
+	    right: 20px;
+	}
+	
+	/*-- /Subscribe Popup --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -2308,6 +2330,41 @@
 	}
 
 	/*-- /More Filter Popup --*/
+
+	/*-- Subscribe Popup --*/
+
+	.popup_content_4 .close_popup_2 {
+	    top: 9px;
+	    right: 15px;
+	}
+
+	.subscribe_popup_templ {
+	    padding: 0 30px;
+	}
+
+	.subscribe_popup_templ > div:nth-child(2) {
+	    padding: 15px 0 10px 0;
+	}
+
+	.subscribe_form_3 {
+		display: block;
+	}
+
+	.subscribe_form_3 > div:nth-child(1) {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.subscribe_form_3 > div:nth-child(2) {
+	    width: 100%;
+	   padding: 5px 0;
+	}
+
+	.subscribe_form_3 > div:nth-child(2) .orange_pill_3 {
+		width: 100%;
+	}
+
+	/*-- /Subscribe Popup --*/
 	
 }
 
