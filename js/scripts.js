@@ -724,7 +724,11 @@ $(document).ready(function() {
 
   // ---------
 
-  
-  
+  if( $("#subscribePopup").length > 0 ) {
+    timeout = parseInt($("#subscribePopup").attr("data-timeout"));
+    setTimeout(function () {
+      $("#showSubscribe").trigger("click");
+    },timeout);
+  }
 
 });

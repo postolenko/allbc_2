@@ -1678,6 +1678,22 @@
 
 	/*-- /Section 5 - Catalog Page --*/
 
+	/*-- Cookie Modals --*/
+
+	.cookie_modal {
+		display: block;
+		padding: 15px 15px 15px 15px;
+	}
+
+	.cookie_modal > div:nth-child(1),
+	.cookie_modal > div:nth-child(2) {
+	    width: 100%;
+	    padding: 8px 0;
+	    text-align: center;
+	}
+
+	/*-- /Cookie Modals --*/
+
 }
 
 @media only screen and (max-width: 660px) {
