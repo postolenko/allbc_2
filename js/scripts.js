@@ -269,6 +269,7 @@ $(document).ready(function() {
   $(this).keydown(function(eventObject){
     if (eventObject.which == 27) {
       $(".dr").removeClass("active");
+      $(".promo_sect_2").removeClass("z");
     }
   });
 
@@ -277,6 +278,7 @@ $(document).ready(function() {
     if (!hide_element.is(e.target)
         && hide_element.has(e.target).length === 0) {
         hide_element.removeClass("active");
+        $(".promo_sect_2").removeClass("z");
       }
   });
 
@@ -730,5 +732,36 @@ $(document).ready(function() {
       $("#showSubscribe").trigger("click");
     },timeout);
   }
+
+  // ---------
+
+  $(".search_tab_radio").each(function () {
+      if($(this).is(":checked") ) {
+        id = $(this).attr("id");
+        $(".search_tab_pill[for = '"+id+"']").addClass("active");
+      }
+  });
+
+  $(".search_tab_radio").on("change" , function() {
+    $(".search_tab_pill").removeClass("active");
+    if($(this).is(":checked") ) {
+      id = $(this).attr("id");
+      $(".search_tab_pill[for = '"+id+"']").addClass("active");
+    }
+  });
+
+  // ---------
+
+  $(".search_dropdown_title").on("click", function(e) {
+    e.preventDefault();
+    $(".promo_sect_2").addClass("z");
+  });
+
+  $(".dr .close_btn").on('click', function (e) {
+    e.preventDefault();
+    parent =$(this).closest(".dr");
+    parent.removeClass("active");
+    $(".promo_sect_2").removeClass("z");
+  });
 
 });

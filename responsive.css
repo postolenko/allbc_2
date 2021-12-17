@@ -1405,6 +1405,131 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 1 - Main Page Arend --*/
+
+	.search_box_wrapp_2 {
+	    padding: 13px 16px 16px 16px;
+	}
+
+	.two_cols_form {
+		display: block;
+	}
+
+	.two_cols_form > div:nth-child(1) {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.two_cols_form > div:nth-child(2) {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-top: 8px;
+	}
+
+	.inline_dr {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	.inline_dr > div {
+	    width: 100%;
+	   	margin: 4px 0;
+	   	border-radius: 6px;
+	   	-webkit-border-radius: 6px;
+	   	box-shadow: 0 0 1px rgb(12 26 75 / 24%), 0 3px 8px -1px rgb(50 50 71 / 5%);
+    	-webkit-box-shadow: 0 0 1px rgb(12 26 75 / 24%), 0 3px 8px -1px rgb(50 50 71 / 5%);
+	}
+
+	.search_dropdown_title {
+	    min-height: 40px;
+	    padding: 12px 17px;
+	}
+
+	.search_dropdown_title:after {
+	    top: 17px;
+	    right: 20px;
+	}
+
+	.two_cols_form .orange_pill {
+	    min-height: 40px;
+	}
+
+	.search_dropdown_content {
+	    margin-top: 0;
+	    padding: 0;
+	    width: 100% !important;
+	    min-width: 100% !important;
+	    height: 100%;
+	    position: fixed;
+	    top: 0;
+	    border-radius: 0;
+	    -webkit-border-radius: 0;
+	    z-index: 10;
+	    background-color: #FCFCFC;
+	}
+
+	.promo_sect_2.z {
+		z-index: 7;
+	}
+
+	.grey_title {
+		padding: 15px 10px 15px 10px;
+		background-color: #EEE;
+		text-align: center;
+		position: relative;
+	}
+
+	.grey_title h3 {
+		font-weight: 600;
+		font-size: 17px;
+		line-height: 21px;
+		color: #2A3842;
+	}
+
+	.grey_title .close_btn {
+		position: absolute;
+		top: 13px;
+		right: 16px;
+	}
+
+	.resp_scroll > div  {
+		height: calc(100vh - 99px);
+	}
+
+	.checkboxes_wrapp {
+	    padding-left: 20px;
+	    padding-right: 10px;
+	}
+
+	.resp_height {
+		height: calc(100vh - 99px);
+	}
+
+	.radios_wrapp_2 {
+		padding: 20px 10px 20px 20px;
+	}
+
+	.radios_wrapp_2 > div {
+		padding: 10px 0;
+	}
+
+	.inner_padding {
+		padding: 9px 13px;
+	}
+
+	.resp_height_2 {
+		height: calc(100vh - 165px) !important;
+	}
+
+	.cities_ch_wrapp {
+	    padding-left: 20px;
+	    padding-right: 10px;
+	}
+
+	/*-- /Section 1 - Main Page Arend --*/
+
 	/*-- Footer --*/
 
 	.footer_templ > div:nth-child(1) {
