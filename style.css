@@ -6547,6 +6547,10 @@ label.main_checkbox.green {
     position: relative;
 }
 
+.radio input:checked + span {
+    font-weight: 600;
+}
+
 .radio input:checked + span:before {
     display: block;
     content: "";
@@ -6761,6 +6765,82 @@ label.main_checkbox.green {
     background-repeat: no-repeat;
     border: 1px solid #05ADE5;
 }
+
+.city_radio {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 2px 5px 2px 38px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A3842;
+}
+
+.city_radio > span {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.city_radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.city_radio > span > span:nth-child(1) {
+    display: block;
+    width: calc(100% - 20px);
+}
+
+.city_radio > span > span:nth-child(2) {
+    width: 20px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+.city_radio > span > span:nth-child(2) img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+}
+
+.city_radio > span:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #F6F8F9;
+    border: 1px solid #B0BABF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.city_radio > input:checked + span:before {
+    display: block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    background-image: url(img/radio_checked.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
 
 .offices_val_2 {
     margin: 38px auto 40px auto;
