@@ -1539,6 +1539,11 @@
 	    flex: none;
 	}
 
+	.dr.active > .dr_content.filter_dr_content {
+	    margin-top: 10px;
+	    position: relative;
+	}
+
 	/*-- /Section 2 - Catalog Page --*/
 
 	/*-- Section 1 - Main Page Arend --*/
