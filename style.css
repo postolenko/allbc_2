@@ -4797,6 +4797,20 @@ label.main_checkbox.green {
     fill: #fff;
 }
 
+.white_pill_4_blue:link,
+.white_pill_4_blue:visited {
+    color: #05ADE4;
+}
+
+.white_pill_4_blue:active,
+.white_pill_4_blue.active {
+    color: #fff;
+}
+
+.white_pill_4_blue:hover {
+    color: #fff;
+}
+
 .tags_wrapp {
     display: flex;
     display: -webkit-flex;
@@ -5722,6 +5736,15 @@ label.main_checkbox.green {
 }
 
 .slide_map_box img {
+    margin-bottom: -6px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+.slide_map {
+    height: 230px;
     margin-bottom: -6px;
     position: relative;
     left: 50%;
