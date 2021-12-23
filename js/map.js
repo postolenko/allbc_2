@@ -188,51 +188,51 @@ if( document.getElementById("object_map") ) {
         }
     ];
 
-    // function initMap() {
-    //   map = new google.maps.Map(document.getElementById('object_map'), {
-    //     center: {lat: 50.4488889, lng: 30.5295878},
-    //     scrollwheel: false,
-    //     scaleControl: false,
-    //     zoom: 16,
-    //     styles: styles
-    //   });
-    //   marker = new google.maps.Marker({
-    //     map: map,
-    //     draggable: false,
-    //     animation: google.maps.Animation.DROP,
-    //     position: {lat: 50.4488889, lng: 30.5295878},
-    //     map: map,
-    //     // icon: image,
-    //     title: ''
-    //   });
-    // }
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('object_map'), {
+        center: {lat: 50.4488889, lng: 30.5295878},
+        scrollwheel: false,
+        scaleControl: false,
+        zoom: 16,
+        styles: styles
+      });
+      marker = new google.maps.Marker({
+        map: map,
+        draggable: false,
+        animation: google.maps.Animation.DROP,
+        position: {lat: 50.4488889, lng: 30.5295878},
+        map: map,
+        // icon: image,
+        title: ''
+      });
+    }
 
   }
 
-function mapCreate(id, latval, lngval, z) {
-  var map = new google.maps.Map(document.getElementById(id), {
-    center: {lat: latval, lng: lngval},
-    scrollwheel: false,
-    scaleControl: false,
-    zoom: z,
-    styles: styles
-  });
-  var marker = new google.maps.Marker({
-    map: map,
-    draggable: false,
-    animation: google.maps.Animation.DROP,
-    position: {lat: latval, lng: lngval},
-    // icon: image,
-    title: ''
-  });
-}
+// function mapCreate(id, latval, lngval, z) {
+//   var map2 = new google.maps.Map(document.getElementById(id), {
+//     center: {lat: latval, lng: lngval},
+//     scrollwheel: false,
+//     scaleControl: false,
+//     zoom: z,
+//     styles: styles
+//   });
+//   var marker2 = new google.maps.Marker({
+//     map: map2,
+//     draggable: false,
+//     animation: google.maps.Animation.DROP,
+//     position: {lat: latval, lng: lngval},
+//     // icon: image,
+//     title: ''
+//   });
+// }
 
-$(document).ready(function() {
-    $(".slide_map").each(function() {
-        id = $(this).attr("id");
-        latval = parseFloat($(this).attr("data-lat"));
-        lngval = parseFloat($(this).attr("data-lat"));
-        z = parseInt($(this).attr("data-zoom"));
-        mapCreate(id, latval, lngval, z);
-    });
-});
+// $(document).ready(function() {
+//     $(".slide_map").each(function() {
+//         id = $(this).attr("id");
+//         latval = parseFloat($(this).attr("data-lat"));
+//         lngval = parseFloat($(this).attr("data-lat"));
+//         z = parseInt($(this).attr("data-zoom"));
+//         mapCreate(id, latval, lngval, z);
+//     });
+// });
