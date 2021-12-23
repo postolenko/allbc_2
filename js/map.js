@@ -201,7 +201,6 @@ if( document.getElementById("object_map") ) {
         draggable: false,
         animation: google.maps.Animation.DROP,
         position: {lat: 50.4488889, lng: 30.5295878},
-        map: map,
         // icon: image,
         title: ''
       });

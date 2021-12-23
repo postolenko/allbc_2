@@ -1458,6 +1458,7 @@
 	    height: calc(100vh - 111px);
 	    left: 0;
 	    position: relative;
+	    overflow: hidden;
 	}
 
 	.objectMap {
