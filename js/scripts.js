@@ -247,6 +247,7 @@ $(document).scroll(function() {
   getMapParams();
   getFixedHeaderParams();
   getFiltersScrollParams();
+  // console.log($(document).scrollTop());
 });
 
 $(document).ready(function() {
@@ -650,16 +651,14 @@ $(document).ready(function() {
     div.style.visibility = 'hidden';
     document.body.appendChild(div);
     scrollWidth = div.offsetWidth - div.clientWidth;
-    document.body.removeChild(div);    
+    document.body.removeChild(div);
+    topCoord = $(document).scrollTop();
+    $("body").addClass("fixed");
     $("body").css({
-        "top" :  -$(document).scrollTop() + "px",
-        "overflow" : "hidden",
-        "right" : 0,
-        "left" : 0,
-        "bottom" : 0,
+        "top" :  -1 * topCoord + "px",
         "padding-right" : scrollWidth + "px"
     });
-    $("body").addClass("fixed");
+    console.log(topCoord);
     $(".popup_bg").fadeIn(300);
     $("[data-popup = '"+ popupName +"']").fadeIn(300);
   });
@@ -667,11 +666,11 @@ $(document).ready(function() {
     e.preventDefault();
     curTop = $("body").css("top");
     curTop = Math.abs(parseInt(curTop, 10));
-    $("body").attr("style", "");
+    $("body").removeClass("fixed");
     if (curTop !== 0) {
         $("html").scrollTop(curTop);
     }
-    $("body").removeClass("fixed");
+    $("body").attr("style", "");    
     $(".popup_bg").fadeOut(300);
     $("[data-popup]").fadeOut(300);
   });
@@ -679,11 +678,11 @@ $(document).ready(function() {
     if (eventObject.which == 27 && $("body").hasClass("fixed")) {
       curTop = $("body").css("top");
       curTop = Math.abs(parseInt(curTop, 10));
-      $("body").attr("style", "");
+      $("body").removeClass("fixed");
       if (curTop !== 0) {
           $("html").scrollTop(curTop);
       }
-      $("body").removeClass("fixed");
+      $("body").attr("style", "");      
       $(".popup_bg").fadeOut(300);
       $("[data-popup]").fadeOut(300);
     }
@@ -696,11 +695,11 @@ $(document).ready(function() {
           && hide_element.has(e.target).length === 0) {
           curTop = $("body").css("top");
           curTop = Math.abs(parseInt(curTop, 10));
-          $("body").attr("style", "");
+          $("body").removeClass("fixed");
           if (curTop !== 0) {
               $("html").scrollTop(curTop);
           }
-          $("body").removeClass("fixed");
+          $("body").attr("style", "");    
           $(".popup_bg").fadeOut(300);
           $("[data-popup]").fadeOut(300);
       }
