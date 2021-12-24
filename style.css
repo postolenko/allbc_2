@@ -98,6 +98,10 @@ body {
     min-height: 100vh;
 }
 
+.inner_wrapper {
+    padding-top: 68px;
+}
+
 header {
     flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
@@ -7296,7 +7300,11 @@ body.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 20;
+    z-index: 21;
+}
+
+.more_filter_popup {
+    z-index: 22;
 }
 
 .popup_bg {
