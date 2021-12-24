@@ -1,7 +1,5 @@
-var map;
-var marker;
-// var image = "img/marker.svg";
-var styles = [
+const image = "img/map_marker.svg";
+const styles = [
     {
         "featureType": "water",
         "elementType": "geometry.fill",
@@ -187,51 +185,59 @@ var styles = [
     }
 ];
 
-function initMap() {
-    if( document.getElementById("object_map") ) {
-      map = new google.maps.Map(document.getElementById('object_map'), {
-        center: {lat: 50.4488889, lng: 30.5295878},
-        scrollwheel: false,
-        scaleControl: false,
-        zoom: 16,
-        styles: styles
-      });
-      marker = new google.maps.Marker({
-        map: map,
-        draggable: false,
-        animation: google.maps.Animation.DROP,
-        position: {lat: 50.4488889, lng: 30.5295878},
-        // icon: image,
-        title: ''
-      });
-    }
+function initMap() {  
+
+  const map = new google.maps.Map(document.getElementById("object_map"), {
+    zoom: 16,
+    center: {lat: 50.478209954172236, lng: 30.431968155699604},
+  });
+
+  const flats = [
+    [{ lat: 50.478209954172236, lng: 30.431968155699604 }, "Flat 1"],
+    [{ lat: 50.477654, lng: 30.434942 }, "Flat 2"],
+    [{ lat: 50.47925562715485, lng: 30.43558249317178 }, "Flat 3"],
+    [{ lat: 50.47816480257362, lng: 30.432253434555196 }, "Flat 4"],
+  ];
+
+  const infoWindow = new google.maps.InfoWindow();
+
+  flats.forEach(([position, title], i) => {
+    const marker = new google.maps.Marker({
+      position,
+      map,
+      // title: `${i + 1}. ${title}`,
+      // label: `${i + 1}`,
+      optimized: false,
+      icon: image,
+      styles: styles
+    });
+
+    marker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(marker.getTitle());
+      infoWindow.open(marker.getMap(), marker);
+    });
+  });
 }
 
 function mapCreate(id, latval, lngval, z) {
-  var map2 = new google.maps.Map(document.getElementById(id), {
-    center: {lat: latval, lng: lngval},
-    scrollwheel: false,
-    scaleControl: false,
-    zoom: z,
-    styles: styles
-  });
-  var marker2 = new google.maps.Marker({
-    map: map2,
-    draggable: false,
-    animation: google.maps.Animation.DROP,
-    position: {lat: latval, lng: lngval},
-    // icon: image,
-    title: ''
-  });
+    const map2 = new google.maps.Map(document.getElementById(id), {
+        center: {lat: latval, lng: lngval},
+        scrollwheel: false,
+        scaleControl: false,
+        zoom: z,
+        styles: styles
+    });
+    const marker2 = new google.maps.Marker({
+        map: map2,
+        draggable: false,
+        animation: google.maps.Animation.DROP,
+        position: {lat: latval, lng: lngval},
+        icon: image,
+        title: ''
+    });
 }
 
-$(document).ready(function() {
+window.addEventListener("load", function(){
     initMap();
-    $(".slide_map").each(function() {
-        id = $(this).attr("id");
-        latval = parseFloat($(this).attr("data-lat"));
-        lngval = parseFloat($(this).attr("data-lat"));
-        z = parseInt($(this).attr("data-zoom"));
-        mapCreate(id, latval, lngval, z);
-    });
 });

@@ -1811,7 +1811,12 @@
 									</div>
 								</div>
 								<div class="slide_map_box" data-slidedown = "sl_1">
-									<div class="slide_map" id="map_sl_1" data-lat= "50.4488889" data-lat= "30.5295878" data-zoom = "16"></div>									
+									<div class="slide_map" id="map_sl_1"></div>
+									<script>
+										// window.addEventListener("load", function(){
+										// 	mapCreate("map_sl_1", 50.4488889, 30.5295878, 16);
+										// });										
+									</script>
 								</div>
 								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
 									<a href="img/sl_miniature.jpg" data-fancybox="gallery_1" ></a>
@@ -2017,7 +2022,12 @@
 									</div>
 								</div>
 								<div class="slide_map_box" data-slidedown = "sl_2">
-									<div class="slide_map" id="map_sl_2" data-lat= "51.4488889" data-lat= "31.5295878" data-zoom = "16"></div>
+									<div class="slide_map" id="map_sl_2"></div>
+									<script>
+										// window.addEventListener("load", function(){
+										// 	mapCreate("map_sl_2", 51.4488889, 31.5295878, 16);
+										// });										
+									</script>
 								</div>
 								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
 									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
@@ -2227,7 +2237,12 @@
 									</div>
 								</div>
 								<div class="slide_map_box" data-slidedown = "sl_3">
-									<div class="slide_map" id="map_sl_3" data-lat= "51.4488889" data-lat= "31.5295878" data-zoom = "16"></div>
+									<div class="slide_map" id="map_sl_3"></div>
+									<script>
+										// window.addEventListener("load", function(){
+										// 	mapCreate("map_sl_3", 51.4488889, 31.5295878, 16);
+										// });										
+									</script>
 								</div>
 								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
 									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
@@ -2434,7 +2449,12 @@
 									</div>
 								</div>
 								<div class="slide_map_box" data-slidedown = "sl_4">
-									<div class="slide_map" id="map_sl_4" data-lat= "51.4488889" data-lat= "31.5295878" data-zoom = "16"></div>
+									<div class="slide_map" id="map_sl_4"></div>
+									<script>
+										// window.addEventListener("load", function(){
+										// 	mapCreate("map_sl_4", 51.4488889, 31.5295878, 16);
+										// });
+									</script>
 								</div>
 								<div class="catalog_thumb_gallery" data-gallery = "object_slider_1">
 									<a href="img/sl_miniature_2.jpg" data-fancybox="catalog_thumb_gallery_1" ></a>
@@ -3201,8 +3221,18 @@
 	<script src="vendors/js/wnumb.js"></script>
 	<script src="vendors/js/nouislider.min.js"></script>
 	<script src="vendors/js/inputmask.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0-5AxzvKjbwCMVCov_cwLTwvtlyEHAHs&callback=initMap&v=weekly"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0-5AxzvKjbwCMVCov_cwLTwvtlyEHAHs&callback=initMap&v=weekly" async></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/map.js"></script>
+	<!-- Инициализация google карт в карточках объектов -->
+	<script>
+		window.addEventListener("load", function(){
+		    mapCreate("map_sl_1", 50.4488889, 30.5295878, 15);
+		    mapCreate("map_sl_2", 50.4488889, 30.5295888, 15);
+		    mapCreate("map_sl_3", 50.4488889, 30.5295868, 15);
+		    mapCreate("map_sl_4", 50.4488889, 30.5295898, 15);
+		});
+	</script>
+	<!-- /////// -->
 </body>
 </html>

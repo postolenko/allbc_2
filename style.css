@@ -5735,14 +5735,6 @@ label.main_checkbox.green {
     overflow: hidden;
 }
 
-.slide_map_box img {
-    margin-bottom: -6px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-}
-
 .slide_map {
     height: 230px;
     margin-bottom: -6px;
