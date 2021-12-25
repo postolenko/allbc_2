@@ -1210,6 +1210,10 @@
 	    display: block;
 	}
 
+	.h1_wrapp_inner h1 {
+	    font-size: 28px;
+	}
+
 	/*-- Header --*/
 
 	.header_site {
@@ -2037,6 +2041,10 @@
 
 	.row {
 	    padding: 0 15px;
+	}
+
+	.h1_wrapp_inner h1 {
+	    font-size: 23px;
 	}
 
 	/*-- Header --*/

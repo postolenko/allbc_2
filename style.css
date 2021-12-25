@@ -4507,6 +4507,17 @@ textarea:focus {
 
 /*-- /Bradcrumbs --*/
 
+.h1_wrapp_inner {
+    padding: 5px 0 14px 0;
+}
+
+.h1_wrapp_inner h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 140%;
+    color: #141F27;
+}
+
 .filters_fixed {
     padding: 10px 0;
 }
