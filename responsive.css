@@ -1717,6 +1717,11 @@
 		padding: 50px 0 0 0;
 		border-radius: 0;
 		-webkit-border-radius: 0;
+		background: #FAFAFA;
+	}
+
+	.more_filter_popup .popup_title {
+	    background: #FAFAFA;
 	}
 
 	.inner_scroll > div {
