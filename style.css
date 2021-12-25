@@ -7318,6 +7318,14 @@ body.fixed {
     z-index: 22;
 }
 
+.more_filter_popup .popup_content_2 {
+    background: #FAFAFA;
+}
+
+.more_filter_popup .popup_title {
+    background: #FAFAFA;
+}
+
 .popup_bg {
     display: none;
     width: 100%;
