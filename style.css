@@ -4452,6 +4452,7 @@ textarea:focus {
     position: absolute;
     top: 7px;
     right: -4px;
+    opacity: .4;
 }
 
 .breadcrumbs li:last-child:after {
@@ -4513,6 +4514,11 @@ textarea:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(img/home_icon.svg);
+}
+
+.breadcrumbs li .home_icon {
+    position: relative;
+    top: 1px;
 }
 
 /*-- /Bradcrumbs --*/
