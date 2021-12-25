@@ -4459,7 +4459,7 @@ textarea:focus {
 }
 
 .breadcrumbs li a {
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     font-weight: 500;
     font-size: 12px;
     line-height: 140%;
@@ -4487,22 +4487,32 @@ textarea:focus {
 
 .breadcrumbs li a:link,
 .breadcrumbs li a:visited {
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .breadcrumbs li a:active,
 .breadcrumbs li a.active {
-    border: 1px solid #2A3842;
+    border-bottom: 1px solid #2A3842;
 }
 
 .breadcrumbs li a:hover {
-    border: 1px solid #2A3842;
+    border-bottom: 1px solid #2A3842;
 }
 
 .breadcrumbs li:last-child a {
     color: #546E7A;
     cursor: default;
     pointer-events: none;
+}
+
+.home_icon {
+    display: block;
+    width: 16px;
+    height: 21px;    
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/home_icon.svg);
 }
 
 /*-- /Bradcrumbs --*/
