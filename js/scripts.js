@@ -773,4 +773,37 @@ $(document).ready(function() {
     $(".promo_sect_2").removeClass("z");
   });
 
+  // ---------
+
+  $("[data-slide-link]").on("click", function(e) {
+    e.preventDefault();
+    sl = $("[data-slide-box = '"+$(this).attr("data-slide-link")+"']");
+    if(sl.is(":hidden")) {
+      sl.slideDown(300);
+      $(this).addClass("active");
+    } else {
+      sl.slideUp(300);
+      $(this).removeClass("active");
+    }
+  });
+
+  // ---------
+
+  $(".table_row").on("click", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".table_row_wrapp");
+    table = parent.closest("[data-table]");
+    tableName = table.attr("data-table");
+    sl = parent.find(".table_slidedown");
+    if(sl.is(":hidden")) {
+      $("[data-table = '"+tableName+"']").find(".table_row_wrapp").removeClass("active");
+      $("[data-table = '"+tableName+"']").find(".table_slidedown").slideUp(300);
+      parent.addClass("active");
+      sl.slideDown(300);
+    } else {
+      parent.removeClass("active");
+      sl.slideUp(300);
+    }
+  });
+
 });
