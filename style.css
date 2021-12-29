@@ -7227,16 +7227,17 @@ label.main_checkbox.green {
 .object_two_cols {
     display: flex;
     display: -webkit-flex;
+    position: relative;
 }
 
 .object_two_cols > .left_col {
-    width: calc(100% - 305px);
-    padding-right: 10px;
+    width: calc(100% - 295px);
+    padding-right: 20px;
 }
 
 .object_two_cols > .right_col {
-    width: 305px;
-    padding-left: 10px;
+    width: 295px;
+    position: relative;
 }
 
 .scroll_menu {
@@ -8274,6 +8275,48 @@ label.main_checkbox.green {
     color: #141F27;
 }
 
+.contactsScrollBotttomCoord {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.contacts_scroll {
+    -webkit-transition-property: padding-top;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: padding-top;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: padding-top;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: padding-top;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: padding-top;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.contacts_scroll.fixed {
+    width: 295px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contacts_scroll.fixed.bottom_position {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0 !important;
+}
+
 /*-- /Section 2 - Object Page --*/
 
 /*-- Section 3 - Object Page --*/
@@ -8320,10 +8363,6 @@ label.main_checkbox.green {
     height: 135px;
 }
 
-.person_info_thumb_2 {
-
-}
-
 .person_info_thumb_2 h3 {
     font-size: 16px;
 }
@@ -8338,14 +8377,6 @@ label.main_checkbox.green {
 
 .person_info_thumb_2 .soc_list_4 {
     margin-top: 22px;
-}
-
-.catacts_form {
-
-}
-
-.input_wrapp {
-
 }
 
 .input_wrapp textarea {
@@ -8422,6 +8453,30 @@ label.main_checkbox.green {
     display: block;
     width: 20px;
     height: 20px;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.share_list li a:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .18);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .18);
 }
 
 .share_list li a img {
@@ -8441,7 +8496,72 @@ label.main_checkbox.green {
 
 /*-- /Section 3 - Object Page --*/
 
+/*-- Section 4 - Object Page --*/
 
+.sect_4_op {
+    padding-top: 60px;
+}
+
+.sort_tags_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.sort_tags_wrapp > div:nth-child(1) {
+    padding: 14px 15px 0 0;
+}
+
+.img_box_footer > div:nth-child(1) p {
+    padding-bottom: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #EEE;
+}
+
+.more_objects_thumbs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 3px -10px;
+}
+
+.more_objects_thumbs .object_card {
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+
+.obj_type_tag.grey {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: 21px;
+    padding: 3px 6px;
+    background-color: #EEF0F2;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    color: #252C32;
+    white-space: nowrap;
+}
+
+.more_btn_wrapp {
+    padding:  17px 0 43px 0;
+    text-align: center;
+}
+
+.more_btn_wrapp .blue_pill_3 {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    width: auto;
+    min-width: 160px;
+}
+
+
+/*-- /Section 4 - Object Page --*/
 
 
 

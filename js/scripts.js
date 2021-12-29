@@ -217,6 +217,43 @@ function getAdaptivePositionElements() {
     });
 }
 
+function getContactsPosition() {
+    if( $(".contacts_scroll").length > 0 && bodyWidth > 900 ) {
+        $(".contacts_scroll_height").css({
+            "height" : $(".contacts_scroll").height() + "px"
+        });
+        contactsScrollWrappCoord = $("#contactsScrollWrapp").offset().top;
+        contactsScrollBottomCoord = $(".contacts_scroll").offset().top + $(".contacts_scroll").height();
+        bottomCoord = $(".contactsScrollBotttomCoord").offset().top;
+        if($(document).scrollTop() >= contactsScrollWrappCoord ) {
+            $(".contacts_scroll").addClass("fixed");
+            $(".contacts_scroll").css({
+                "left" : $("#contactsScrollWrapp").offset().left + "px",
+                "padding-top" : $("#witeHeader").height() + "px"
+            });
+            if( ($(document).scrollTop() + $(".contacts_scroll").height() ) >= bottomCoord ) {
+                $(".contacts_scroll").addClass("bottom_position");
+            } else {
+                $(".contacts_scroll").removeClass("bottom_position");
+            }
+        } else {
+            $(".contacts_scroll").removeClass("fixed");
+            $(".contacts_scroll").removeClass("bottom_position");
+            $(".contacts_scroll").css({
+                "left" : 0,
+                "padding-top" : 0
+            });
+        }
+    } else {
+        $(".contacts_scroll").removeClass("fixed");
+        $(".contacts_scroll").removeClass("bottom_position");
+        $(".contacts_scroll").css({
+            "left" : 0,
+            "padding-top" : 0
+        });
+    }
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -246,6 +283,7 @@ $(window).resize(function() {
   getFixedHeaderParams();
   getFiltersScrollParams();
   getAdaptivePositionElements();
+  getContactsPosition();
   if(bodyWidth >= 768 && $(".more_filter_popup").is(":visible") > 0) {
     $(".more_filter_popup .close_popup").trigger("click");
   }
@@ -255,6 +293,7 @@ $(document).scroll(function() {
   getMapParams();
   getFixedHeaderParams();
   getFiltersScrollParams();
+  getContactsPosition();
   // console.log($(document).scrollTop());
 });
 
@@ -263,6 +302,7 @@ $(document).ready(function() {
   getFixedHeaderParams();
   getFiltersScrollParams();
   getAdaptivePositionElements();
+  getContactsPosition();
 
   $(".dr_title").on("click", function(e) {
     e.preventDefault();
