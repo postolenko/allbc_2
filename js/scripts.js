@@ -246,7 +246,7 @@ $(window).resize(function() {
   getFixedHeaderParams();
   getFiltersScrollParams();
   getAdaptivePositionElements();
-  if(bodyWidth >= 768 && $(".more_filter_popup").length > 0) {
+  if(bodyWidth >= 768 && $(".more_filter_popup").is(":visible") > 0) {
     $(".more_filter_popup .close_popup").trigger("click");
   }
 });
