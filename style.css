@@ -7957,6 +7957,135 @@ label.main_checkbox.green {
     width: calc(50% - 20px);
 }
 
+.location_article {
+    padding: 20px 0 15px 0;
+}
+
+.location_article p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #121212;
+}
+
+.loc_thumbs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.loc_thumb_2 {
+    display: flex;
+    display: -webkit-flex;
+    max-width: 290px;
+    margin: 12px 0;
+}
+
+.loc_thumb_2 > div:nth-child(1) {
+    width: 38px;
+}
+
+.loc_thumb_2 > div:nth-child(2) {
+    width: calc(100% - 38px);
+}
+
+.loc_thumb_2 > div:nth-child(1) img {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.loc_thumb_2  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #2A3842;
+}
+
+.inlines_8 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 5px -5px;
+}
+
+.inlines_8 > div {
+    padding: 0 5px;
+}
+
+.loc_thumb_3 {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    height: 24px;
+}
+
+.loc_thumb_3 > div:nth-child(1) {
+    width: 30px;
+}
+
+.loc_thumb_3 > div:nth-child(2) {
+    width: calc(100% - 30px);
+}
+
+.loc_thumb_3 > div:nth-child(1) svg {
+    position: relative;
+    top: 3px;
+}
+
+.loc_thumb_3 p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.loc_thumb_4 {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    height: 24px;
+}
+
+.loc_thumb_4 > div:nth-child(1) {
+    width: 25px;
+}
+
+.loc_thumb_4 > div:nth-child(2) {
+    width: calc(100% - 25px);
+}
+
+.loc_thumb_4 > div:nth-child(1) svg {
+    position: relative;
+    top: 1px;
+}
+
+.loc_thumb_4 p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #5E5E5E;
+}
+
+.loc_map_wrapp {
+    margin: 26px 0 20px 0;
+    overflow: hidden;
+}
+
+#locMap {
+    height: 288px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+
+
+
 /*-- /Section 2 - Object Page --*/
 
 
