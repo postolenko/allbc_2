@@ -851,4 +851,18 @@ $(document).ready(function() {
     }
   });
 
+  // ---------
+
+  $('.scroll_menu a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      var hrefAttr = $(this).attr("href");
+      if( hrefAttr.length > 0 && hrefAttr != "#" ) {
+        $(".scroll_menu a").removeClass("active");
+        $(this).addClass("active");
+        $('html, body').stop().animate({
+            'scrollTop': $(hrefAttr).offset().top+2
+        }, 500);
+      }
+  });
+
 });
