@@ -8557,10 +8557,19 @@ label.main_checkbox.green {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
 }
 
 .sort_tags_wrapp > div:nth-child(1) {
-    padding: 14px 15px 0 0;
+    padding: 17px 15px 0 0;
+}
+
+.sort_tags_wrapp > div:nth-child(1) h4 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #2A3842;
 }
 
 .img_box_footer > div:nth-child(1) p {

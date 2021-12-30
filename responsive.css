@@ -181,6 +181,15 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 4 - Object Page --*/
+
+	.more_objects_thumbs .object_card {
+	    width: calc(50% - 20px);
+	    margin: 10px;
+	}
+
+	/*-- /Section 4 - Object Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ > div:nth-child(1) {
@@ -1877,6 +1886,22 @@
 
 	/*-- /Section 3 - Object Page --*/
 
+	/*-- Section 4 - Object Page --*/
+
+	.more_objects_thumbs {
+    	margin: -25px -10px 3px -10px;
+	}
+
+	.more_objects_thumbs.object_cards_slider .slick-slide {
+	    padding: 20px 10px;
+	}
+
+	.more_objects_thumbs .object_card {
+	    margin: 10px 0;
+	}
+
+	/*-- .Section 4 - Object Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ > div:nth-child(1) {
@@ -2643,6 +2668,26 @@
 
 	/*-- /Section 2 - Object Page --*/
 
+	/*-- Section 4 - Object Page --*/
+
+	.sect_4_op {
+	    padding-top: 15px;
+	}
+
+	.sort_tags_wrapp > div:nth-child(1) {
+    	padding: 10px 15px 0 0;
+	}
+
+	.more_objects_thumbs {
+	    margin: -20px -10px 3px -10px;
+	}
+
+	.more_btn_wrapp {
+    	padding: 17px 0 6px 0;
+	}
+
+	/*-- /Section 4 - Object Page --*/
+
 	/*-- Footer --*/
 
 	.footer_section {
@@ -2985,6 +3030,23 @@
 	}
 
 	/*-- /Section 2 - Catalog Page --*/
+
+	/*-- Section 4 - Object Page --*/
+
+	.sort_tags_wrapp > div:nth-child(1) {
+		width: 100%;
+	    padding: 7px 0 0 0;
+	}
+
+	.sort_tags_wrapp > div:nth-child(2) {
+		width: 100%;
+	}
+
+	.more_btn_wrapp .blue_pill_3 {
+	    min-width: 100%;
+	}
+
+	/*-- /Section 4 - Object Page --*/
 
 	/*-- More Filter Popup --*/
 
