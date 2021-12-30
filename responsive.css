@@ -306,6 +306,15 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 1 - Object Page --*/
+
+	.object_info > div {
+	    width: 33.33%;
+	    padding: 10px 10px;
+	}
+
+	/*-- /Section 1 - Object Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -614,6 +623,19 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 1 - Object Page --*/
+
+	.object_info > div {
+	    width: 100%;
+	    padding: 7px 0;
+	}
+
+	.object_info > div:nth-child(2) {
+	    text-align: left;
+	}
+
+	/*-- /Section 1 - Object Page --*/
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -714,16 +736,6 @@
 		text-align: center;
 		position: relative;
 	}
-
-/*	.resp_filter_nav > div:after {
-		content: "";
-		width: 1px;
-		height: 100%;
-		background-color: #E9EEF1;
-		position: absolute;
-		top: 0;
-		right: -1px;
-	}*/
 
 	.filter_blue_link {
 		display: inline-flex;
@@ -960,6 +972,10 @@
 		display: none;
 	}
 
+	.visible_900 {
+		display: block;
+	}
+
 	.header_site_row > .col_2 {
 	    width: calc(45% - 85px);
 	}
@@ -1189,6 +1205,63 @@
 	}
 
 	/*-- /Section 3 - Catalog Page --*/
+
+	/*-- Section 2 - Object Page --*/
+
+	.object_two_cols > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.object_two_cols > .right_col {
+		display: none;
+	}
+
+	.scroll_menu_wrapp {
+		margin: 0 -20px;
+		padding-bottom: 5px;
+	}
+
+	.scroll_menu li a {
+		min-width: 128px;
+    	padding: 2px 5px 6px 5px;
+	    font-size: 12px;
+	}
+
+	.object_descript {
+	    padding: 20px 0;
+	}
+
+	.h2_wrapp_3 h2 {
+	    font-size: 28px;
+	}
+
+	.article_wrapp p {
+	    padding: 8px 0;
+	    font-weight: 400;
+	    font-size: 14px;
+	    color: #455A64;
+	}
+
+	.location_article p {
+	    font-weight: 400;
+	    font-size: 14px;
+	    color: #455A64;
+	}
+
+	.contacts_two_cols > div:nth-child(1) {
+	    width: 50%;
+	}
+
+	.contacts_two_cols > div:nth-child(2) {
+	    width: 50%;
+	}
+
+	.prange_pill_resp {
+		padding: 10px 0;
+	}
+
+	/*-- /Section 2 - Object Page --*/
 
 }
 
@@ -1679,6 +1752,131 @@
 
 	/*-- /Section 1 - Main Page Arend --*/
 
+	/*-- Objec Info --*/
+
+	.object_info {
+	    padding: 10px 0 9px;
+	}
+
+	.object_info > div {
+	    padding: 4px 0;
+	}
+
+	.thumb_5 h3 {
+	    padding: 0 0 3px 0;
+	}
+
+	.thumb_5_two_cols > div:nth-child(1) {
+	    width: 20px;
+	    padding-top: 0;
+	}
+
+	.thumb_5_two_cols > div:nth-child(2) {
+	    max-width: 100%;
+	}
+
+	.thumb_5_two_cols > div:nth-child(1) img {
+		width: auto;
+		max-width: 100%;
+		width: 12px;
+	}
+
+	.inlines_4 {
+	    margin: 3px -3px;
+	}
+
+	.inlines_4 > div {
+	    padding: 3px;
+	}
+
+	.inlines_4 .num_p {
+	    padding-top: 0;
+	}
+
+	.thumb_5_two_cols p {
+	    font-size: 12px;
+	}
+
+	/*-- /Objec Info --*/
+
+	/*-- Section 2 - Object Page --*/
+
+	.object_descript {
+	    padding: 8px 0;
+	}
+
+	.object_descript_list {
+		padding-top: 6px;
+	}
+
+	.object_descript_list li {
+	    padding: 2px 10px;
+	}
+
+	.object_descript_list li h3 {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 140%;
+		color: #141F27;
+	}
+
+	.h2_wrapp_3 {
+		padding: 5px 0 5px 0;
+	}
+
+	.h2_wrapp_3 h2 {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 140%;
+		color: #141F27;
+	}
+
+	.object_table .table_row .cell:nth-child(1) {
+	    width: 90px;
+	}
+
+	.object_table .table_row .cell:nth-child(2) {
+	    width: 70px;
+	}
+
+	.object_table .table_row .cell:nth-child(3) {
+	    width: 100px;
+	}
+
+	.object_table .table_row .cell:nth-child(4) {
+	    width: 120px;
+	}
+
+	.location_article {
+	    padding: 10px 0 5px 0;
+	}
+
+	/*-- /Section 2 - Object Page --*/
+
+	/*-- Section 3 - Object Page --*/
+
+	.sect_3_op {
+	    padding: 15px 0 5px 0;
+	}
+
+	.contacts_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.contacts_two_cols > div:nth-child(1) {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.contacts_two_cols > div:nth-child(2) {
+	    width: 100%;
+	    padding-top: 12px;
+	    padding-left: 0;
+	}
+
+	/*-- /Section 3 - Object Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ > div:nth-child(1) {
@@ -1862,6 +2060,28 @@
 	
 	/*-- /Subscribe Popup --*/
 
+	/*-- Section 1 - Object Page --*/
+
+	.h1_wrapp_2_2 h1 {
+	    padding: 10px 0;
+	}
+
+	.h1_wrapp_2_2 p {
+	    padding: 5px 0;
+	    font-size: 14px;
+	}
+
+	/*-- /Section 1 - Object Page --*/
+
+	/*-- Section 2 - Object Page --*/
+
+	.object_thumb .img_box {
+	    height: 200px;
+	}
+
+	/*-- /Section 2 - Object Page --*/
+
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1994,6 +2214,40 @@
 	}
 
 	/*-- /Cookie Modals --*/
+
+	/*-- Section 2 - Object Page --*/
+
+	.object_items_wrapp > div {
+	    width: 100%;
+	}
+
+	.object_thumbs .object_thumb {
+	    margin: 5px 4px 2px 4px;
+	}
+
+	.object_item > div:nth-child(1) {
+	    width: 50%;
+	    padding-right: 5px;
+	}
+
+	.object_item > div:nth-child(2) {
+	    width: 50%;
+	    padding-left: 5px;
+	    text-align: right;
+	}
+
+	.object_item_2 > div:nth-child(1) {
+	    width: 50%;
+	    padding-right: 5px;
+	}
+
+	.object_item_2 > div:nth-child(2) {
+	    width: 50%;
+	    padding-left: 5px;
+	    text-align: right;
+	}
+
+	/*-- /Section 2 - Object Page --*/
 
 }
 
@@ -2286,6 +2540,109 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 1 - Object Page --*/
+
+	.h1_wrapp_2_2 {
+	    padding: 81px 0 70px 0;
+	}
+
+	/*-- /Section 1 - Object Page --*/
+
+	/*-- Section 2 - Object Page --*/
+
+	.object_descript_list {
+	    margin: 0;
+	}
+
+	.object_descript_list li {
+	    width: 100%;
+	    padding: 6px 0;
+	}
+
+	.object_table_sect {
+		margin: 0 -15px;
+	}
+
+	.object_table .table_row {
+		padding: 10px 32px 10px 10px;
+	}
+
+	.object_table .table_row .cell:nth-child(2) {
+		display: none;
+	}
+
+	.object_table .table_row .cell:nth-child(3) {
+	    display: none;
+	}
+
+	.object_table .table_row .cell:nth-child(1) {
+	    width: 80px;
+	}
+
+	.object_table .table_row .cell:nth-child(5) {
+	    width: 100px;
+	}
+
+	.sort_link {
+	    padding-right: 17px;
+	}
+
+	.gallery_templ {
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	    margin: 13px -4px;
+	}
+
+	.gallery_templ > div:nth-child(1) {
+	    width: 100%;
+	}
+
+	.gallery_templ > div:nth-child(2) {
+	    width: 100%;
+	}
+
+	.gallery_thumb_2 {
+	    height: 170px;
+	    margin: 4px;
+	}
+
+	.gallery_thumb_3 {
+	    height: 90px;
+	    margin: 4px;
+	}
+
+	.gallery_thumbs_3 .gallery_thumb_3 {
+	    width: calc(50% - 8px);
+	}
+
+	.table_slidedown > .inner {
+    	padding: 0 18px 5px 18px;
+	}
+
+	.object_thumb .img_box {
+	    height: 112px;
+	}
+
+	.object_thumbs {
+	    margin: 0 -4px;
+	}
+
+	.object_thumbs .object_thumb {
+	    width: calc(50% - 8px);
+	    margin: 5px 4px 13px 4px;
+	}
+
+	.loc_map_wrapp {
+	    margin: 14px -15px;
+	    border-radius: 0;
+	}
+
+	#locMap {
+	    height: 235px;
+	}
+
+	/*-- /Section 2 - Object Page --*/
+
 	/*-- Footer --*/
 
 	.footer_section {
@@ -2393,6 +2750,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+	.visible_480 {
+	    display: block;
+	}
 
 	/*-- Section 1 - Main Page --*/
 
@@ -2602,6 +2963,27 @@
 	    padding: 0 5px;
 	}
 
+	.object_item_2 > div:nth-child(1) {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.object_item_2 > div:nth-child(2) {
+		display: none;
+	}
+
+	.object_item_2 p {
+	    padding-bottom: 0;
+	}
+
+	.object_items_2_2 p {
+		padding-bottom: 12px;
+	}
+
+	.inlines_7 > div {
+		width: 50%;
+	}
+
 	/*-- /Section 2 - Catalog Page --*/
 
 	/*-- More Filter Popup --*/
@@ -2689,6 +3071,40 @@
 	}
 
 	/*-- /Resp Menu --*/
+
+	/*-- Section 3 - Object Page --*/
+
+	.contacts_two_cols {
+	    margin: 10px 0 0 0;
+	}
+
+	.prange_pill_resp .orange_pill_3 {
+		width: 100%;
+	}
+
+	.catacts_form_footer {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.catacts_form_footer > div:nth-child(1) {
+	    width: 100%;
+	    padding: 5px 0;
+	    order: 2;
+	}
+
+	.catacts_form_footer > div:nth-child(2) {
+	    width: 100%;
+	    padding: 5px 0;
+	    text-align: left;
+	    order: 1;
+	}
+
+	.catacts_form_footer .blue_pill_3 {
+		width: 100%;
+	}
+
+	/*-- /Section 3 - Object Page --*/
 
 }
 

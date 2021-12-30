@@ -454,11 +454,19 @@ textarea:focus {
     display: none;
 }
 
+.visible_900 {
+    display: none;  
+}
+
 .visible_767 {
     display: none;
 }
 
 .visible_700 {
+    display: none;
+}
+
+.visible_480 {
     display: none;
 }
 
@@ -7114,6 +7122,7 @@ label.main_checkbox.green {
 
 .thumb_5_two_cols > div:nth-child(2) {
     width: calc(100% - 33px);
+    max-width: 250px;
 }
 
 .thumb_5_two_cols p {
@@ -7220,6 +7229,12 @@ label.main_checkbox.green {
     color: #2A3842;
 }
 
+.p_price .sq {
+    font-size: 8px;
+    position: relative;
+    top: -4px;
+}
+
 /*-- /Objec Info --*/
 
 /*-- Section 2 - Object Page --*/
@@ -7254,6 +7269,7 @@ label.main_checkbox.green {
 
 .scroll_menu li a {
     display: block;
+    white-space: nowrap;
     position: relative;
     padding: 2px 5px 14px 5px;
     text-align: center;
@@ -7305,6 +7321,26 @@ label.main_checkbox.green {
     position: absolute;
     bottom: -1px;
     left: 0;
+}
+
+.scroll_x .mCSB_horizontal.mCSB_inside > .mCSB_container {
+    margin-bottom: 15px;
+}
+
+.scroll_x .mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.scroll_x .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+    height: 4px;
+    background-color: #E9EEF1 !important;
+}
+
+.scroll_x .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+    height: 4px;
+    margin: 7px auto;
+    background-color: #B0BEC5 !important;
 }
 
 .object_descript {
@@ -7665,7 +7701,7 @@ label.main_checkbox.green {
 }
 
 .table_slidedown > .inner {
-    padding: 5px 24px 10px 24px;
+    padding: 9px 24px 10px 24px;
 }
 
 .object_thumbs {
@@ -7683,14 +7719,16 @@ label.main_checkbox.green {
 
 .object_thumb .img_box {
     height: 258px;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     position: relative;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
 }
 
-.object_thumb .img_box img {
+/*.object_thumb .img_box img {
     display: block;
     width: auto;
     height: auto;
@@ -7701,6 +7739,18 @@ label.main_checkbox.green {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+}*/
+
+.object_items_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.object_items_wrapp > div {
+    width: 50%;
 }
 
 .object_item {
@@ -8406,12 +8456,12 @@ label.main_checkbox.green {
 }
 
 .catacts_form_footer > div:nth-child(1) {
-    width: 55%;
+    width: 62%;
     padding: 5px 5px 5px 0;
 }
 
 .catacts_form_footer > div:nth-child(2) {
-    width: 45%;
+    width: 38%;
     padding: 5px 0 5px 5px;
     text-align: right;
 }

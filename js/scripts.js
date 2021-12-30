@@ -272,6 +272,11 @@ $(window).on("load", function() {
   if($(".inner_scroll_3").length > 0) {
     $(".inner_scroll_3").mCustomScrollbar();
   }
+  if($(".scroll_x").length > 0) {
+    $(".scroll_x").mCustomScrollbar({
+      axis:"x"
+    });
+  }
 });
 
 $(window).resize(function() {
