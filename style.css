@@ -1613,6 +1613,10 @@ textarea:focus {
     box-shadow: 0 2px 7px 0 rgba(204,204,204,.4);
 }
 
+.inner_wrapper .white_header {
+    border-bottom: 1px solid #E9EEF1;
+}
+
 /*-- /White Header --*/
 
 /*-- Resp Menu --*/
