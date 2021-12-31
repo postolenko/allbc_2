@@ -181,6 +181,22 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- Section 3 - Object Page --*/
+
+	.contacts_tree_cols > div:nth-child(1) {
+	    width: 33%;
+	}
+
+	.contacts_tree_cols > div:nth-child(2) {
+	    width: 32%;
+	}
+
+	.contacts_tree_cols > div:nth-child(3) {
+	    width: 35%;
+	}
+
+	/*-- /Section 3 - Object Page --*/
+
 	/*-- Section 4 - Object Page --*/
 
 	.more_objects_thumbs .object_card {
@@ -323,6 +339,33 @@
 	}
 
 	/*-- /Section 1 - Object Page --*/
+
+	/*-- Section 3 - Object Page --*/
+
+	.contacts_tree_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.contacts_tree_cols > div:nth-child(1) {
+	    width: 40%;
+	}
+
+	.contacts_tree_cols > div:nth-child(2) {
+	    width: 60%;
+	    padding-right: 0;
+	}
+
+	.contacts_tree_cols > div:nth-child(3) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.person_form_wrapp_2 {
+	    max-width: 100%;
+	}
+
+	/*-- /Section 3 - Object Page --*/
 
 }
 
@@ -1271,6 +1314,18 @@
 	}
 
 	/*-- /Section 2 - Object Page --*/
+
+	/*-- Section 3 - Object Page --*/
+
+	.contacts_tree_cols > div:nth-child(1) {
+	    width: 350px;
+	}
+
+	.contacts_tree_cols > div:nth-child(2) {
+	    width: calc(100% - 350px);
+	}
+
+	/*-- /Section 3 - Object Page --*/
 
 }
 
@@ -2273,6 +2328,29 @@
 	}
 
 	/*-- /Section 2 - Object Page --*/
+
+	/*-- Section 3 - Object Page --*/
+
+	.contacts_tree_cols > div:nth-child(1) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.contacts_tree_cols > div:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.contacts_tree_cols > div:nth-child(3) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.person_form_wrapp_2 {
+		padding: 0;
+	}
+
+	/*-- /Section 3 - Object Page --*/
 
 }
 
@@ -3291,6 +3369,24 @@
 	}
 
 	/*-- /Section 2 - Catalog Page --*/
+
+	/*-- Section 3 - Object Page --*/
+
+	.contacts_tree_cols > div:nth-child(2) {
+	    padding: 5px 0;
+	}
+
+	.person_info_thumb_2 {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.person_info_thumb_2 > div:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0 0 0;
+	}
+
+	/*-- /Section 3 - Object Page --*/
 
 	/*-- Footer --*/
 

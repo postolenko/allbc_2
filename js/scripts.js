@@ -865,4 +865,13 @@ $(document).ready(function() {
       }
   });
 
+  // ---------
+
+  $(".show_link").on("click", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".tel_wrapp_2");
+    parent.addClass("active");
+  });
+  
+
 });
