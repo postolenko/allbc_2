@@ -9136,11 +9136,6 @@ a.tel_link_4:hover {
     color: #546E7A;
 }
 
-/*.office_param h3 span {
-    font-size: 12px;
-    margin-bottom: 2px;
-}*/
-
 .scroll_menu_wrapp_2 {
     position: relative;   
 }
@@ -9195,7 +9190,7 @@ a.tel_link_4:hover {
     padding-left: 10px;
 }
 
-.ooffice_descript_items_2 {
+.ooffice_descript_items {
     padding: 17px 0 0 0;
 }
 
