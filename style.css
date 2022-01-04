@@ -8974,7 +8974,7 @@ a.tel_link_4:hover {
 }
 
 .office_h1_wrapp {
-    padding: 10px 0 5px 0;
+    padding: 10px 70px 5px 0;
 }
 
 .office_h1_wrapp h1 {
@@ -9136,11 +9136,10 @@ a.tel_link_4:hover {
     color: #546E7A;
 }
 
-.office_param h3 .sq {
+/*.office_param h3 span {
     font-size: 12px;
-    position: relative;
-    top: -8px;
-}
+    margin-bottom: 2px;
+}*/
 
 .scroll_menu_wrapp_2 {
     position: relative;   
