@@ -886,4 +886,35 @@ $(document).ready(function() {
     }, 600);    
   });
 
+  // ---------
+
+  $('.office_big_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    fade: true,
+    asNavFor: '.office_miniature_slider'
+  });
+  $('.office_miniature_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.office_big_slider',
+    dots: false,
+    focusOnSelect: true,
+    vertical: true
+  });
+
+  $(document).on("click", ".vertical_arrow", function (e) {
+    e.preventDefault();
+    parent = $(this).closest(".office_miniature_slider_wrapp");
+    topArrow = parent.find(".slick-prev");
+    bottomArrow = parent.find(".slick-next");
+    if($(this).hasClass("bottom_arrow")) {
+      topArrow.trigger("click");
+    } else if($(this).hasClass("top_arrow")) {
+      bottomArrow.trigger("click");
+    }
+  });
+
 });
