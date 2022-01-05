@@ -902,7 +902,29 @@ $(document).ready(function() {
     asNavFor: '.office_big_slider',
     dots: false,
     focusOnSelect: true,
-    vertical: true
+    vertical: true,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          vertical: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          vertical: false
+        }
+      }
+    ]
   });
 
   $(document).on("click", ".vertical_arrow", function (e) {
