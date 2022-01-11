@@ -7,3 +7,14 @@
 # http://postolenko.github.io/allbc_2/object.html
 # http://postolenko.github.io/allbc_2/object_2.html
 # http://postolenko.github.io/allbc_2/office_page.html
+# http://postolenko.github.io/allbc_2/reg_email.html
+# http://postolenko.github.io/allbc_2/reg_email_2.html
+# http://postolenko.github.io/allbc_2/reg_email_3.html
+# http://postolenko.github.io/allbc_2/reg_email_4.html
+# http://postolenko.github.io/allbc_2/reg_tel.html
+# http://postolenko.github.io/allbc_2/reg_tel_2.html
+# http://postolenko.github.io/allbc_2/reg_tel_3.html
+# http://postolenko.github.io/allbc_2/auth_email.html
+# http://postolenko.github.io/allbc_2/auth_email_2.html
+# http://postolenko.github.io/allbc_2/auth_tel.html
+# http://postolenko.github.io/allbc_2/auth_tel_2.html

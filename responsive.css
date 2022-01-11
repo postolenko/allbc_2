@@ -3406,6 +3406,103 @@
 	}
 
 	/*-- /Section 1 - Ofice Page --*/
+
+	/*-- Registration Form --*/
+
+	.sign_form_box {
+	    padding: 33px 15px 19px 15px;
+	}
+
+	.sign_form_title h3 {
+	    font-size: 22px;
+	}
+
+	.form_inputs {
+	    padding: 11px 0 10px 0;
+	}
+
+	.form_info p {
+	    font-size: 12px;
+	}
+
+	.form_info:before {
+	    width: 40px;
+	    top: 8px;
+	}
+
+	.form_info:after {
+	    width: 40px;
+	    top: 8px;
+	}
+
+	.soc_reg_list {
+	    padding: 9px 0 9px 0;
+	}
+
+	.reg_pill {
+	    min-height: 40px;
+	    padding: 8px 15px 9px 15px;
+	    font-size: 14px;
+	}
+
+	.sign_form_footer {
+	    padding: 7px 0;
+	}
+
+	.reg_input_wrapp input {
+	    height: 40px;
+	    line-height: 40px;
+	}
+
+	.reg_checkbox_wrapp {
+	    padding: 7px 0;
+	}
+
+	.reg_checkbox p,
+	.reg_checkbox p a {
+	    font-size: 12px;
+	}
+
+	.password_input {
+	    height: 40px;
+	    line-height: 40px;
+	}
+
+	.password_input_wrapp .show_pass {
+	    top: 9px;
+	}
+
+	.form_info_2 {
+	    padding: 8px 4% 15px 4%;
+	}
+
+	.form_info_2 p {
+	    font-size: 12px;
+	}
+
+	.form_inputs_2 {
+	    padding: 19px 0 6px 0;
+	}
+
+	.sign_form_box + .form_info_3 {
+	    padding-top: 8px;
+	}
+
+	.pass_inputs {
+	    margin: 0 -7px 16px -7px;
+	}
+
+	.pass_inputs input {
+	    margin: 0 7px;
+	    width: calc(25% - 14px);
+	}
+
+	.pass_inputs input {
+	    height: 40px;
+	    line-height: 40px;
+	}
+
+	/*-- /Registration Form --*/
 	
 }
 

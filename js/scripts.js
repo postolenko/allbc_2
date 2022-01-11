@@ -254,6 +254,19 @@ function getContactsPosition() {
     }
 }
 
+function jmp(e){
+    var max = ~~e.getAttribute('maxlength');
+    if(max && e.value.length >= max){
+        do{
+            e = e.nextSibling;
+        }
+        while(e && !(/text/.test(e.type)));
+        if(e && /text/.test(e.type)){
+            e.focus();
+        }
+    }
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -937,6 +950,19 @@ $(document).ready(function() {
     } else if($(this).hasClass("top_arrow")) {
       bottomArrow.trigger("click");
     }
+  });
+
+  // -------------
+
+  $(".show_pass").on("click", function(e) {
+    parent = $(this).closest(".password_input_wrapp");
+    parent.toggleClass("active");
+  });
+
+  $(".password_input").on('propertychange input', function (e) {
+    val = $(this).val();
+    parent = $(this).closest(".password_input_wrapp");
+    parent.find(".password_input").val(val);
   });
 
 });
