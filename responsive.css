@@ -2270,6 +2270,22 @@
 
 	/*-- /Section 1 - Ofice Page --*/
 
+	/*-- Tab Bar Menu --*/
+
+	.wrapper.tab_nav {
+	    padding-bottom: 108px;
+	}
+
+	.tab_bar_box {
+		bottom: 0;
+	}
+
+	/*-- /Tab Bar Menu --*/
+
+	.wrapper.tab_nav .footer_section {
+	    padding-bottom: 24px;
+	}
+
 }
 
 @media only screen and (max-width: 700px) {
