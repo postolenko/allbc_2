@@ -9359,6 +9359,10 @@ a.tel_link_4:hover {
     font-size: 14px;
 }
 
+.blue_pill.reg_pill {
+    background-color: #05ADE5;
+}
+
 .sign_form_box .button_wrapp {
     padding: 8px 0;
 }
