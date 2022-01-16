@@ -18,3 +18,11 @@
 # http://postolenko.github.io/allbc_2/auth_email_2.html
 # http://postolenko.github.io/allbc_2/auth_tel.html
 # http://postolenko.github.io/allbc_2/auth_tel_2.html
+# http://postolenko.github.io/allbc_2/private_notifications.html
+# http://postolenko.github.io/allbc_2/my_objects_objects.html
+# http://postolenko.github.io/allbc_2/my_objects_added_objects.html
+# http://postolenko.github.io/allbc_2/my_objects_locations_selected_empty.html
+# http://postolenko.github.io/allbc_2/my_objects_offices_context_menu.html
+# http://postolenko.github.io/allbc_2/my_objects_offices_context_menu_2.html
+# http://postolenko.github.io/allbc_2/my_objects_offices_context_menu_3.html
+# http://postolenko.github.io/allbc_2/my_objects_offices_context_menu_4.html
