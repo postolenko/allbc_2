@@ -26,3 +26,10 @@
 # http://postolenko.github.io/allbc_2/my_objects_offices_context_menu_2.html
 # http://postolenko.github.io/allbc_2/my_objects_offices_context_menu_3.html
 # http://postolenko.github.io/allbc_2/my_objects_offices_context_menu_4.html
+# http://postolenko.github.io/allbc_2/payment_tarif.html
+# http://postolenko.github.io/allbc_2/payment_promotion.html
+# http://postolenko.github.io/allbc_2/payment_payment.html
+# http://postolenko.github.io/allbc_2/payment_succes.html
+# http://postolenko.github.io/allbc_2/payment_error.html
+# http://postolenko.github.io/allbc_2/messages_empty_chat.html
+# http://postolenko.github.io/allbc_2/messages_list.html

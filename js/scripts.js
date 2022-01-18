@@ -994,4 +994,17 @@ $(document).ready(function() {
     parent.remove();
   });
 
+  // -------------
+
+  $(".promotion_item").on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+    ch = $(this).find(".reg_checkbox_2 input");
+    if($(this).hasClass("active")) {
+      ch.prop("checked", true);
+    } else {
+      ch.prop("checked", false);
+    }
+  });
+
 });
