@@ -33,3 +33,4 @@
 # http://postolenko.github.io/allbc_2/payment_error.html
 # http://postolenko.github.io/allbc_2/messages_empty_chat.html
 # http://postolenko.github.io/allbc_2/messages_list.html
+# http://postolenko.github.io/allbc_2/chat_screen.html

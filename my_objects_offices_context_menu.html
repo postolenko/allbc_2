@@ -1074,14 +1074,16 @@
 		<div class="row">
 			<div class="account_templ">
 				<div class="left_col">
-					<ul class="sidebar_menu">
-						<li class="active"><span></span><a href="#">Мои обьекты</a></li>
-						<li><span></span><a href="#">Уведомления</a></li>
-						<li><span></span><a href="#">Сообщения</a></li>
-						<li><span></span><a href="#">Избранное</a></li>
-						<li><span></span><a href="#">Платежи и оплаты</a></li>
-						<li><span></span><a href="#">Личные данные</a></li>
-					</ul>
+					<div class="sidebar_menu_scroll">
+						<ul class="sidebar_menu">
+							<li class="active"><span></span><a href="#">Мои обьекты</a></li>
+							<li><span></span><a href="#">Уведомления</a></li>
+							<li><span></span><a href="#">Сообщения</a></li>
+							<li><span></span><a href="#">Избранное</a></li>
+							<li><span></span><a href="#">Платежи и оплаты</a></li>
+							<li><span></span><a href="#">Личные данные</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="right_col">
 					<div class="header_two_cols">
@@ -1090,7 +1092,7 @@
 								<h1>Мои обьекты</h1>
 							</div>
 						</div>
-						<div class="right_col">
+						<div class="right_col novisible_600">
 							<div class="right_align">
 								<div>
 									<div class="basket_box">
@@ -1114,16 +1116,42 @@
 						</div>
 					</div>
 
-					<div class="two_cols_3">
-						<div class="left_col">
-							<div class="tabs_links_wrapp">
-								<ul class="tabs_links">
-									<li><a href="#" class="active">Обьекты</a></li>
-									<li><a href="#">Офисы</a></li>
-								</ul>
+					<div class="visible_600">
+						<div class="resp_two_cols">
+							<div>
+								<a href="#" class="blue_pill blue_pill_3 light">Добавить обьект</a>
+							</div>
+							<div>
+								<div class="basket_box basket_box_2">
+									<div>
+										<a href="#" class="basket_pill">
+											<span class="count_goods">6</span>
+											<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3.83268 13.3334V3.33341H2.16602V1.66675H4.66602C4.88703 1.66675 5.09899 1.75455 5.25527 1.91083C5.41155 2.06711 5.49935 2.27907 5.49935 2.50008V12.5001H15.8643L17.531 5.83341H7.16602V4.16675H18.5993C18.726 4.16675 18.851 4.19563 18.9649 4.25119C19.0787 4.30676 19.1784 4.38754 19.2563 4.4874C19.3342 4.58727 19.3884 4.70358 19.4146 4.82751C19.4408 4.95143 19.4385 5.07971 19.4077 5.20258L17.3243 13.5359C17.2792 13.7161 17.1751 13.8761 17.0287 13.9904C16.8822 14.1047 16.7018 14.1667 16.516 14.1667H4.66602C4.445 14.1667 4.23304 14.079 4.07676 13.9227C3.92048 13.7664 3.83268 13.5544 3.83268 13.3334ZM5.49935 19.1667C5.05732 19.1667 4.6334 18.9912 4.32084 18.6786C4.00828 18.366 3.83268 17.9421 3.83268 17.5001C3.83268 17.0581 4.00828 16.6341 4.32084 16.3216C4.6334 16.009 5.05732 15.8334 5.49935 15.8334C5.94138 15.8334 6.3653 16.009 6.67786 16.3216C6.99042 16.6341 7.16602 17.0581 7.16602 17.5001C7.16602 17.9421 6.99042 18.366 6.67786 18.6786C6.3653 18.9912 5.94138 19.1667 5.49935 19.1667ZM15.4993 19.1667C15.0573 19.1667 14.6334 18.9912 14.3208 18.6786C14.0083 18.366 13.8327 17.9421 13.8327 17.5001C13.8327 17.0581 14.0083 16.6341 14.3208 16.3216C14.6334 16.009 15.0573 15.8334 15.4993 15.8334C15.9414 15.8334 16.3653 16.009 16.6779 16.3216C16.9904 16.6341 17.166 17.0581 17.166 17.5001C17.166 17.9421 16.9904 18.366 16.6779 18.6786C16.3653 18.9912 15.9414 19.1667 15.4993 19.1667Z" fill="#141F27"/>
+											</svg>
+										</a>
+									</div>
+									<div>
+										<p>Баланс:</p>
+										<p><span class="price">4 278</span> грн.</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="right_col">
+					</div>
+
+					<div class="two_cols_3">
+						<div class="left_col width_600">
+							<div class="tabs_scroll">
+								<div class="tabs_links_wrapp">
+									<ul class="tabs_links">
+										<li><a href="#" class="active">Обьекты</a></li>
+										<li><a href="#">Офисы</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="right_col novisible_600">
 							<div class="right_align">
 								<div>
 									<a href="#" class="blue_pill light">Добавить обьект</a>
@@ -1142,12 +1170,14 @@
 								</label>
 							</div>
 							<div>
-								<ul class="filter_tags">
-									<li><a href="#" class="filter_tag active">Активные</a></li>
-									<li><a href="#" class="filter_tag">На модерации</a></li>
-									<li><a href="#" class="filter_tag">Ожидают оплату</a></li>
-									<li><a href="#" class="filter_tag">Архив</a></li>
-								</ul>
+								<div class="filter_tags_wrapp">
+									<ul class="filter_tags">
+										<li><a href="#" class="filter_tag active">Активные</a></li>
+										<li><a href="#" class="filter_tag">На модерации</a></li>
+										<li><a href="#" class="filter_tag">Ожидают оплату</a></li>
+										<li><a href="#" class="filter_tag">Архив</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 

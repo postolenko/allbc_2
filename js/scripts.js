@@ -283,6 +283,39 @@ function getItemBgParams() {
   });
 }
 
+function getScrollbar() {
+  if($(".sidebar_menu_scroll").length > 0 ) {
+    if(bodyWidth <= 900) {
+      $(".sidebar_menu_scroll").mCustomScrollbar({
+        axis:"x"
+      });
+    } else {
+      $(".sidebar_menu_scroll").mCustomScrollbar('destroy');
+    }
+  }
+
+  if($(".tabs_scroll").length > 0) {
+    if(bodyWidth <= 900) {
+      $(".tabs_scroll").mCustomScrollbar({
+        axis:"x"
+      });
+    } else {
+      $(".tabs_scroll").mCustomScrollbar('destroy');
+    }
+  }
+
+  if($(".filter_tags_wrapp").length > 0) {
+    if(bodyWidth <= 900) {
+      $(".filter_tags_wrapp").mCustomScrollbar({
+        axis:"x"
+      });
+    } else {
+      $(".filter_tags_wrapp").mCustomScrollbar('destroy');
+    }
+  }
+
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -292,6 +325,7 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 $(window).on("load", function() {
   getBarsChart();
   getObjectCardsSlider();
+  getScrollbar();
   if($(".inner_scroll").length > 0) {
     $(".inner_scroll").mCustomScrollbar();
   }
@@ -320,9 +354,11 @@ $(window).resize(function() {
   getContactsPosition();
   getWrapperBottomPadding();
   getItemBgParams();
+  getScrollbar();
   if(bodyWidth >= 768 && $(".more_filter_popup").is(":visible") > 0) {
     $(".more_filter_popup .close_popup").trigger("click");
   }
+
 });
 
 $(document).scroll(function() {

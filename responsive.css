@@ -401,6 +401,14 @@
 
 	/*-- /Section 1 - Ofice Page --*/
 
+	/*-- My Objects Added Object --*/
+
+	.objects_thumbs .object_card {
+	    width: calc(50% - 20px);
+	}
+
+	/*-- /My Objects Added Object --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1420,6 +1428,145 @@
 
 	/*-- /Section 1 - Ofice Page --*/
 
+	/*-- Account Template --*/
+
+	.account_templ > .left_col {
+		width: 100%;
+		border: none;
+		background-color: transparent;
+	}
+
+	.account_templ > .right_col {
+		width: 100%;
+		padding: 0;
+	}
+
+	.account_templ > .left_col:before {
+		display: none;
+	}
+
+	.sidebar_menu_scroll {
+	    margin-top: 18px;
+	}
+
+	.sidebar_menu {
+		display: flex;
+		display: -webkit-flex;
+		padding: 0;
+	}
+
+	.sidebar_menu li span {
+	    display: none;
+	}
+
+	.sidebar_menu li a {
+		padding: 8px 15px 8px 15px;
+	}
+
+	.sidebar_menu li a:link,
+	.sidebar_menu li a:visited {
+	    color: #546E7A;
+	}
+
+	.sidebar_menu li a:hover,
+	.sidebar_menu li a:active,
+	.sidebar_menu li a.active,
+	.sidebar_menu li.active a {
+	    color: #141F27;
+	    background: linear-gradient(0deg, rgba(160, 205, 105, 0.1), rgba(160, 205, 105, 0.1));
+	    background: -webkit-linear-gradient(0deg, rgba(160, 205, 105, 0.1), rgba(160, 205, 105, 0.1));
+	}
+
+	.sidebar_menu li a:after {
+	    width: 100%;
+	    height: 2px;
+	    background: linear-gradient(0deg, #86C446 0%, #05ADE4 100%);
+	    background: -webkit-linear-gradient(0deg, #86C446 0%, #05ADE4 100%);
+		position: absolute;
+		top: auto;
+		bottom: 0;
+		right: 0;
+		border-radius: 6px 6px 2px 2px;
+		-webkit-border-radius: 6px 6px 2px 2px;
+	}
+
+	.sidebar_menu_scroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		background-color: #05ADE5 !important;
+	}
+
+	.sidebar_menu_scroll .mCSB_horizontal.mCSB_inside > .mCSB_container {
+	    margin-bottom: 13px;
+	}
+
+	.header_two_cols h1 {
+	    padding: 10px 0;
+	    font-size: 20px;
+	}
+
+	/*-- /Account Template --*/
+
+	/*-- My Objects --*/
+
+	.tabs_scroll .mCSB_horizontal.mCSB_inside > .mCSB_container {
+	    margin-bottom: 18px;
+	}
+
+	.tabs_links li a {
+	    padding: 7px 39px;
+	    font-size: 12px;
+	}
+
+	.tabs_scroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	    background-color: #05ADE5 
+	}
+
+	/*-- /My Objects --*/
+
+	/*-- My Objects Location Selected Empty --*/
+
+	.h1_wrapp_3 h1 {
+	    padding: 10px 0;
+	    font-size: 20px;
+	}
+
+	.info_center_box {
+	    margin: 98px auto;
+	}
+
+	/*-- /My Objects Location Selected Empty --*/
+
+	/*-- My Objects Offices Context Menu --*/
+
+	.filter_tags_wrapp .mCSB_horizontal.mCSB_inside > .mCSB_container {
+	    margin-bottom: 10px;
+	}
+
+	.filter_tags_wrapp .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	    background-color: #05ADE5 !important;
+	}
+
+	/*-- /My Objects Offices Context Menu --*/
+
+	/*-- Chat Screen --*/
+
+	.chat_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.chat_two_cols > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	    order: 2;
+	}
+
+	.chat_two_cols > .right_col {
+	    width: 100%;
+	    order: 1;
+	}
+
+	/*-- /Chat Screen --*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -2286,6 +2433,115 @@
 	    padding-bottom: 24px;
 	}
 
+	/*-- My Objects --*/
+
+	.popup_add_object {
+	    padding: 19px 18px 11px 18px;
+	}
+
+	.add_oblect_form .input_wrapp_4 {
+	    margin: 10px 0 0 0;
+	}
+
+	.popup_add_object .submit_wrapp {
+	    padding: 10px 0;
+	}
+
+	/*-- /My Objects --*/
+
+	/*-- My Objects Offices Context Menu --*/
+
+	.context_menu {
+		display: block;
+	}
+
+	.context_menu > div:nth-child(1) {
+	    width: 100%;
+	}
+
+	.context_menu > div:nth-child(2) {
+	    width: 100%;
+	}
+
+	/*-- /My Objects Offices Context Menu --*/
+
+	/*-- Payment Tarif --*/
+
+	.tarif_thumb {
+	    width: 100%;
+	    margin: 10px auto;
+	    max-width: 480px;
+	}
+
+	.tarif_thumb .orange_pill {
+		display: flex;
+		display: -webkit-flex;
+	    width: 100%;
+	    max-width: 360px;
+	    margin: 0 auto;
+	}
+
+	/*-- /Payment Tarif --*/
+
+	/*-- Payment Payment --*/
+
+	.payment_type_header p {
+	    font-size: 14px;
+	}
+
+	.payment_type_thumbs .payment_type_thumb {
+	    width: 100%;
+	    margin: 8px 0;
+	}
+
+	.payment_type_thumbs {
+		display: block;
+	    margin: 6px 0;
+	}
+
+	.payment_type_thumb .inner {
+	    min-height: 70px;
+	}
+
+	.payment_type_thumb h3 {
+    	padding: 3px 0 10px 3px;
+	    font-size: 14px;
+	}
+
+	.payment_type_thumb p {
+	    font-size: 12px;
+	}
+
+	/*-- /Payment Payment --*/
+
+	/*-- Messages Items List --*/
+
+	.message_item {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		position: relative;
+		padding: 7px 0 10px;
+	}
+
+	.message_item > div:nth-child(1) {
+	    width: calc(100% - 80px);
+	}
+
+	.message_item > div:nth-child(2) {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.message_item > div:nth-child(3) {
+	    width: 80px;
+	    padding: 5px 0 5px 5px;
+	    position: absolute;
+	    top: 14px;
+	    right: 0;
+	}
+
+	/*-- /Messages Items List --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -2501,6 +2757,47 @@
 
 	/*-- /Section 1 - Ofice Page --*/
 
+	/*-- Account Template --*/
+
+	.header_two_cols {
+	    padding: 7px 0 5px 0;
+	}
+
+	.header_two_cols > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.header_two_cols > .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	/*-- /Account Template --*/
+
+	/*-- Payment Tarif --*/
+
+	.tree_cols_2 {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	    padding: 5px 0;
+	}
+
+	.tree_cols_2 > .left_col {
+	    width: 100%;
+	}
+
+	.tree_cols_2 > .center_col {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.info_box_2 p {
+	    font-size: 14px;
+	}
+
+	/*-- /Payment Tarif --*/
+
 }
 
 @media only screen and (max-width: 660px) {
@@ -2533,6 +2830,19 @@
 
 	/*-- /Section 4 - Main Page --*/
 
+	/*-- My Objects Added Object --*/
+
+	.objects_thumbs {
+	    margin: 3px 0 0 0;
+	}
+
+	.objects_thumbs .object_card {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /My Objects Added Object --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -2556,6 +2866,10 @@
 
 	.h1_wrapp_inner h1 {
 	    font-size: 23px;
+	}
+
+	.width_600 {
+		width: 100% !important;
 	}
 
 	/*-- Header --*/
@@ -3073,6 +3387,256 @@
 
 	/*-- /Footer --*/
 
+	/*-- Account Template --*/
+
+	.notifications {
+		margin-top: -10px;
+	}
+
+	.notification {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		padding: 12px 20px 14px 30px;
+	}
+
+	.notification.new:before {
+	    top: 18px;
+	    left: 11px;
+	}
+
+	.notification > div:nth-child(1) {
+		display: flex;
+		display: -webkit-flex;
+		align-items: flex-end;
+		-webkit-align-items: flex-end;
+		margin: 0 -3px;
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.notification > div:nth-child(2) {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.notification > div:nth-child(1) p {
+		padding: 0 3px;
+	    line-height: 16px;
+	}
+
+	.notification .notification_dropdown {
+	    top: 9px;
+	    right: 13px;
+	}
+
+	.pagination_wrapp_2 {
+	    padding: 10px 0 30px 0;
+	}
+
+	/*-- /Account Template --*/
+
+	/*-- My Objects Added Object --*/
+
+	.resp_two_cols {
+		display: flex;
+		display: -webkit-flex;
+	}
+
+	.resp_two_cols > div:nth-child(1) {
+		width: 49%;
+	}
+
+	.resp_two_cols > div:nth-child(2) {
+		width: 51%;
+		text-align: right;
+	}
+
+	.basket_box_2 {
+		display: inline-flex;
+		display: -webkit-inline-flex;
+	}
+
+	.basket_box_2 > div:nth-child(1) {
+		width: 57px;
+	}
+
+	.basket_box_2 > div:nth-child(2) {
+		min-width: 120px;
+		text-align: right;
+	}
+
+	.basket_box_2 p {
+	    padding-top: 0;
+	}
+
+	.tabs_links_wrapp {
+		margin-top: 10px;
+	}
+
+	/*-- /My Objects Added Object --*/
+
+	/*-- My Objects Offices Context Menu --*/
+
+	.tags_sect {
+	    margin-top: 9px;
+	}
+
+	/*-- /My Objects Offices Context Menu --*/
+
+	/*-- Payment Promotion --*/
+
+	.promotion_item {
+		display: block;
+	}
+
+	.promotion_item > div:nth-child(1) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.promotion_item > div:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0 10px 35px;
+	    text-align: left;
+	}
+
+	/*-- /Payment Promotion --*/
+
+	/*-- Payment Payment --*/
+
+	.back_link_wrapp_3 {
+		padding: 8px 0 6px;
+	}
+
+	.payment_type_footer > div:nth-child(1) {
+	    width: 40%;
+	    padding: 9px 10px 9px 0;
+	}
+
+	.payment_type_footer > div:nth-child(2) {
+	    width: 60%;
+	    padding: 9px 0 10px 9px;
+	}
+
+	/*-- /Payment Payment --*/
+
+	/*-- Messages Items List --*/
+
+	.account_templ > .left_col.white_bg_resp {
+		background-color: #fff;
+		padding: 9px 15px 10px 15px;
+	    margin: 0 -15px;
+	    width: auto;
+	    min-width: 100%;
+	}
+
+	.h1_wrapp_3_2.white_bg_resp  {
+		background-color: #fff;
+	    padding: 9px 15px 10px 15px;
+	    margin: 0 -15px;
+	    border-bottom: 1px solid #ECECEC;
+	}
+
+	.messages_items {
+		margin-top: 0;
+		border-top: none;
+	}
+
+	/*-- /Messages Items List --*/
+
+	/*-- Chat Screen --*/
+
+	.back_link_wrapp_2.white_bg_resp {
+		background-color: #fff;
+		padding: 9px 15px 10px 15px;
+	    margin: 0 -15px;
+	    width: auto;
+	    min-width: 100%;
+	    border-bottom: 1px solid #ECECEC;
+	}
+
+	.chat_two_cols {
+	    border-top: none;
+	    padding-top: 0;
+	    padding-bottom: 20px;
+	}
+
+	.chat_header_wrapp.white_bg_resp {
+		background-color: #fff;
+		padding: 10px 15px;
+		margin: 0 -15px;
+	}
+
+	.person_info_wrapp.white_bg_resp {
+		background-color: #fff;
+		padding: 10px 15px;
+		margin: 0 -15px;
+	}
+
+	.person_info_box_2 .photo_box {
+		width: 60px;
+		height: 60px;
+	}
+
+	.person_info_box_2 .photo_box img {
+		max-width: 100%;
+		top: 0;
+		-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+	}
+
+	.person_info_thumb > div:nth-child(1) {
+	    width: 75px;
+	}
+
+	.person_info_thumb > div:nth-child(2) {
+	    width: calc(100% - 75px);
+	}
+
+	.grey_pills_wrapp_2 {
+	    margin-top: 3px;
+	}
+
+	.user_message {
+	    width: calc(100% - 30px);
+	}
+
+	.user_message_content {
+	    padding: 10px 38px 8px 15px;
+	}
+
+	.admin_message {
+		width: calc(100% - 75px);
+	}
+
+	.orange_pill.circle {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		-webkit-align-items: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		background-color: #FF5722;
+	}
+
+	.orange_pill.circle span {
+		width: 20px;
+		height: 20px;
+	}
+
+	.chat_message_area_footer .orange_pill.circle {
+		position: relative;
+		top: 2px;
+	}
+
+	.chat_message_textarea {
+	    height: 57px;
+	}
+
+	/*-- /Chat Screen --*/
+
 }
 
 @media only screen and (max-width: 510px) {
@@ -3519,6 +4083,76 @@
 	}
 
 	/*-- /Registration Form --*/
+
+	/*-- Payment Promotion --*/
+
+	.promotions_items {
+	    padding: 1px 0 25px 0;
+	}
+
+	.promotion_item {
+		padding: 11px 15px 11px 15px;
+	}
+
+	.promotion_item > div:nth-child(1) {
+	    padding: 5px 0;
+	}
+
+	.promotion_item > div:nth-child(2) {
+	    padding: 5px 0 5px 35px;
+	}
+
+	.promotion_item > div:nth-child(2) p {
+	    font-size: 14px;
+	}
+
+	.promotion__btn_right .orange_pill {
+		width: 100%;
+	}
+
+	/*-- /Payment Promotion --*/
+
+	/*-- Payment Payment --*/
+
+	.payment_type_header {
+		background-color: #FCFCFC;
+		padding: 7px 15px 7px 15px;
+	}
+
+	.payment_type_header > div:nth-child(1) {
+	    width: 100%;
+	    padding: 2px 0;
+	}
+
+	.payment_type_header > div:nth-child(2) {
+		display: none;
+	}
+
+	.payment_type_price {
+	    font-size: 14px;
+	}
+
+	.payment_type_footer > div:nth-child(1) {
+	    width: 80px;
+	}
+
+	.payment_type_footer > div:nth-child(2) {
+	    width: calc(100% - 80px);
+	}
+
+	.payment_type_footer .inline_3 > div {
+	    padding: 4px 3px;
+	}
+
+	/*-- /Payment Payment --*/
+
+	/*-- Succes Message --*/
+
+	.succes_message h3 {
+	    font-size: 24px;
+	}
+
+	/*-- /Succes Message --*/
 	
 }
 
@@ -3582,6 +4216,60 @@
 
 	/*-- /Section 3 - Object Page --*/
 
+	/*-- My Objects Added Object --*/
+
+	.basket_box_2 > div:nth-child(2) {
+	    min-width: 100px;
+	}
+
+	.basket_box p .price {
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+
+	/*-- /My Objects Added Object --*/
+
+	/*-- My Objects Offices Context Menu --*/
+
+	.filter_tags {
+	    flex-wrap: nowrap;
+	    -webkit-flex-wrap: nowrap;
+	}
+
+	.context_list li {
+		width: 100%;
+	    padding: 2px 0;
+	}
+
+	.context_list li a {
+	    align-items: center;
+	    -webkit-align-items: center;
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	}
+
+	/*-- /My Objects Offices Context Menu --*/
+
+}
+
+@media only screen and (max-width: 357px) {
+	/*-- Payment Payment --*/
+
+	.payment_type_footer {
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.payment_type_footer > div:nth-child(1) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.payment_type_footer > div:nth-child(2) {
+	    width: 100%;
+	    padding: 0;
+	}
+	/*-- /Payment Payment --*/
 }
 
 @media only screen and (max-width: 349px) {
