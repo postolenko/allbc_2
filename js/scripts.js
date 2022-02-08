@@ -316,6 +316,22 @@ function getScrollbar() {
 
 }
 
+// function filterFunction() {
+//   var input, filter, ul, li, a, i;
+//   input = document.getElementById("myInput");
+//   filter = input.value.toUpperCase();
+//   div = document.getElementById("myDropdown");
+//   a = div.getElementsByTagName("a");
+//   for (i = 0; i < a.length; i++) {
+//     txtValue = a[i].textContent || a[i].innerText;
+//     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//       a[i].style.display = "";
+//     } else {
+//       a[i].style.display = "none";
+//     }
+//   }
+// }
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -577,6 +593,7 @@ $(document).ready(function() {
     parent = $(this).closest(".checkout_dr");
     val = $(this).text();
     parent.find(".checkout_val p").text(val);
+    parent.find("input[type='hidden']").val(val);
     parent.removeClass("active");
   });
 
@@ -796,6 +813,9 @@ $(document).ready(function() {
     $("body").attr("style", "");
     $("[data-popup]").fadeOut(300);
     $(".popup_bg").fadeOut(300);
+    $(".drop_image_card").attr("id", "");
+    $("#objTitle").val("");
+    $("#objDescript").val("");
   });
   $(this).keydown(function(eventObject){
     if (eventObject.which == 27 && $("body").hasClass("fixed")) {
@@ -825,6 +845,9 @@ $(document).ready(function() {
           $("body").attr("style", "");    
           $(".popup_bg").fadeOut(300);
           $("[data-popup]").fadeOut(300);
+          $(".drop_image_card").attr("id", "");
+          $("#objTitle").val("");
+          $("#objDescript").val("");
       }
     }
   });
@@ -1043,4 +1066,292 @@ $(document).ready(function() {
     }
   });
 
+  // --------------
+  var fileInput = document.querySelector("#myfiles");
+  var pullfiles=function(){      
+      var files = fileInput.files;
+      var fl=files.length;
+      var i=0;
+      var dropArea = $("#dropArea");
+      var templ = "";
+      var file;
+      while ( i < fl) {
+          file = files[i];
+          fileUrl = URL.createObjectURL(file);
+          if(fileUrl) {
+          templ += '<div class="drop_image_card_wrapp">'+
+                        '<div class="drop_image_card">'+
+                          '<div class="img_box">'+
+                            '<img src="'+fileUrl+'" alt="" />'+
+                            '<div class="drop_image_card_mask">'+
+                              '<div class="drag_n_drop"></div>'+
+                              '<div class="controls_btns">'+
+                                '<div>'+
+                                  '<button type="button" class="control_btn rotate"></button>'+
+                                '</div>'+
+                                '<div>'+
+                                  '<button type="button" class="control_btn trash"></button>'+
+                                '</div>'+
+                              '</div>'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="drop_image_card_descript">'+
+                            '<button type="button" class="edit_btn" data-popup-link = "popup_edit_obj"></button>'+
+                            '<div class="drop_image_title">'+
+                              '<h3></h3>'+
+                            '</div>'+
+                            '<div class="drop_image_text">'+
+                              '<p></p>'+
+                            '</div>'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>';
+                    }
+          i++;
+      }
+      dropArea.prepend(templ);
+
+      new Sortable(document.getElementById('dropArea'), {
+          onEnd: function (evt) {
+            $("#dropArea .upl_btn").appendTo($("#dropArea"));
+          }
+      });
+
+  }
+
+
+  document.querySelector("#myfiles").onchange=pullfiles;
+
+  dropArea.addEventListener('dragover', (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'copy';
+  });
+
+  dropArea.addEventListener('drop', (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    var files = event.dataTransfer.files;
+      var fl=files.length;
+      var i=0;
+      var dropArea = $("#dropArea");
+      var templ = "";
+      var file;
+      while ( i < fl) {
+          file = files[i];
+          fileUrl = URL.createObjectURL(file);
+          if(fileUrl) {
+          templ += '<div class="drop_image_card_wrapp">'+
+                        '<div class="drop_image_card">'+
+                          '<div class="img_box">'+
+                            '<img src="'+fileUrl+'" alt="" />'+
+                            '<div class="drop_image_card_mask">'+
+                              '<div class="drag_n_drop"></div>'+
+                              '<div class="controls_btns">'+
+                                '<div>'+
+                                  '<button type="button" class="control_btn rotate"></button>'+
+                                '</div>'+
+                                '<div>'+
+                                  '<button type="button" class="control_btn trash"></button>'+
+                                '</div>'+
+                              '</div>'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="drop_image_card_descript">'+
+                            '<button type="button" class="edit_btn" data-popup-link = "popup_edit_obj"></button>'+
+                            '<div class="drop_image_title">'+
+                              '<h3></h3>'+
+                            '</div>'+
+                            '<div class="drop_image_text">'+
+                              '<p></p>'+
+                            '</div>'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>';
+                    }
+          i++;
+      }
+      dropArea.prepend(templ);
+      new Sortable(document.getElementById('dropArea'), {
+          onEnd: function (evt) {
+            $("#dropArea .upl_btn").appendTo($("#dropArea"));
+          }
+      });
+
+  });
+
+  $(".reset_drop_area").on("click", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".drop_area_wrapp");
+    parent.find(".drop_area > div").each(function() {
+      if(!$(this).hasClass("upl_btn")) {
+        $(this).remove();
+      }
+    });
+  });
+
+  $(document).on("click", ".add_contact", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".object_btn_wrapp");
+    $('<div class="object_input_wrapp"><input type="text" placeholder="" /></div>').insertBefore(parent);
+  });
+
+  // --------------
+  $(document).on("propertychange input",".search_input",function() {
+    var input, filter, ul, li, a, i;
+    id = $(this).attr("id");
+    input = document.getElementById(id);
+    filter = input.value.toUpperCase();
+    parent = $(this).closest(".search_dropdown_input");
+    div = parent.find(".dropdown_search");
+    a = div.find(".option");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  });
+
+  // --------------
+
+  $(".search_input").on('propertychange input', function (e) {
+    parent = $(this).closest(".search_dropdown_input");
+    parent.addClass("active");
+  });
+
+  $(".search_input").on('click', function (e) {
+    $(".search_dropdown_input").removeClass("active");
+    parent = $(this).closest(".search_dropdown_input");
+    parent.addClass("active");
+  });
+
+  $(this).keydown(function(eventObject){
+    if (eventObject.which == 27) {
+      $(".search_dropdown_input").removeClass("active");
+    }
+  });
+
+  $(document).mouseup(function(e) {
+    hide_element = $(".search_input");
+    if (!hide_element.is(e.target)
+        && hide_element.has(e.target).length === 0) {
+        $(".search_dropdown_input").removeClass("active");
+      }
+  });
+
+  // -------------
+
+  $(".dropdown_search .option").on("click", function(e) {
+    e.preventDefault();
+    val = $(this).attr("data-val");
+    parent = $(this).closest(".search_dropdown_input");
+    input = parent.find(".search_input");
+    input.val(val);
+  });
+
+  // -------------
+
+  $(".count_simbols_input input, textarea").on('propertychange input', function (e) {
+    parent = $(this).closest(".count_simbols_input");
+    maxlength = parseInt(parent.attr("data-max-simbols"));
+    valLength = $(this).val().length;
+    val = $(this).val();
+    parent.removeClass("error");
+    if(valLength > maxlength) {
+      val = val.substring(0, val.length - 1);
+      $(this).val(val);
+      parent.addClass("error");
+    }
+    if(valLength > maxlength) {
+      simbText = maxlength;
+    }
+     else {
+      simbText = valLength;
+    }
+    parent.find(".simb").text(simbText);
+  });
+
+  // -------------
+
+  $(document).on("click", "[data-popup-link = 'popup_edit_obj']", function() {
+    parent = $(this).closest(".drop_image_card");
+    imgSrc = parent.find("img").attr("src");
+    $("#edit_obj_img_src").attr("src", imgSrc);
+    parent.attr("id", "activePhotoObjCard");
+  });
+
+  $(document).on("click","#saveObjInfo", function(e) {
+    e.preventDefault();
+    objTitle = $("#objTitle").val();
+    objDescript = $("#objDescript").val();
+    parent = $(".drop_image_card[id = 'activePhotoObjCard']");
+    parent.find(".drop_image_title h3").text(objTitle);
+    parent.find(".drop_image_text p").text(objDescript);
+    popup = $(this).closest(".popup");
+    closeBtn = popup.find(".close_popup");
+    closeBtn.trigger("click");
+    $("#objTitle").val("");
+    $("#objDescript").val("");
+    parent.attr("id", "");
+  });
+
+  $(this).keydown(function(eventObject){
+    if (eventObject.which == 27) {
+      $(".drop_image_card").attr("id", "");
+      $("#objTitle").val("");
+      $("#objDescript").val("");
+    }
+  });
+
+  // -------------
+
 });
+
+//   document.addEventListener('DOMContentLoaded', (event) => {
+
+//   function handleDragStart(e) {
+//     this.style.opacity = '0.4';
+//   }
+
+//   function handleDragEnd(e) {
+//     this.style.opacity = '1';
+
+//     items.forEach(function (item) {
+//       item.classList.remove('over');
+//     });
+//   }
+
+//   function handleDragOver(e) {
+//     if (e.preventDefault) {
+//       e.preventDefault();
+//     }
+
+//     return false;
+//   }
+
+//   function handleDragEnter(e) {
+//     this.classList.add('over');
+//   }
+
+//   function handleDragLeave(e) {
+//     this.classList.remove('over');
+//   }
+
+//   function handleDrop(e) {
+//     e.stopPropagation(); // препятствует перенаправлению в браузере.
+//     return false;
+//   }
+
+//   let items = document.querySelectorAll('.drop_image_card_wrapp');
+//   items.forEach(function(item) {
+//     item.addEventListener('dragstart', handleDragStart);
+//     item.addEventListener('dragover', handleDragOver);
+//     item.addEventListener('dragenter', handleDragEnter);
+//     item.addEventListener('dragleave', handleDragLeave);
+//     item.addEventListener('dragend', handleDragEnd);
+//     item.addEventListener('drop', handleDrop);
+//   });
+// });

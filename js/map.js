@@ -259,11 +259,33 @@ function mapObject() {
     });
 }
 
+function mapAddObject() {
+    const image2 = "img/map_pin.svg";
+    const map3 = new google.maps.Map(document.getElementById("addObjMap"), {
+        center: {lat: 50.44889, lng: 30.494567},
+        scrollwheel: false,
+        scaleControl: false,
+        zoom: 16,
+        styles: styles
+    });
+    const marker3 = new google.maps.Marker({
+        map: map3,
+        draggable: false,
+        animation: google.maps.Animation.DROP,
+        position: {lat: 50.44889, lng: 30.494567},
+        icon: image2,
+        title: ''
+    });
+}
+
 window.addEventListener("load", function(){
     if($("#object_map").length > 0) {
         initMap();
     }
     if($("#locMap").length > 0) {
         mapObject();
-    }    
+    }
+    if($("#addObjMap").length > 0) {
+        mapAddObject();
+    }
 });
