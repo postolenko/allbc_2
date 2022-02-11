@@ -1095,7 +1095,7 @@
 						</a>
 					</div>
 					<div class="h1_wrapp_3">
-						<h1>Добавление обьекта</h1>
+						<h1>Добавление помещения</h1>
 					</div>
 					<div class="back_link_wrapp_resp visible_900">
 						<a href="#" class="back_link">
@@ -1123,40 +1123,76 @@
 											</div>
 										</div>
 									</div>
-									<div class="input_two_cols_2 dr_wrapp">
+									<div class="input_two_cols_2">
 										<div>
-											<h3>Тип:</h3>
+											<h3>Площадь: <span class="visible_480">м2</span></h3>
 										</div>
 										<div>
-											<div class="dropdown_box object_dr dr checkout_dr">
-												<div class="dropdown_title dr_title checkout_val">
-													<input type="hidden">
-													<p>Выберите</p>
+											<div class="inputs_inlines">
+												<div>
+													<div class="object_input_wrapp">
+														<input type="number" placeholder="Укажите площадь">
+													</div>
 												</div>
-												<div class="dropdown_content dr_content">
-													<div class="checkout_list">
-														<p>Опция 1</p>
-														<p>Опция 2</p>
-														<p>Опция 3</p>
+												<div class="novisible_480">
+													<p>м2</p>
+												</div>
+											</div>
+											<div class="obj_checkbox_wrapp">
+												<label class="reg_checkbox">
+													<input type="checkbox" name="registration">
+													<p>Диапозон площади</p>
+												</label>
+											</div>
+										</div>
+									</div>									
+									<div class="input_two_cols_2">
+										<div>
+											<h3>Максимальная посадка:</h3>
+										</div>
+										<div>
+											<div class="inputs_inlines">
+												<div>
+													<div class="object_input_wrapp">
+														<input type="number" placeholder="Кол-во чел">
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="input_two_cols_2 dr_wrapp">
+									<div class="input_two_cols_2">
 										<div>
-											<h3>Класс:</h3>
+											<h3>Состояние помещений:</h3>
 										</div>
 										<div>
-											<div class="dropdown_box object_dr dr checkout_dr">
-												<div class="dropdown_title dr_title checkout_val">
-													<p>Выберите</p>
-												</div>
-												<div class="dropdown_content dr_content">
-													<div class="checkout_list">
-														<p>Опция 1</p>
-														<p>Опция 2</p>
-														<p>Опция 3</p>
+											<div class="inputs_inlines">
+												<div>
+													<div class="dropdown_box object_dr dr">
+														<div class="dropdown_title dr_title">
+															<p>отделка после Арендатора</p>
+														</div>
+														<div class="dropdown_content dr_content">
+															<div class="dr_ch_wrapp">
+																<div>
+																	<label class="reg_checkbox">
+																		<input type="checkbox" name="registration">
+																		<p>Отличное</p>
+																	</label>
+																</div>
+																<div>
+																	<label class="reg_checkbox">
+																		<input type="checkbox" name="registration">
+																		<p>Хорошее</p>
+																	</label>
+																</div>
+																<div>
+																	<label class="reg_checkbox">
+																		<input type="checkbox" name="registration">
+																		<p>Убитое</p>
+																	</label>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -1167,7 +1203,7 @@
 											<h3>Описание помещения:</h3>
 										</div>
 										<div>
-											<div class="count_simbols_input" data-max-simbols = "3">
+											<div class="count_simbols_input" data-max-simbols="3">
 												<div class="editor_wrapp">
 													<div class="editor_header">
 														<div>
@@ -1191,21 +1227,21 @@
 																<div>
 																	<button type="button" class="simbol_btn active">
 																		<svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path fill-rule="evenodd" clip-rule="evenodd" d="M4.78603 3.88391C5.32326 3.51283 5.69987 2.9036 5.69987 2.33868C5.69987 1.08698 4.73064 0.123291 3.48449 0.123291H0.0229492V7.87714H3.92203C5.07956 7.87714 5.9768 6.9356 5.9768 5.77806C5.9768 4.93621 5.50049 4.21621 4.78603 3.88391ZM1.68449 1.50802H3.34602C3.80572 1.50802 4.17679 1.8791 4.17679 2.33879C4.17679 2.79848 3.80572 3.16956 3.34602 3.16956H1.68449V1.50802ZM1.68449 6.49242H3.62295C4.08264 6.49242 4.45372 6.12134 4.45372 5.66165C4.45372 5.20196 4.08264 4.83088 3.62295 4.83088H1.68449V6.49242Z" fill="#78909C"/>
+																			<path fill-rule="evenodd" clip-rule="evenodd" d="M4.78603 3.88391C5.32326 3.51283 5.69987 2.9036 5.69987 2.33868C5.69987 1.08698 4.73064 0.123291 3.48449 0.123291H0.0229492V7.87714H3.92203C5.07956 7.87714 5.9768 6.9356 5.9768 5.77806C5.9768 4.93621 5.50049 4.21621 4.78603 3.88391ZM1.68449 1.50802H3.34602C3.80572 1.50802 4.17679 1.8791 4.17679 2.33879C4.17679 2.79848 3.80572 3.16956 3.34602 3.16956H1.68449V1.50802ZM1.68449 6.49242H3.62295C4.08264 6.49242 4.45372 6.12134 4.45372 5.66165C4.45372 5.20196 4.08264 4.83088 3.62295 4.83088H1.68449V6.49242Z" fill="#78909C"></path>
 																		</svg>
 																	</button>
 																</div>
 																<div>
 																	<button type="button" class="simbol_btn">
 																		<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path d="M2.89214 0.123291V1.78483H4.11614L2.22199 6.2156H0.676758V7.87714H5.10753V6.2156H3.88353L5.77768 1.78483H7.32291V0.123291H2.89214Z" fill="#78909C"/>
+																			<path d="M2.89214 0.123291V1.78483H4.11614L2.22199 6.2156H0.676758V7.87714H5.10753V6.2156H3.88353L5.77768 1.78483H7.32291V0.123291H2.89214Z" fill="#78909C"></path>
 																		</svg>
 																	</button>
 																</div>
 																<div>
 																	<button type="button" class="simbol_btn">
 																		<svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path fill-rule="evenodd" clip-rule="evenodd" d="M7.32305 4.44615C7.32305 6.27938 5.8332 7.76923 3.99997 7.76923C2.16674 7.76923 0.676892 6.27938 0.676892 4.44615V0.0153809H2.06151V4.44615C2.06151 5.51507 2.93105 6.38461 3.99997 6.38461C5.06889 6.38461 5.93843 5.51507 5.93843 4.44615V0.0153809H7.32305V4.44615ZM0.123047 9.9846V8.87691H7.87689V9.9846H0.123047Z" fill="#78909C"/>
+																			<path fill-rule="evenodd" clip-rule="evenodd" d="M7.32305 4.44615C7.32305 6.27938 5.8332 7.76923 3.99997 7.76923C2.16674 7.76923 0.676892 6.27938 0.676892 4.44615V0.0153809H2.06151V4.44615C2.06151 5.51507 2.93105 6.38461 3.99997 6.38461C5.06889 6.38461 5.93843 5.51507 5.93843 4.44615V0.0153809H7.32305V4.44615ZM0.123047 9.9846V8.87691H7.87689V9.9846H0.123047Z" fill="#78909C"></path>
 																		</svg>
 																	</button>
 																</div>
@@ -1216,40 +1252,40 @@
 																<div>
 																	<button type="button" class="simbol_btn simbol_btn_2">
 																		<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"/>
-																			<path d="M1 4C0.447693 4 0 4.44771 0 5C0 5.55229 0.447693 6 1 6H9C9.55231 6 10 5.55229 10 5C10 4.44771 9.55231 4 9 4H1Z" fill="#5B6871"/>
-																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"/>
-																			<path d="M1 12C0.447693 12 0 12.4477 0 13C0 13.5523 0.447693 14 1 14H9C9.55231 14 10 13.5523 10 13C10 12.4477 9.55231 12 9 12H1Z" fill="#5B6871"/>
+																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"></path>
+																			<path d="M1 4C0.447693 4 0 4.44771 0 5C0 5.55229 0.447693 6 1 6H9C9.55231 6 10 5.55229 10 5C10 4.44771 9.55231 4 9 4H1Z" fill="#5B6871"></path>
+																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"></path>
+																			<path d="M1 12C0.447693 12 0 12.4477 0 13C0 13.5523 0.447693 14 1 14H9C9.55231 14 10 13.5523 10 13C10 12.4477 9.55231 12 9 12H1Z" fill="#5B6871"></path>
 																		</svg>
 																	</button>
 																</div>
 																<div>
 																	<button type="button" class="simbol_btn simbol_btn_2">
 																		<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"/>
-																			<path d="M4 4C3.44769 4 3 4.44771 3 5C3 5.55229 3.44769 6 4 6H12C12.5523 6 13 5.55229 13 5C13 4.44771 12.5523 4 12 4H4Z" fill="#5B6871"/>
-																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"/>
-																			<path d="M4 12C3.44769 12 3 12.4477 3 13C3 13.5523 3.44769 14 4 14H12C12.5523 14 13 13.5523 13 13C13 12.4477 12.5523 12 12 12H4Z" fill="#5B6871"/>
+																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"></path>
+																			<path d="M4 4C3.44769 4 3 4.44771 3 5C3 5.55229 3.44769 6 4 6H12C12.5523 6 13 5.55229 13 5C13 4.44771 12.5523 4 12 4H4Z" fill="#5B6871"></path>
+																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"></path>
+																			<path d="M4 12C3.44769 12 3 12.4477 3 13C3 13.5523 3.44769 14 4 14H12C12.5523 14 13 13.5523 13 13C13 12.4477 12.5523 12 12 12H4Z" fill="#5B6871"></path>
 																		</svg>
 																	</button>
 																</div>
 																<div>
 																	<button type="button" class="simbol_btn simbol_btn_2">
 																		<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"/>
-																			<path d="M7 4C6.44769 4 6 4.44771 6 5C6 5.55229 6.44769 6 7 6H15C15.5523 6 16 5.55229 16 5C16 4.44771 15.5523 4 15 4H7Z" fill="#5B6871"/>
-																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"/>
-																			<path d="M7 12C6.44769 12 6 12.4477 6 13C6 13.5523 6.44769 14 7 14H15C15.5523 14 16 13.5523 16 13C16 12.4477 15.5523 12 15 12H7Z" fill="#5B6871"/>
+																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"></path>
+																			<path d="M7 4C6.44769 4 6 4.44771 6 5C6 5.55229 6.44769 6 7 6H15C15.5523 6 16 5.55229 16 5C16 4.44771 15.5523 4 15 4H7Z" fill="#5B6871"></path>
+																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"></path>
+																			<path d="M7 12C6.44769 12 6 12.4477 6 13C6 13.5523 6.44769 14 7 14H15C15.5523 14 16 13.5523 16 13C16 12.4477 15.5523 12 15 12H7Z" fill="#5B6871"></path>
 																		</svg>
 																	</button>
 																</div>
 																<div>
 																	<button type="button" class="simbol_btn simbol_btn_2">
 																		<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"/>
-																			<path d="M1 4C0.447693 4 0 4.44771 0 5C0 5.55229 0.447693 6 1 6H15C15.5523 6 16 5.55229 16 5C16 4.44771 15.5523 4 15 4H1Z" fill="#5B6871"/>
-																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"/>
-																			<path d="M1 12C0.447693 12 0 12.4477 0 13C0 13.5523 0.447693 14 1 14H15C15.5523 14 16 13.5523 16 13C16 12.4477 15.5523 12 15 12H1Z" fill="#5B6871"/>
+																			<path d="M1 0C0.447693 0 0 0.447708 0 1C0 1.55229 0.447693 2 1 2H15C15.5523 2 16 1.55229 16 1C16 0.447708 15.5523 0 15 0H1Z" fill="#5B6871"></path>
+																			<path d="M1 4C0.447693 4 0 4.44771 0 5C0 5.55229 0.447693 6 1 6H15C15.5523 6 16 5.55229 16 5C16 4.44771 15.5523 4 15 4H1Z" fill="#5B6871"></path>
+																			<path d="M0 9C0 8.44771 0.447693 8 1 8H15C15.5523 8 16 8.44771 16 9C16 9.55229 15.5523 10 15 10H1C0.447693 10 0 9.55229 0 9Z" fill="#5B6871"></path>
+																			<path d="M1 12C0.447693 12 0 12.4477 0 13C0 13.5523 0.447693 14 1 14H15C15.5523 14 16 13.5523 16 13C16 12.4477 15.5523 12 15 12H1Z" fill="#5B6871"></path>
 																		</svg>
 																	</button>
 																</div>
@@ -1260,24 +1296,24 @@
 																<div>
 																	<button type="button" class="simbol_btn simbol_btn_2">
 																		<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path d="M1 1C1 0.447715 1.44772 0 2 0C2.55228 0 3 0.447715 3 1V4C3 4.55228 2.55228 5 2 5C1.44772 5 1 4.55228 1 4V1Z" fill="#5B6871"/>
-																			<path d="M3.35689 9.06557C3.23644 9.01945 3.11032 8.99805 2.98538 9H1C0.447715 9 6.55991e-08 9.44771 6.55991e-08 10C6.55991e-08 10.5523 0.447715 11 1 11H1.13158L0.178215 12.43C0.0920468 12.5541 0.0332271 12.6985 0.0104887 12.8546C0.00345247 12.9028 -1.73994e-05 12.9512 6.55991e-08 12.9994C6.55991e-08 13.1906 0.0536686 13.3699 0.146764 13.5218C0.200414 13.6097 0.268324 13.6902 0.349744 13.7597C0.46697 13.8602 0.60771 13.9339 0.762568 13.9716C0.845082 13.9918 0.929133 14.0011 1.01267 14H3C3.55228 14 4 13.5523 4 13C4 12.4477 3.55228 12 3 12H2.86861L3.82858 10.56C3.8603 10.5132 3.88814 10.4636 3.91166 10.4115L3.91706 10.3994C3.99204 10.2278 4.0153 10.0427 3.99092 9.8647C3.9776 9.76617 3.94992 9.6722 3.91007 9.58496C3.83903 9.42881 3.72699 9.28911 3.5775 9.18351C3.50972 9.13548 3.4357 9.09568 3.35689 9.06557Z" fill="#5B6871"/>
-																			<path d="M6 1C6 0.447715 6.44772 0 7 0H15C15.5523 0 16 0.447715 16 1C16 1.55228 15.5523 2 15 2H7C6.44772 2 6 1.55228 6 1Z" fill="#5B6871"/>
-																			<path d="M6 10C6 9.44771 6.44772 9 7 9H15C15.5523 9 16 9.44771 16 10C16 10.5523 15.5523 11 15 11H7C6.44772 11 6 10.5523 6 10Z" fill="#5B6871"/>
-																			<path d="M7 3C6.44772 3 6 3.44772 6 4C6 4.55228 6.44772 5 7 5H13C13.5523 5 14 4.55228 14 4C14 3.44772 13.5523 3 13 3H7Z" fill="#5B6871"/>
-																			<path d="M6 13C6 12.4477 6.44772 12 7 12H13C13.5523 12 14 12.4477 14 13C14 13.5523 13.5523 14 13 14H7C6.44772 14 6 13.5523 6 13Z" fill="#5B6871"/>
+																			<path d="M1 1C1 0.447715 1.44772 0 2 0C2.55228 0 3 0.447715 3 1V4C3 4.55228 2.55228 5 2 5C1.44772 5 1 4.55228 1 4V1Z" fill="#5B6871"></path>
+																			<path d="M3.35689 9.06557C3.23644 9.01945 3.11032 8.99805 2.98538 9H1C0.447715 9 6.55991e-08 9.44771 6.55991e-08 10C6.55991e-08 10.5523 0.447715 11 1 11H1.13158L0.178215 12.43C0.0920468 12.5541 0.0332271 12.6985 0.0104887 12.8546C0.00345247 12.9028 -1.73994e-05 12.9512 6.55991e-08 12.9994C6.55991e-08 13.1906 0.0536686 13.3699 0.146764 13.5218C0.200414 13.6097 0.268324 13.6902 0.349744 13.7597C0.46697 13.8602 0.60771 13.9339 0.762568 13.9716C0.845082 13.9918 0.929133 14.0011 1.01267 14H3C3.55228 14 4 13.5523 4 13C4 12.4477 3.55228 12 3 12H2.86861L3.82858 10.56C3.8603 10.5132 3.88814 10.4636 3.91166 10.4115L3.91706 10.3994C3.99204 10.2278 4.0153 10.0427 3.99092 9.8647C3.9776 9.76617 3.94992 9.6722 3.91007 9.58496C3.83903 9.42881 3.72699 9.28911 3.5775 9.18351C3.50972 9.13548 3.4357 9.09568 3.35689 9.06557Z" fill="#5B6871"></path>
+																			<path d="M6 1C6 0.447715 6.44772 0 7 0H15C15.5523 0 16 0.447715 16 1C16 1.55228 15.5523 2 15 2H7C6.44772 2 6 1.55228 6 1Z" fill="#5B6871"></path>
+																			<path d="M6 10C6 9.44771 6.44772 9 7 9H15C15.5523 9 16 9.44771 16 10C16 10.5523 15.5523 11 15 11H7C6.44772 11 6 10.5523 6 10Z" fill="#5B6871"></path>
+																			<path d="M7 3C6.44772 3 6 3.44772 6 4C6 4.55228 6.44772 5 7 5H13C13.5523 5 14 4.55228 14 4C14 3.44772 13.5523 3 13 3H7Z" fill="#5B6871"></path>
+																			<path d="M6 13C6 12.4477 6.44772 12 7 12H13C13.5523 12 14 12.4477 14 13C14 13.5523 13.5523 14 13 14H7C6.44772 14 6 13.5523 6 13Z" fill="#5B6871"></path>
 																		</svg>
 																	</button>
 																</div>
 																<div>
 																	<button type="button" class="simbol_btn simbol_btn_2">
 																		<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-																			<path d="M2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1Z" fill="#5B6871"/>
-																			<path d="M4 1C4 0.447715 4.44772 0 5 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H5C4.44772 2 4 1.55228 4 1Z" fill="#5B6871"/>
-																			<path d="M4 10C4 9.44771 4.44772 9 5 9H13C13.5523 9 14 9.44771 14 10C14 10.5523 13.5523 11 13 11H5C4.44772 11 4 10.5523 4 10Z" fill="#5B6871"/>
-																			<path d="M4 4C4 3.44772 4.44772 3 5 3H11C11.5523 3 12 3.44772 12 4C12 4.55228 11.5523 5 11 5H5C4.44772 5 4 4.55228 4 4Z" fill="#5B6871"/>
-																			<path d="M4 13C4 12.4477 4.44772 12 5 12H11C11.5523 12 12 12.4477 12 13C12 13.5523 11.5523 14 11 14H5C4.44772 14 4 13.5523 4 13Z" fill="#5B6871"/>
-																			<path d="M1 11C1.55228 11 2 10.5523 2 10C2 9.44771 1.55228 9 1 9C0.447715 9 0 9.44771 0 10C0 10.5523 0.447715 11 1 11Z" fill="#5B6871"/>
+																			<path d="M2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1Z" fill="#5B6871"></path>
+																			<path d="M4 1C4 0.447715 4.44772 0 5 0H13C13.5523 0 14 0.447715 14 1C14 1.55228 13.5523 2 13 2H5C4.44772 2 4 1.55228 4 1Z" fill="#5B6871"></path>
+																			<path d="M4 10C4 9.44771 4.44772 9 5 9H13C13.5523 9 14 9.44771 14 10C14 10.5523 13.5523 11 13 11H5C4.44772 11 4 10.5523 4 10Z" fill="#5B6871"></path>
+																			<path d="M4 4C4 3.44772 4.44772 3 5 3H11C11.5523 3 12 3.44772 12 4C12 4.55228 11.5523 5 11 5H5C4.44772 5 4 4.55228 4 4Z" fill="#5B6871"></path>
+																			<path d="M4 13C4 12.4477 4.44772 12 5 12H11C11.5523 12 12 12.4477 12 13C12 13.5523 11.5523 14 11 14H5C4.44772 14 4 13.5523 4 13Z" fill="#5B6871"></path>
+																			<path d="M1 11C1.55228 11 2 10.5523 2 10C2 9.44771 1.55228 9 1 9C0.447715 9 0 9.44771 0 10C0 10.5523 0.447715 11 1 11Z" fill="#5B6871"></path>
 																		</svg>
 																	</button>
 																</div>
@@ -1293,42 +1329,9 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="add_object_white_box">
 									<div class="h3_wrapp_2">
 										<h3>Адрес</h3>
-									</div>
-									<div class="input_two_cols_2 w_2">
-										<div>
-											<h3>Поиск адреса</h3>
-										</div>
-										<div>
-											<div class="inputs_inlines">
-												<div>
-													<div class="search_dropdown_input" >
-														<div class="object_input_wrapp">
-															<input class="search_input" type="text" id="myAdress" placeholder="Поиск адреса">
-														</div>
-														<div class="dropdown_search">
-															<div class="options_adreses_wrapp">
-																<div class="option" data-val = "Киев, просп. Победы 176">
-																	<p class="option_adres">Киев, <span>просп. Победы 176</span></p>
-																</div>
-																<div class="option" data-val = "Днепр, просп. Победы 176">
-																	<p class="option_adres">Днепр, <span>просп. Победы 176</span></p>
-																</div>
-																<div class="option" data-val = "Харьков, просп. Победы 176">
-																	<p class="option_adres">Харьков, <span>просп. Победы 176</span></p>
-																</div>
-																<div class="option" data-val = "Херсон, просп. Победы 176">
-																	<p class="option_adres">Херсон, <span>просп. Победы 176</span></p>
-																</div>
-															</div>
-														 </div>
-													</div>
-												</div>
-											</div>
-										</div>
 									</div>
 									<div class="input_two_cols_2 w_2">
 										<div>
@@ -1339,7 +1342,7 @@
 												<div>
 													<div class="search_dropdown_input" >
 														<div class="object_input_wrapp">
-															<input class="search_input" type="text" id="Countri" placeholder="Укажите страну">
+															<input class="search_input" value="Украина" readonly type="text" id="Countri" placeholder="Украина">
 														</div>
 														<div class="dropdown_search">
 															<div class="options_adreses_wrapp">
@@ -1371,7 +1374,7 @@
 												<div>
 													<div class="search_dropdown_input" >
 														<div class="object_input_wrapp">
-															<input class="search_input" type="text" id="Countri" placeholder="Укажите город">
+															<input class="search_input" value="Киев" readonly type="text" id="Countri" placeholder="Укажите город">
 														</div>
 														<div class="dropdown_search">
 															<div class="options_adreses_wrapp">
@@ -1403,7 +1406,7 @@
 												<div>
 													<div class="search_dropdown_input" >
 														<div class="object_input_wrapp">
-															<input class="search_input" type="text" id="Countri" placeholder="Укажите район">
+															<input class="search_input" readonly value="Святошинский" type="text" id="Countri" placeholder="Укажите район">
 														</div>
 														<div class="dropdown_search">
 															<div class="options_adreses_wrapp">
@@ -1435,7 +1438,7 @@
 												<div>
 													<div class="search_dropdown_input" >
 														<div class="object_input_wrapp">
-															<input class="search_input" type="text" id="Countri" placeholder="Укажите улицу">
+															<input class="search_input" readonly value="просп. Победы" type="text" id="Countri" placeholder="Укажите улицу">
 														</div>
 														<div class="dropdown_search">
 															<div class="options_adreses_wrapp">
@@ -1467,7 +1470,7 @@
 												<div>
 													<div class="search_dropdown_input" >
 														<div class="object_input_wrapp">
-															<input class="search_input" type="text" id="Countri" placeholder="Укажите номер дома">
+															<input class="search_input" readonly value="176" type="text" id="Countri" placeholder="Укажите номер дома">
 														</div>
 														<div class="dropdown_search">
 															<div class="options_adreses_wrapp">
@@ -1498,7 +1501,7 @@
 											<div class="input_tree_cols">
 												<div>
 													<div class="object_input_wrapp">
-														<input type="text" placeholder="Укажите станцию метро" />
+														<input type="text" readonly value="Житомирский" placeholder="Укажите станцию метро" />
 													</div>
 												</div>
 												<div>
@@ -1507,7 +1510,7 @@
 															<i class="walker"></i>
 														</div>
 														<div>
-															<input type="text" placeholder="Кол-во" />
+															<input type="text" readonly value="7-10" placeholder="Кол-во" />
 														</div>
 														<div>
 															<p>мин</p>
@@ -1520,7 +1523,7 @@
 															<i class="steps"></i>
 														</div>
 														<div>
-															<input type="text" placeholder="Кол-во" />
+															<input type="text" readonly value="650" placeholder="Кол-во" />
 														</div>
 														<div>
 															<p>м</p>
@@ -1531,7 +1534,7 @@
 											<div class="input_tree_cols">
 												<div>
 													<div class="object_input_wrapp">
-														<input type="text" placeholder="Укажите станцию метро" />
+														<input type="text" readonly value="Святошино" placeholder="Укажите станцию метро" />
 													</div>
 												</div>
 												<div>
@@ -1540,7 +1543,7 @@
 															<i class="walker"></i>
 														</div>
 														<div>
-															<input type="text" placeholder="Кол-во" />
+															<input type="text" readonly value="10-15" placeholder="Кол-во" />
 														</div>
 														<div>
 															<p>мин</p>
@@ -1553,40 +1556,7 @@
 															<i class="steps"></i>
 														</div>
 														<div>
-															<input type="text" placeholder="Кол-во" />
-														</div>
-														<div>
-															<p>м</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="input_tree_cols">
-												<div>
-													<div class="object_input_wrapp">
-														<input type="text" placeholder="Укажите станцию метро" />
-													</div>
-												</div>
-												<div>
-													<div class="object_input_wrapp tree_cols_3">
-														<div>
-															<i class="walker"></i>
-														</div>
-														<div>
-															<input type="text" placeholder="Кол-во" />
-														</div>
-														<div>
-															<p>мин</p>
-														</div>
-													</div>
-												</div>
-												<div>
-													<div class="object_input_wrapp tree_cols_3">
-														<div>
-															<i class="steps"></i>
-														</div>
-														<div>
-															<input type="text" placeholder="Кол-во" />
+															<input type="text" readonly value="1200" placeholder="Кол-во" />
 														</div>
 														<div>
 															<p>м</p>
@@ -1602,7 +1572,7 @@
 										</div>
 										<div>
 											<div class="object_input_wrapp">
-												<input type="text" placeholder="Координаты" />
+												<input type="text" readonly value="50.437397579983866, 30.52747952733927" placeholder="Координаты" />
 											</div>
 										</div>
 									</div>
@@ -1622,107 +1592,6 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="add_object_white_box">
-									<div class="h3_wrapp_2">
-										<h3>Характеристики</h3>
-									</div>
-									<div class="input_two_cols_2">
-										<div>
-											<h3>*Статус строительства: <span class="tooltip"><span class="tooltip_box">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a</span></span></h3>
-										</div>
-										<div>
-											<div class="object_input_wrapp error">
-												<input class="error" type="text" placeholder="Описание статуса строительства" />
-												<p class="error_text">Это поле обязательно к заполнению</p>
-											</div>
-										</div>
-									</div>
-									<div class="input_two_cols_2">
-										<div>
-											<h3>Кол-во лифтов: <span class="tooltip"><span class="tooltip_box">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a</span></span></h3>
-										</div>
-										<div>
-											<div class="object_input_wrapp">
-												<input type="text" placeholder="Описание кол-ва лифтов" />
-											</div>
-										</div>
-									</div>
-									<div class="input_two_cols_2">
-										<div>
-											<h3>Кол-во корпусов этажностью: <span class="tooltip"><span class="tooltip_box">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a</span></span></h3>
-										</div>
-										<div>
-											<div class="two_inputs">
-												<div>
-													<div class="object_input_wrapp">
-														<input type="text" placeholder="Описание кол-ва корпусов" />
-													</div>
-												</div>
-												<div>
-													<div class="object_input_wrapp">
-														<input type="text" placeholder="Описание кол-во этажей" />
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="input_two_cols_2">
-										<div>
-											<h3>Площадь комплекса: <span class="tooltip"><span class="tooltip_box">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a</span></span></h3>
-										</div>
-										<div>
-											<div class="object_input_wrapp">
-												<input type="text" placeholder="Описание общей площади комплекса" />
-											</div>
-										</div>
-									</div>
-									<div class="input_two_cols_2">
-										<div>
-											<h3>Площадь этажа: <span class="tooltip"><span class="tooltip_box">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a</span></span></h3>
-										</div>
-										<div>
-											<div class="object_input_wrapp">
-												<input type="text" placeholder="Описание общей площади этажа" />
-											</div>
-										</div>
-									</div>
-									<div class="input_two_cols_2">
-										<div>
-											<h3>Состояние помещений: <span class="tooltip"><span class="tooltip_box">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a</span></span></h3>
-										</div>
-										<div>
-											<div class="dropdown_box object_dr dr">
-												<div class="dropdown_title dr_title">
-													<p>отделка после Арендатора</p>
-												</div>
-												<div class="dropdown_content dr_content">
-													<div class="dr_ch_wrapp">
-														<div>
-															<label class="reg_checkbox">
-																<input type="checkbox" name="registration">
-																<p>Отличное</p>
-															</label>
-														</div>
-														<div>
-															<label class="reg_checkbox">
-																<input type="checkbox" name="registration">
-																<p>Хорошее</p>
-															</label>
-														</div>
-														<div>
-															<label class="reg_checkbox">
-																<input type="checkbox" name="registration">
-																<p>Убитое</p>
-															</label>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
 								<div class="add_object_white_box">
 									<div class="h3_wrapp_2">
 										<h3>Коммерческие условия</h3>
@@ -2061,7 +1930,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="add_object_white_box">
 									<div class="h3_wrapp_2">
 										<h3>Фото</h3>
@@ -2108,7 +1976,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="add_object_white_box">
 									<div class="h3_wrapp_2">
 										<h3>Контакты</h3>
@@ -2201,7 +2068,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="btns_inline">
 									<div>
 										<button type="submit" class="white_pill_4_2 add_obj_pill">Добавить в корзину</button>

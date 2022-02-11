@@ -409,6 +409,23 @@
 
 	/*-- /My Objects Added Object --*/
 
+	/*-- Add Object --*/
+
+	.input_two_cols_2 {
+	    padding: 11px 0;
+	}
+
+	.input_two_cols_2 > div:nth-child(1) {
+	    width: 100%;
+	    padding: 0 0 9px 0;
+	}
+
+	.input_two_cols_2 > div:nth-child(2) {
+	    width: 100%;
+	}
+
+	/*-- .Add Object --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -729,6 +746,36 @@
 	}
 
 	/*-- /Section 1 - Object Page --*/
+
+	/*-- Add Object --*/
+
+	.input_tree_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.input_tree_cols > div {
+	    padding: 4px 7px;
+	}
+
+	.input_tree_cols > div:nth-child(1) {
+	    width: 100%;
+	    padding-bottom: 18px;
+	}
+
+	.input_tree_cols > div:nth-child(2) {
+	    width: 50%;
+	}
+
+	.input_tree_cols > div:nth-child(3) {
+	    width: 50%;
+	}
+
+	.add_obj_pill {
+	    min-width: 130px;
+	}
+
+	/*-- /Add Object --*/
 
 }
 
@@ -1566,6 +1613,57 @@
 	}
 
 	/*-- /Chat Screen --*/
+
+	/*-- Add Object --*/
+
+	.back_link_wrapp_resp {
+    	padding: 22px 0 5px 0;
+	}
+
+	.add_object_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.add_object_two_cols .left_col {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.add_object_two_cols .right_col {
+		min-width: calc(100% + 30px);
+		margin-left: -15px;
+		padding-left: 0;
+	}
+
+	.steps_box {
+		width: 100%;
+		padding: 1px 15px 10px 15px;
+		border-radius: 6px 6px 0 0;
+		-webkit-border-radius: 6px 6px 0 0;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	.steps_box.relative {
+		position: relative;
+	}
+
+	.steps_box_title {
+	    padding: 8px 0;
+	}
+
+	.steps_list {
+		display: none;
+	}
+
+	.add_object_two_cols .contacts_scroll_height {
+		height: 65px !important;
+	}
+
+	/*-- /Add Object --*/
 
 }
 
@@ -2541,6 +2639,58 @@
 	}
 
 	/*-- /Messages Items List --*/
+
+	/*-- Add Object --*/
+
+	.add_object_white_box {
+	    padding: 14px 13px;
+	}
+
+	.input_tree_cols + .input_tree_cols {
+	    margin-top: 14px;
+	}
+
+	.drop_area {
+	    min-height: 107px;
+	    padding: 7px;
+	}
+
+	.drop_area > div {
+	    width: 96px;
+	    height: 96px;
+	    padding: 4px;
+	}
+
+	.drop_image_card {
+	    width: 88px;
+	    height: 88px;
+	}
+
+	.drop_plus_btn {
+	    width: 88px;
+	    height: 88px;
+	 	top: 0;
+	 	left: 0;
+	 	transform: none;
+	}
+
+	.drop_image_card .img_box {
+	    width: 88px;
+	    height: 88px;
+	    border-radius: 6px;
+	    -webkit-border-radius: 6px;
+	}
+
+	.drop_image_card_mask {
+		opacity: 0 !important;
+		z-index: -1;
+	}
+
+	.drop_image_card_descript {
+		display: none;
+	}
+
+	/*-- /Add Object --*/
 
 }
 
@@ -4153,6 +4303,31 @@
 	}
 
 	/*-- /Succes Message --*/
+
+	/*-- Add Object --*/
+
+	.visible_480 {
+		display: inline;
+	}
+
+	.novisible_480 {
+		display: none;
+	}
+
+	.input_tree_cols_2 > div:nth-child(2) {
+	    width: 100%;
+	    padding-bottom: 18px;
+	}
+
+	.input_tree_cols_2 > div:nth-child(3) {
+	    width: 100%;
+	}
+
+	.inputs_inlines > div:nth-child(1) {
+	    min-width: 100%;
+	}
+
+	/*-- /Add Object --*/
 	
 }
 
@@ -4249,6 +4424,27 @@
 	}
 
 	/*-- /My Objects Offices Context Menu --*/
+
+	/*-- Add Object --*/
+
+	.filter_tags_3 {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.btns_inline {
+		padding-bottom: 20px;
+	}
+
+	.btns_inline > div {
+		width: 50%;
+	}
+
+	.add_obj_pill {
+		width: 100%;
+	}
+
+	/*-- /Add Object --*/
 
 }
 
@@ -4437,6 +4633,21 @@
 	}
 
 	/*-- /More Filter Popup --*/
+
+	/*-- Add Object --*/
+
+	.btns_inline {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		margin: 8px 0;
+	}
+
+	.btns_inline > div {
+		width: 100%;
+	    padding: 4px 0;
+	}
+
+	/*-- /Add Object --*/
 
 }
 

@@ -35,3 +35,4 @@
 # http://postolenko.github.io/allbc_2/messages_list.html
 # http://postolenko.github.io/allbc_2/chat_screen.html
 # http://postolenko.github.io/allbc_2/add_object.html
+# http://postolenko.github.io/allbc_2/add_room.html
