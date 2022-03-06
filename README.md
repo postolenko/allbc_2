@@ -36,3 +36,5 @@
 # http://postolenko.github.io/allbc_2/chat_screen.html
 # http://postolenko.github.io/allbc_2/add_object.html
 # http://postolenko.github.io/allbc_2/add_room.html
+# http://postolenko.github.io/allbc_2/landing/index.html
+# http://postolenko.github.io/allbc_2/landing/index_2.html
