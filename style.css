@@ -10350,6 +10350,10 @@ a.tel_link_4:hover {
     border-radius: 6px;
     -webkit-border-radius: 6px;
     left: auto;
+    right: 200vw;
+}
+
+.notification_dropdown.active .notification_content {
     right: 0;
 }
 
@@ -12780,6 +12784,1214 @@ h3 .tooltip {
 }
 
 /*-- /Add Object --*/
+
+/*-- All Brokers --*/
+
+.my_brokers_table {
+    margin: 16px 0;
+}
+
+.my_brokers_table .table_row {
+    display: flex;
+    display: -webkit-flex;
+    margin: 12px 0;
+    padding: 5px 14px 5px 14px;
+    position: relative;
+    background: #FFF;
+    min-height: 73px;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.my_brokers_table .table_row .cell {
+    padding: 5px 10px;
+}
+
+.my_brokers_table .table_header {
+    min-height: 49px;
+    align-items: center;
+    -webkit-align-items: center;
+    background-color: #F1F5F8;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.my_brokers_table .table_row .cell:nth-child(1) {
+    width: 65px;
+}
+
+.my_brokers_table .table_row .cell:nth-child(2) {
+    width: calc(26% - 65px);
+}
+
+.my_brokers_table .table_row .cell:nth-child(3) {
+    width: 21%;
+}
+
+.my_brokers_table .table_row .cell:nth-child(4) {
+    width: 16%;
+}
+
+.my_brokers_table .table_row .cell:nth-child(5) {
+    width: 21%;
+}
+
+.my_brokers_table .table_row .cell:nth-child(6) {
+    width: 16%;
+    text-align: center;
+}
+
+.broker_photo {
+    width: 49px;
+    height: 49px;
+    position: relative;
+    overflow: hidden;
+}
+
+.my_brokers_table .broker_photo {
+    margin-top: 2px;
+}
+
+.broker_photo img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.my_brokers_table h3 {
+    padding: 3px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.my_brokers_table h3 + h3 {
+    padding-top: 0;
+}
+
+.my_brokers_table p {
+    padding: 3px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.my_brokers_table .table_row .notification_dropdown {
+    position: absolute;
+    top: 19px;
+    right: 72px;
+}
+
+.my_brokers_table .table_row:nth-child(1) h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.btns_list {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin: 0 -4.5px;
+}
+
+.btns_list > li {
+    padding: 4.5px;
+}
+
+.white_icon_pill {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 9px 12px;
+    min-width: 57px;
+    min-height: 38px;
+    background: #FFF;
+    border: 1px solid #E9EEF1;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-transition-property: border, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border, background;
+    transition-duration: .3s;
+    transition-timing-function: ease; 
+}
+
+.white_icon_pill:hover {
+    border-bottom: 1px solid #000;
+    background: #000;
+}
+
+.white_icon_pill svg path {
+    -webkit-transition-property: fill;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: fill;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: fill;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: fill;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: fill;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.white_icon_pill:hover svg path {
+    fill: #fff;
+}
+
+/*-- /All Brokers --*/
+
+/*-- User Data --*/
+
+.tabs_links_wrapp_2 {
+    padding-top: 15px;
+}
+
+.tabs_links_3 li a {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.user_promo {
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    min-height: 230px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 27px 0 55px 0;
+}
+
+.user_promo:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.user_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.user_promo .user_dropdown {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 2;
+}
+
+.user_dropdown .list_4 li {
+    padding: 3px 0;
+}
+
+.pencil_2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/pencil_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.user_title .pencil_2 {
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.user_promo_footer {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    width: 100%;
+    min-height: 95px;
+    padding: 6px 10px 10px 210px;
+    background: rgba(0, 0, 0, .6);
+    position: relative;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.user_promo_photo {
+    width: 146px;
+    height: 146px;
+    overflow: hidden;
+    position: relative;
+    background: #F3F4F3;
+    box-shadow: 0 2.7037px 7.20988px -0.901235px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 2.7037px 7.20988px -0.901235px rgba(50, 50, 71, .05);
+    filter: drop-shadow(0 0 .901235px rgba(12, 26, 75, .24));
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.user_promo_footer .user_promo_photo {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.user_promo_photo:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(18, 18, 18, .4);
+    z-index: 2;
+}
+
+.user_promo_photo:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(img/pencil_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.user_promo_photo img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.user_promo_footer h2 {
+    padding: 2px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.user_promo_footer p {
+    padding: 1px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.user_data_two_cols {
+    display: flex;
+    display: -webkit-flex;
+    margin: 4px 0;
+}
+
+.user_data_two_cols > div:nth-child(1) {
+    width: 330px;
+    padding: 10px 10px 10px 0;
+}
+
+.user_data_two_cols > div:nth-child(2) {
+    width: calc(100% - 330px);
+    padding: 10px 0 10px 10px;
+}
+
+.user_data_title h3 {
+    padding: 3px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #2A3842;
+}
+
+.user_data_title p {
+    padding: 4px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #2A3842;
+}
+
+.white_box {
+    background: #FFF;
+    padding: 8px 15px 5px 15px;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.user_data_inputs_two_cols {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 3px 0;
+}
+
+.user_data_inputs_two_cols > div:nth-child(odd) {
+    width: 50%;
+    padding: 8px 8px 8px 0;
+}
+
+.user_data_inputs_two_cols > div:nth-child(even) {
+    width: 50%;
+    padding: 8px 0 8px 8px;
+}
+
+.user_data_input {
+    position: relative;
+}
+
+.user_data_input input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 12px;
+    background: #FFFFFF;
+    border: 1px solid #E9EEF1;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 47px;
+    color: #121212;
+}
+
+.user_data_input input::placeholder {
+    color: #BFBFBF;
+}
+
+.white_pill_user_data {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    min-width: 220px;
+    align-items: center;
+    -webkit-align-items: center;
+    min-height: 48px;
+    font-size: 14px;
+}
+
+.white_box_footer {
+    border-top: 1px solid #E9EEF1;
+    margin-top: 10px;
+    padding: 6px 0;
+}
+
+.user_data_inlines {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 0 -8px;
+}
+
+.user_data_inlines > div {
+    padding: 8px;
+}
+
+.user_data_pill {
+    min-width: 152px;
+    min-height: 40px;
+    padding: 6px 15px;
+    font-size: 12px !important;
+}
+
+.input_icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.youtube {
+    background-image: url(img/youtube.svg);
+}
+
+.tel {
+    background-image: url(img/tel.svg);
+}
+
+.whatsapp {
+    background-image: url(img/whatsapp.svg);
+}
+
+.viber {
+    background-image: url(img/viber3.svg);
+}
+
+.telegram2 {
+    background-image: url(img/telegram_3.svg);
+}
+
+.facebook {
+    background-image: url(img/f_2.svg);
+}
+
+.instagram {
+    background-image: url(img/inst2.svg);
+}
+
+.link {
+    background-image: url(img/link2.svg);
+}
+
+.user_data_input .input_icon {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.user_data_input .input_icon + input {
+    padding-left: 44px;
+}
+
+.user_data_single_input {
+    padding: 12px 0;
+}
+
+.user_data_input textarea {
+    display: block;
+    width: 100%;
+    height: 190px;
+    padding: 10px 12px;
+    background: #FFFFFF;
+    border: 1px solid #E9EEF1;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+    color: #121212;
+}
+
+.user_data_input textarea::placeholder {
+    color: #BFBFBF;
+}
+
+.input_link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #546E7A;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.input_link:hover {
+    color: #FF5722;
+}
+
+.user_data_input .input_link {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+}
+
+.user_data_input.wl input {
+    padding-right: 110px;
+}
+
+/*-- /User Data --*/
+
+/*-- Data Company --*/
+
+.data_two_cols {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 3px 0;
+}
+
+.data_two_cols > div:nth-child(odd) {
+    width: 50%;
+    padding: 13px 13px 13px 0;
+}
+
+.data_two_cols > div:nth-child(even) {
+    width: 50%;
+    padding: 13px 0 13px 13px;
+}
+
+.white_box_2 {
+    background: #FFF;
+    min-height: 263px;
+    padding: 23px 20px 23px 20px;
+    box-shadow: 0 0 1px rgb(12 26 75 / 24%), 0 3px 8px -1px rgb(50 50 71 / 5%);
+    -webkit-box-shadow: 0 0 1px rgb(12 26 75 / 24%), 0 3px 8px -1px rgb(50 50 71 / 5%);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.white_box_2.center {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.white_box_2.center > div {
+    width: 100%;
+}
+
+.white_box_2 h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #2A3842;
+}
+
+.white_box_2 .user_data_input {
+    margin: 17px 0;
+}
+
+.data_submit {
+    width: 100%;
+}
+
+.data_pill {
+    width: 100%;
+}
+
+.data_btn_wrapp {
+    padding: 17px 0;
+}
+
+.succes_message_2 {
+    max-width: 294px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.succes_icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(img/succes_icon.svg);
+}
+
+.succes_message_2 .succes_icon {
+    margin: 15px auto;
+}
+
+.succes_message_2 h3 {
+    padding: 2px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2A3842;
+}
+
+.succes_message_2 p {
+    padding: 2px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5B6871;
+}
+
+/*-- /Data Company --*/
+
+/*-- Company Data --*/
+
+.user_promo_photo_2 img {
+    min-width: auto;
+    min-height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*-- /Company Data --*/
+
+/*-- User Data --*/
+
+.checked_input:after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(img/checked_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 11px;
+    right: -38px;
+}
+
+.user_data_two_cols_2 {
+    margin-top: 6px;
+}
+
+/*-- /User Data --*/
+
+/*-- Section 1 - Company Page --*/
+
+.company_promo_box {
+    padding: 88px 0 44px 0;
+}
+
+.company_promo_logo {
+    display: block;
+    width: 162px;
+    height: 163px;
+    margin: 15px auto;
+    background-color: #F3F4F3;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    position: relative;
+}
+
+.company_promo_logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.company_promo h1 {
+    padding: 16px 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFF;
+}
+
+.company_promo_thumbs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 15px -10px;
+}
+
+.company_promo_thumb {
+    display: flex;
+    display: -webkit-flex;
+    width: 295px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin: 10px;
+    padding: 12px 20px 12px 20px;
+}
+
+.company_promo_thumb > div:nth-child(1) {
+    width: calc(100% - 55px);
+    padding-right: 25px;
+}
+
+.company_promo_thumb > div:nth-child(2) {
+    width: 55px;
+    text-align: right;
+}
+
+.company_promo_thumb h3 {
+    padding: 1px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.company_promo_link {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFF;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.company_promo_link:hover {
+    color: #FF5722;
+}
+
+.company_promo_icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, .24);
+    -webkit-background: rgba(255, 255, 255, .24);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    position: relative;
+}
+
+.company_promo_icon svg {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.offices_val_4 {
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin-bottom: 30px;
+}
+
+.offices_val_thumb.orange:before {
+    background: #FF5722;
+}
+
+.offices_val_thumb.offices_val_thumb_2.orange > div:nth-child(1) p {
+    color: #FF5722;
+}
+
+.brokers_thumbs_sect {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.brokers_thumbs_sect > div {
+    padding: 0 5px;
+}
+
+.brokers_thumbs_sect > div:nth-child(1) {
+    padding-right: 10px;
+}
+
+.brokers_thumbs_sect h3 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.brokers_thumbs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.broker_thumb {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-left: -15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: relative;
+    border: 2px solid #ECECEC;
+    overflow: hidden;
+}
+
+.broker_thumb img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+
+
+
+/*-- /Section 1 - Company Page --*/
+
+/*-- Section 1 - Brokers List --*/
+
+.object_two_cols_2 {
+    margin-bottom: 33px;
+}
+
+.brokers_cards_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 5px -10px;
+}
+
+.broker_card {
+    background: #FFF;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 11px 17px 5px 17px;
+}
+
+.brokers_cards_wrapp .broker_card {
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.broker_card_user {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.broker_card_user > div:nth-child(1) {
+    width: 83px;
+}
+
+.broker_card_user > div:nth-child(2) {
+    width: calc(100% - 83px);
+}
+
+.broker_card_user_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: #C4C4C4;
+}
+
+.broker_card_user_img img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.broker_card_user h3 {
+    padding-bottom: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.broker_card_user p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.broker_card_title {
+    padding-bottom: 10px;
+}
+
+.broker_card_footer {
+    padding: 5px 0;
+}
+
+.orange_link {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    color: #FF5722;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.orange_link:hover {
+    color: #51B4E8;
+}
+
+.tel_btn_wrapp {
+    padding: 15px 0;
+}
+
+.tell_pill {
+    min-height: 48px;
+    font-size: 16px;
+}
+
+.side_banner_2 {
+    margin: 27px 0;
+}
+
+.pagination_wrapp_3 {
+    padding: 15px 0;
+}
+
+/*-- /Section 1 - Brokers List --*/
+
+/*-- Section 2 - Brokers List --*/
+
+.sect_2_bl {
+    padding: 43px 0;
+}
+
+/*-- /Section 2 - Brokers List --*/
+
+/*-- Section 1 - 404 --*/
+
+.wrapp_404 {
+    padding: 75px 0 50px 0;
+}
+
+.img_404 {
+    display: block;
+    margin: 0 auto;
+}
+
+.two_cols_404 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    max-width: 710px;
+    margin: 57px auto;
+}
+
+.two_cols_404 > div:nth-child(1) {
+    width: 420px;
+}
+
+.two_cols_404 > div:nth-child(2) {
+    width: calc(100% - 420px);
+    padding-top: 22px;
+}
+
+.two_cols_404 > div:nth-child(1) img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.two_cols_404 h3 {
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.two_cols_404 p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.pill_404 {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    min-width: 190px;
+    min-height: 40px;
+    margin: 17px 0;
+    padding: 10px 15px;
+    text-align: center; 
+    font-size: 12px;
+}
+
+/*-- /Section 1 - 404 --*/
+
+/*-- Section 1 - Developer Page --*/
+
+.object_two_cols.object_two_cols_2 > .right_col {
+    padding-top: 81px;
+}
+
+.developer_cards_wrapp {
+    padding-bottom: 40px;
+}
+
+.developer_cards_wrapp .h2_wrapp h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.person_info_thumb.person_info_thumb_3 > div:nth-child(1) {
+    width: 0;
+}
+
+.person_info_thumb.person_info_thumb_3 > div:nth-child(2) {
+    width: 100%;
+    padding-left: 10px;
+}
+
+p.p_3 {
+    padding: 6px 0 2px 0;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.blue_link_2 {
+    font-weight: 500;
+    font-size: 13px;
+    color: #51B4E8;
+}
+
+.soc_list_4_2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*-- /Section 1 - Developer Page --*/
+
+
+
 
 
 

@@ -38,3 +38,15 @@
 # http://postolenko.github.io/allbc_2/add_room.html
 # http://postolenko.github.io/allbc_2/landing/index.html
 # http://postolenko.github.io/allbc_2/landing/index_2.html
+# http://postolenko.github.io/allbc_2/my_brokers_all_brokers.html
+# http://postolenko.github.io/allbc_2/my_brokers_orders.html
+# http://postolenko.github.io/allbc_2/user_data.html
+# http://postolenko.github.io/allbc_2/data_company.html
+# http://postolenko.github.io/allbc_2/data_company_2.html
+# http://postolenko.github.io/allbc_2/data_company_3.html
+# http://postolenko.github.io/allbc_2/company_data.html
+# http://postolenko.github.io/allbc_2/comany_data_credentials.html
+# http://postolenko.github.io/allbc_2/brokers_list.html
+# http://postolenko.github.io/allbc_2/404.html
+# http://postolenko.github.io/allbc_2/developer_page.html
+# http://postolenko.github.io/allbc_2/developer_page_2.html
