@@ -5079,7 +5079,7 @@ label.main_checkbox.green {
     margin: 0 -9px;
 }
 
-.inlines_4 > div {
+.search_res_wrapp .inlines_4 > div {
     padding: 2px 9px;
 }
 
@@ -5874,17 +5874,29 @@ label.main_checkbox.green {
     color: #121212;
 }
 
-.loc_thumb_2 > div:nth-child(1) {
+.catalog_thumb_content .loc_thumb_2 {
+    margin: 0;
+}
+
+.catalog_thumb_content .loc_thumb_2 > div:nth-child(1) {
     width: 20px;
 }
 
-.loc_thumb_2 > div:nth-child(2) {
+.catalog_thumb_content .loc_thumb_2 > div:nth-child(2) {
     width: calc(100% - 20px);
 }
 
-.loc_thumb_2 p {
-    font-weight: 500;
-    color: #5E5E5E;
+.catalog_thumb_content .loc_thumb_2 p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #121212;
+}
+
+.catalog_thumb_content .loc_thumb > div:nth-child(1) img {
+    position: none;
+    top: 0;
+    transform: none;
 }
 
 .two_cols_templ.mapVisible .catalog_thumb_descript {
@@ -13990,9 +14002,104 @@ p.p_3 {
 
 /*-- /Section 1 - Developer Page --*/
 
+/*-- Section 2 - Company Page --*/
+
+.filters_two_cols {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.filters_two_cols > div:nth-child(1) {
+    width: calc(100% - 315px);
+    padding: 5px 10px 5px 0;
+}
+
+.filters_two_cols > div:nth-child(2) {
+    width: 315px;
+    padding: 5px 0 5px 10px;
+}
+
+.filters_two_cols > div:nth-child(2) .filters_wrapp {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+#objectTwoCols.active > .left_col {
+    width: 100%;
+    padding-right: 0;
+}
+
+#objectTwoCols.active > .right_col {
+    display: none;
+    width: 0;
+}
+
+#objectTwoCols .filters_fixed {
+    padding: 0 0 5px 0;
+}
+
+.filters_fixed .row {
+    padding: 0;
+}
+
+.filters_fixed.fixed .row {
+    padding: 0 25px;
+}
+
+#objectTwoCols .contacts_scroll.fixed {
+    padding-top: 125px !important;
+}
+
+#objectTwoCols.active .object_cards .object_card {
+    width: calc(100% - 20px);
+}
+
+.brokers_card_sect {
+    padding:  45px 0 0 0;
+}
+
+.brokers_card_sect .persons_box_header_2 {
+    padding: 10px 0 10px 0;
+}
+
+.persons_box_header_2 h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.persons_box_header_2 > div:nth-child(2) {
+    padding-top: 10px;
+}
+
+.brokers_cards_wrapp_2 {
+    margin: 0 -10px;
+}
+
+.brokers_cards_wrapp_2 .broker_card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.more_btn_wrapp_2 {
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+.more_pill {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    min-width: 110px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+}
 
 
-
+/*-- /Section 2 - Company Page --*/
 
 
 

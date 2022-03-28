@@ -726,11 +726,14 @@ $(document).ready(function() {
         getObjectSlider(false);
         $(".showMap").addClass("active");
         getMapParams();
+        $("#objectTwoCols").addClass("active");
     } else {
         $("[data-slider-big]").slick('unslick');
         $("[data-slider-miniature]").slick('unslick');
         getObjectSlider(true);
         $(".showMap").removeClass("active");
+        $("#objectTwoCols").removeClass("active");
+        getContactsPosition();
     }
   });
 
@@ -1137,66 +1140,65 @@ $(document).ready(function() {
 
   }
 
-
-  document.querySelector("#myfiles").onchange=pullfiles;
-
-  dropArea.addEventListener('dragover', (event) => {
-    event.stopPropagation();
-    event.preventDefault();
-    event.dataTransfer.dropEffect = 'copy';
-  });
-
-  dropArea.addEventListener('drop', (event) => {
-    event.stopPropagation();
-    event.preventDefault();
-    var files = event.dataTransfer.files;
-      var fl=files.length;
-      var i=0;
-      var dropArea = $("#dropArea");
-      var templ = "";
-      var file;
-      while ( i < fl) {
-          file = files[i];
-          fileUrl = URL.createObjectURL(file);
-          if(fileUrl) {
-          templ += '<div class="drop_image_card_wrapp">'+
-                        '<div class="drop_image_card">'+
-                          '<div class="img_box">'+
-                            '<img src="'+fileUrl+'" alt="" />'+
-                            '<div class="drop_image_card_mask">'+
-                              '<div class="drag_n_drop"></div>'+
-                              '<div class="controls_btns">'+
-                                '<div>'+
-                                  '<button type="button" class="control_btn rotate"></button>'+
-                                '</div>'+
-                                '<div>'+
-                                  '<button type="button" class="control_btn trash"></button>'+
+  if($("#myfiles").length > 0 ) {
+    document.querySelector("#myfiles").onchange=pullfiles;
+    dropArea.addEventListener('dragover', (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'copy';
+    });
+    dropArea.addEventListener('drop', (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      var files = event.dataTransfer.files;
+        var fl=files.length;
+        var i=0;
+        var dropArea = $("#dropArea");
+        var templ = "";
+        var file;
+        while ( i < fl) {
+            file = files[i];
+            fileUrl = URL.createObjectURL(file);
+            if(fileUrl) {
+            templ += '<div class="drop_image_card_wrapp">'+
+                          '<div class="drop_image_card">'+
+                            '<div class="img_box">'+
+                              '<img src="'+fileUrl+'" alt="" />'+
+                              '<div class="drop_image_card_mask">'+
+                                '<div class="drag_n_drop"></div>'+
+                                '<div class="controls_btns">'+
+                                  '<div>'+
+                                    '<button type="button" class="control_btn rotate"></button>'+
+                                  '</div>'+
+                                  '<div>'+
+                                    '<button type="button" class="control_btn trash"></button>'+
+                                  '</div>'+
                                 '</div>'+
                               '</div>'+
                             '</div>'+
-                          '</div>'+
-                          '<div class="drop_image_card_descript">'+
-                            '<button type="button" class="edit_btn" data-popup-link = "popup_edit_obj"></button>'+
-                            '<div class="drop_image_title">'+
-                              '<h3></h3>'+
+                            '<div class="drop_image_card_descript">'+
+                              '<button type="button" class="edit_btn" data-popup-link = "popup_edit_obj"></button>'+
+                              '<div class="drop_image_title">'+
+                                '<h3></h3>'+
+                              '</div>'+
+                              '<div class="drop_image_text">'+
+                                '<p></p>'+
+                              '</div>'+
                             '</div>'+
-                            '<div class="drop_image_text">'+
-                              '<p></p>'+
-                            '</div>'+
                           '</div>'+
-                        '</div>'+
-                      '</div>';
-                    }
-          i++;
-      }
-      dropArea.prepend(templ);
-      new Sortable(document.getElementById('dropArea'), {
-          onEnd: function (evt) {
-            $("#dropArea .upl_btn").appendTo($("#dropArea"));
-          }
-      });
+                        '</div>';
+                      }
+            i++;
+        }
+        dropArea.prepend(templ);
+        new Sortable(document.getElementById('dropArea'), {
+            onEnd: function (evt) {
+              $("#dropArea .upl_btn").appendTo($("#dropArea"));
+            }
+        });
 
-  });
+    });
+  }
 
   $(".reset_drop_area").on("click", function(e) {
     e.preventDefault();
