@@ -14271,7 +14271,7 @@ p.p_3 {
     border-radius: 6px;
     -webkit-border-radius: 6px;
     margin: 10px 0 10px 0;
-    padding: 18px 40px 32px 25px;
+    padding: 18px 40px 22px 25px;
 }
 
 .private_info_box > div:nth-child(1) {
@@ -14341,6 +14341,41 @@ p.p_3 {
     line-height: 180%;
     color: #546E7A;
 }
+
+.two_cols_4 {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.two_cols_4 > div:nth-child(1) {
+    width: 50%;
+    padding: 0 10px 0 0;
+}
+
+.two_cols_4 > div:nth-child(2) {
+    width: 50%;
+    padding: 0 0 0 10px;
+}
+
+.video_box {
+    height: 343px;
+    margin: 10px 0;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    overflow: hidden;
+}
+
+.video_box iframe {
+    height: 343px;
+    border: none;
+    width: 100%;
+}
+
+
 
 /*-- /Section 3 - Broker Page --*/
 
