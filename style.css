@@ -12831,6 +12831,19 @@ h3 .tooltip {
     -webkit-border-radius: 6px;
 }
 
+.resp_title {
+    display: none;
+    padding-bottom: 1px;
+}
+
+.resp_title h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #546E7A;
+    opacity: .8;
+}
+
 .my_brokers_table .table_row .cell:nth-child(1) {
     width: 65px;
 }
@@ -12854,6 +12867,24 @@ h3 .tooltip {
 .my_brokers_table .table_row .cell:nth-child(6) {
     width: 16%;
     text-align: center;
+}
+
+.my_brokers_table_two_cells {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    margin: 0 -14px;
+    min-width: 100%;
+}
+
+.my_brokers_table_two_cells > div {
+    padding: 0 14px;
+    width: 100%;
 }
 
 .broker_photo {
@@ -14374,8 +14405,6 @@ p.p_3 {
     border: none;
     width: 100%;
 }
-
-
 
 /*-- /Section 3 - Broker Page --*/
 
@@ -16272,6 +16301,90 @@ body.fixed {
     font-size: 12px;
 }
 
-
-
 /*-- /Send Message Popup --*/
+
+/*-- Color Popup --*/
+
+.colors_popup {
+    max-width: 505px;
+    padding: 31px 25px 7px 25px;
+}
+
+.colors_popup .popup_title_4 .close_popup {
+    position: absolute;
+    top: 35px;
+    right: 27px;
+}
+
+.colors_btns_wrapp {
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 6px 0;
+}
+
+.colors_btns {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 24px -3px 0 -3px;
+    padding: 15px 17px;
+}
+
+.colors_btns > div {
+    padding: 3px;
+}
+
+.color_btn {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.color_btn:after {
+    display: block;
+    content: "";
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.color_btn input {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.color_btn span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.color_btn > input:checked + span {
+    box-shadow: 0 0 3px rgb(12 26 75 / 40%), 0 3px 8px -1px rgb(50 50 71 / 30%);
+    -webkit-box-shadow: 0 0 3px rgb(12 26 75 / 40%), 0 3px 8px -1px rgb(50 50 71 / 30%);
+}
+
+/*-- /Color Popup --*/

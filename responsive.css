@@ -424,7 +424,27 @@
 	    width: 100%;
 	}
 
-	/*-- .Add Object --*/
+	/*-- /Add Object --*/
+
+	/*-- User Data --*/
+
+	.user_data_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		padding-top: 10px;
+	}
+
+	.user_data_two_cols > div:nth-child(1) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.user_data_two_cols > div:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /User Data --*/
 
 }
 
@@ -1103,6 +1123,20 @@
 
 	/*-- /Section 2 - Catalog Page --*/
 
+	/*-- User Data --*/
+
+	.white_box_3 .user_data_inputs_two_cols > div:nth-child(odd) {
+	    width: 100%;
+	    padding: 8px 0;
+	}
+
+	.white_box_3 .user_data_inputs_two_cols > div:nth-child(even) {
+	    width: 100%;
+	    padding: 8px 0;
+	}
+
+	/*-- /User Data --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -1664,6 +1698,60 @@
 	}
 
 	/*-- /Add Object --*/
+
+	/*-- All Brokers --*/
+
+	.my_brokers_table .table_header {
+		display: none;
+	}
+
+	.my_brokers_table .table_row {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(2) {
+	    width: calc(100% - 65px);
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(3) {
+	    width: 33.33%;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(4) {
+	    width: 33.33%;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(5) {
+	    width: 33.33%;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(6) {
+	    width: 100%;
+	}
+
+	.btns_list {
+	    min-width: 100%;
+	    margin: 0 -4.5px;
+	}
+
+	.btns_list > li {
+		width: 50%;
+	}
+
+	.btns_list > li .white_icon_pill {
+		width: 100%;
+	}
+
+	.resp_title {
+		display: block;
+	}
+
+	.my_brokers_table .table_row .notification_dropdown {
+	    right: 30px;
+	}
+
+	/*-- /All Brokers --*/
 
 }
 
@@ -2691,6 +2779,114 @@
 	}
 
 	/*-- /Add Object --*/
+
+	/*-- Data Company --*/
+
+	.tabs_links_wrapp_2 {
+	    padding-top: 0;
+	}
+
+	.data_two_cols {
+		padding-bottom: 43px;
+	}
+
+	.data_two_cols > div:nth-child(odd) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.data_two_cols > div:nth-child(even) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.white_box_2 {
+		padding: 23px 16px 10px 16px;
+	    min-height: auto;
+	}
+
+	.white_box_2_2 {
+		min-height: 254px;
+	}
+
+	.user_data_input input {
+		height: 40px;
+		line-height: 39px;
+	}
+
+	.data_pill {
+		padding: 11px 15px;
+		font-size: 12px;
+	}
+
+	.tabs_links_3 li a {
+	    padding-left: 18px;
+	    padding-right: 18px;
+	}
+
+	/*-- /Data Company --*/
+
+	/*-- User Data --*/
+
+	.user_promo {
+	    min-height: 156px;
+	    margin: 25px -15px 8px -15px;
+	}
+
+	.user_promo_photo {
+	    width: 82px;
+	    height: 82px;
+	}
+
+	.user_promo_footer .user_promo_photo {
+	    top: auto;
+	    bottom: -9px;
+	    left: 13px;
+	    transform: none;
+	}
+
+	.user_promo_footer h2 {
+	    font-size: 16px;
+	}
+
+	.user_promo_footer {
+	    min-height: 95px;
+	    padding: 6px 10px 10px 112px;
+	}
+
+	.user_data_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.user_data_two_cols > div:nth-child(1) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.user_data_two_cols > div:nth-child(2) {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	.user_data_input .input_link {
+	    top: 14px;
+	    right: 12px;
+	}
+
+	.user_data_input .input_icon {
+	    top: 9px;
+	}
+
+	.user_data_input textarea {
+	    padding: 7px 12px;
+	}
+
+	.checked_input:after {
+	    top: 7px;
+	}
+
+	/*-- /User Data --*/
 
 }
 
@@ -3787,6 +3983,108 @@
 
 	/*-- /Chat Screen --*/
 
+	/*-- All Brokers --*/
+
+	.my_brokers_table .table_row .cell:nth-child(3) {
+	    width: 50%;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(4) {
+	    width: 50%;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(5) {
+	    width: 100%;
+	}
+
+	.my_brokers_table_two_cells {
+		flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+
+	.my_brokers_table_two_cells > div {
+	    max-width: 112px;
+	}
+
+	.my_brokers_table_two_cells.two_cells_2 > div {
+		max-width: 50%;
+	}
+
+	.my_brokers_table_two_cells.two_cells_2 > div:nth-child(1) {
+	    max-width: calc(100% - 100px);
+	    width: calc(100% - 100px);
+	}
+
+	.my_brokers_table_two_cells.two_cells_2 > div:nth-child(2) {
+	    max-width: 50%;
+	    width: 100px;
+	}
+
+	.my_brokers_table .table_row .notification_dropdown {
+	    top: 15px;
+	    right: 21px;
+	}
+
+	/*-- /All Brokers --*/
+
+	/*-- User Data --*/
+
+	.user_data_inlines {
+		min-width: 100%;
+	}
+
+	.user_data_inlines > div {
+		width: 50%;
+	}
+
+	.user_data_inlines .user_data_pill {
+	    min-width: 100%;
+	}
+
+	.user_data_inputs_two_cols > div:nth-child(odd) {
+	    width: 100%;
+	    padding: 8px 0;
+	}
+
+	.user_data_inputs_two_cols > div:nth-child(even) {
+	    width: 100%;
+	    padding: 8px 0;
+	}
+
+	.checked_input:after {
+		right: 2px;
+	}
+
+	/*-- /User Data --*/
+
+	/*-- Color Popup --*/
+
+	.colors_popup {
+	    max-width: 320px;
+	    padding: 18px 15px 1px 15px;
+	}
+
+	.colors_popup .popup_title_4 .close_popup {
+	    top: 22px;
+	    right: 17px;
+	}
+
+	.colors_btns {
+		justify-content: center;
+		-webkit-justify-content: center;
+	}	
+
+	.color_btn {
+	    width: 30px;
+	    height: 30px;
+	}
+
+	.colors_popup .submit_orange_pill {
+	    margin: 17px 0 12px 0;
+	}
+
+	/*-- /Color Popup --*/
+
 }
 
 @media only screen and (max-width: 510px) {
@@ -3798,6 +4096,21 @@
 	.thumb_4 {
 	    padding: 11px 15px 15px 15px;
 	}
+
+	/*-- All Brokers --*/
+
+	.my_brokers_table .table_row {
+	    padding: 5px 6px 5px 6px;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(3) {
+	    width: 100%;
+	}
+
+	.my_brokers_table .table_row .cell:nth-child(4) {
+	    width: 100%;
+	}
+	/*-- /All Brokers --*/
 
 }
 

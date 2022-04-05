@@ -255,18 +255,19 @@ function getContactsPosition() {
 }
 
 function getFixedBoxParams() {
-  if( bodyWidth <= 900 ) {
-    bottomCoord = $(".footer_section").offset().top;
-    stepsBoxCoord = $(".steps_box").offset().top + $(".steps_box").height();
-    if($(document).scrollTop() + $(window).height() >= bottomCoord) {
-      $(".steps_box").addClass("relative");
+  if( $(".steps_box").length > 0 ){
+    if( bodyWidth <= 900 ) {
+      bottomCoord = $(".footer_section").offset().top;
+      stepsBoxCoord = $(".steps_box").offset().top + $(".steps_box").height();
+      if($(document).scrollTop() + $(window).height() >= bottomCoord) {
+        $(".steps_box").addClass("relative");
+      } else {
+        $(".steps_box").removeClass("relative");
+      }
     } else {
       $(".steps_box").removeClass("relative");
     }
-  } else {
-    $(".steps_box").removeClass("relative");
   }
-  
 }
 
 function jmp(e){
