@@ -134,7 +134,20 @@
 	    right: 11px;
 	}
 
-/*-- Section 2 - Catalog Page --*/
+/*-- /Section 2 - Catalog Page --*/
+
+/*-- Section 2 - Company Page --*/
+
+.company_promo_thumbs {
+    margin: 15px auto;
+    max-width: 767px;
+}
+
+.company_promo_thumb {
+	width: calc(50% - 20px);
+}
+
+/*-- /Section 2 - Company Page --*/
 
 }
 
@@ -199,12 +212,20 @@
 
 	/*-- Section 4 - Object Page --*/
 
+	/*-- Section 2 - Company Page --*/
+
 	.more_objects_thumbs .object_card {
 	    width: calc(50% - 20px);
 	    margin: 10px;
 	}
 
+	/*-- /Section 2 - Company Page --*/
+
 	/*-- /Section 4 - Object Page --*/
+
+	.brokers_cards_wrapp_2 .broker_card {
+	    width: calc(50% - 20px);
+	}
 
 	/*-- Footer --*/
 
@@ -821,6 +842,7 @@
 
 	.sect_2_cp {
 		padding-top: 0;
+		padding-bottom: 13px;
 	}
 
 	.filters_fixed {
@@ -1136,6 +1158,36 @@
 	}
 
 	/*-- /User Data --*/
+
+	/*-- Section 2 - Company Page --*/
+
+	.filtersFixedRow {
+		max-width: 100%;
+		padding: 0 !important;
+	}
+
+	.object_two_cols_2 > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.object_two_cols_2 > .right_col {
+		display: none;
+	}
+
+	.resp_filter_nav_2 > div {
+		width: 50%;
+	}
+
+	.resp_right_col {
+		padding-top: 10px;
+	}
+
+	.pagination_wrapp_4 {
+		padding: 13px 0 10px 0 !important;
+	}
+
+	/*-- /Section 2 - Company Page --*/
 
 }
 
@@ -1752,6 +1804,33 @@
 	}
 
 	/*-- /All Brokers --*/
+
+	/*-- Section 2 - Company Page --*/
+
+	.company_promo_logo {
+	    width: 100px;
+	    height: 100px;
+	}
+
+	.company_promo h1 {
+	    padding: 8px 0;
+	    font-size: 30px;
+	}
+
+	.company_promo_thumbs {
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+
+	.company_promo_thumb > div:nth-child(1) {
+		display: none;
+	}
+
+	.company_promo_thumb {
+	    width: 88px;
+	}
+
+	/*-- /Section 2 - Company Page --*/
 
 }
 
@@ -4085,6 +4164,46 @@
 
 	/*-- /Color Popup --*/
 
+	/*-- Section 1 - Company Page --*/
+
+	.offices_val_4 {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		margin-bottom: 6px;
+	}
+
+	.offices_val_thumb {
+	    display: flex;
+	    display: -webkit-flex;
+	}
+
+	.offices_val_thumb.offices_val_thumb_2 > div:nth-child(1) {
+	    padding: 0 0 0 22px;
+	}
+
+	.offices_val_thumb.offices_val_thumb_2 > div:nth-child(1) p {
+		font-size: 32px;
+	}
+
+	.company_promo h1 {
+	    padding: 8px 0;
+	    font-size: 28px;
+	}
+
+	.company_promo_thumb {
+		width: 70px;
+		height: 70px;
+	    margin: 8px;
+	    padding: 12px 12px 12px 12px;
+	}
+
+	.company_promo_icon {
+	    width: 46px;
+	    height: 46px;
+	}
+
+    /*-- /Section 1 - Company Page --*/
+
 }
 
 @media only screen and (max-width: 510px) {
@@ -4760,6 +4879,15 @@
 
 	/*-- /Add Object --*/
 
+	/*-- Section 1 - Company Page --*/
+
+	.company_promo_thumb {
+		margin: 2px;
+	    padding: 12px 12px 12px 12px;
+	}
+
+	/*-- /Section 1 - Company Page --*/
+
 }
 
 @media only screen and (max-width: 357px) {
@@ -4962,6 +5090,19 @@
 	}
 
 	/*-- /Add Object --*/
+
+	/*-- Section 1 - Company Page --*/
+
+	.company_promo_thumb {
+	    padding: 5px 5px 5px 5px;
+	}
+
+	.company_promo_thumb {
+	    width: 56px;
+	    height: 56px;
+	}
+
+	/*-- /Section 1 - Company Page --*/
 
 }
 

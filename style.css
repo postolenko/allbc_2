@@ -7223,7 +7223,7 @@ label.main_checkbox.green {
 }
 
 .breadcrumbs.white li:last-child a {
-    color: #E9EEF1
+    color: #E9EEF1;
 }
 
 /*-- /Section 1 - Object Page --*/
@@ -13718,6 +13718,10 @@ h3 .tooltip {
 }
 
 .company_promo_link:hover {
+    color: #FF5722;
+}
+
+.company_promo_thumb:hover .company_promo_link {
     color: #FF5722;
 }
 
