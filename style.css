@@ -14225,6 +14225,8 @@ p.p_3 {
     display: -webkit-flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     margin: 7px -8px 0 -8px;
 }
 
@@ -14248,6 +14250,8 @@ p.p_3 {
     background: #FFF;
     box-shadow: 0 4px 8px rgba(42, 56, 66, .1);
     -webkit-box-shadow: 0 4px 8px rgba(42, 56, 66, .1);
+    position: relative;
+    z-index: 2;
 }
 
 .tabs_links_wrapp_3 .tabs_links {

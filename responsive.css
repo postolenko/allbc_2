@@ -227,6 +227,14 @@
 	    width: calc(50% - 20px);
 	}
 
+	/*-- Section 4 - Broker Page --*/
+
+	.contants_thumbs_2 .contant_thumb_2 {
+	    width: calc(33.33% - 20px);
+	}
+
+	/*-- /Section 4 - Broker Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ > div:nth-child(1) {
@@ -818,6 +826,36 @@
 
 	/*-- /Add Object --*/
 
+	/*-- Section 3 - Broker Page --*/
+
+	.sect_3_bp {
+	    padding: 16px 0 30px 0;
+	}
+
+	.two_cols_4 > div:nth-child(1) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.two_cols_4 > div:nth-child(2) {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.private_info_box {
+	    max-width: 100%;
+	}
+
+	/*-- /Section 3 - Broker Page --*/
+
+	/*-- Section 1 - Developer Page --*/
+
+	.developer_cards_wrapp .object_cards .object_card {
+	    width: calc(50% - 20px);
+	}
+
+	/*-- /Section 1 - Developer Page --*/
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1188,6 +1226,38 @@
 	}
 
 	/*-- /Section 2 - Company Page --*/
+
+	/*-- Section 1 - Broker Page --*/
+
+	.tabs_links_wrapp_3 {
+		box-shadow: none;
+	}
+
+	/*-- /Section 1 - Broker Page --*/
+
+	/*-- Section 2 - Broker Page --*/
+
+	.sect_2_bp {
+		padding: 0;
+	}
+
+	/*-- /Section 2 - Broker Page --*/
+
+	/*-- Section 4 - Broker Page --*/
+
+	.sect_4_bp {
+	    padding: 20px 0 20px 0;
+	}
+
+	/*-- /Section 4 - Broker Page --*/
+
+	/*-- Section 1 - Developer Page --*/
+
+	.developer_cards_wrapp {
+	    padding-bottom: 9px;
+	}
+
+	/*-- /Section 1 - Developer Page --*/
 
 }
 
@@ -1831,6 +1901,26 @@
 	}
 
 	/*-- /Section 2 - Company Page --*/
+
+	/*-- Section 4 - Broker Page --*/
+
+	.sect_4_bp {
+	   padding: 5px 0 19px 0;
+	}
+
+	.contants_thumbs_2 .contant_thumb_2 {
+	    width: calc(50% - 20px);
+	}
+
+	/*-- /Section 4 - Broker Page --*/
+
+	/*-- Section 1 - Developer Page --*/
+
+	.developer_cards_wrapp .h2_wrapp h2 {
+	    font-size: 24px;
+	}
+
+	/*-- /Section 1 - Developer Page --*/
 
 }
 
@@ -2967,6 +3057,117 @@
 
 	/*-- /User Data --*/
 
+	/*-- Section 1 - 404 --*/
+
+	.wrapp_404 {
+	    padding: 37px 15px 20px 15px;
+	}
+
+	.img_404 {
+	    height: 70px;
+	}
+
+	.two_cols_404 {
+		display: block;
+		margin: 30px auto;
+	}
+
+	.two_cols_404 > div:nth-child(1) {
+	    width: 100%;
+	}
+
+	.two_cols_404 > div:nth-child(2) {
+	    width: 100%;
+	    padding-top: 7px;
+	    text-align: center;
+	}
+
+	.two_cols_404 > div:nth-child(1) img {
+		margin: 0 auto;
+		max-width: 235px;
+	}
+
+	/*-- /Section 1 - 404 --*/
+
+	/*-- Section 1 - Broker Page --*/
+
+	.user_promo_2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.user_promo_two_cols > div:nth-child(1) {
+	    width: 100%;
+	}
+
+	.tabs_links_wrapp_3 .tabs_links {
+	    padding-left: 0;
+	}
+
+	.tabs_links_wrapp_3 .tabs_links li a {
+		padding: 14px 12px 9px 12px;
+	}
+
+	.tabs_links_wrapp_3 .row {
+		padding: 0;
+	}
+
+	/*-- /Section 1 - Broker Page --*/
+
+	/*-- Section 3 - Broker Page --*/
+
+	.h2_wrapp_4 {
+	    padding: 7px 0 15px 0;
+	}
+
+	.h2_wrapp_4 h2 {
+	    font-size: 18px;
+	}
+
+	.private_info_box > div:nth-child(1) {
+		width: 100%;
+	}
+
+	.private_info_box > div:nth-child(2) {
+	    width: 100%;
+	}
+
+	.private_info_box .private_info_img {
+	    width: 120px;
+	    height: 120px;
+	    margin: 0 auto 10px auto;
+	}
+
+	/*-- /Section 3 - Broker Page --*/
+
+	/*-- Tab Bar Menu --*/
+
+	.inlines_3_2_resp {
+		margin-top: 0;
+	}
+
+	.inlines_3_2_resp > div {
+		padding: 0 8px;
+	}
+
+	/*-- /Tab Bar Menu --*/
+
+	/*-- Section 2 - Brokers List --*/
+
+	.sect_2_bl_2 {
+	    padding: 2px 0;
+	}
+
+	/*-- /Section 2 - Brokers List --*/
+
+	/*-- Section 1 - Developer Page --*/
+
+	.developer_cards_wrapp .h2_wrapp h2 {
+	    font-size: 18px;
+	}
+
+	/*-- /Section 1 - Developer Page --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -3223,6 +3424,28 @@
 
 	/*-- /Payment Tarif --*/
 
+	/*-- Section 1 - Brokers List --*/
+
+	.brokers_cards_wrapp .broker_card {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 1 - Brokers List --*/
+
+	/*-- Section 1 - Developer Page --*/
+
+    .developer_cards_wrapp .object_cards {
+	    min-width: 100%;
+	    margin: 10px -10px;
+	}
+
+	.developer_cards_wrapp .object_cards .object_card {
+	    margin: 10px;
+	}
+
+	/*-- /Section 1 - Developer Page --*/
+
 }
 
 @media only screen and (max-width: 660px) {
@@ -3267,6 +3490,48 @@
 	}
 
 	/*-- /My Objects Added Object --*/
+
+	/*-- Section 4 - Broker Page --*/
+
+	.contants_thumbs_2 {
+	    margin: 0;
+	}
+
+    .contants_thumbs_2 .contant_thumb_2 {
+	    width: 100%;
+	    margin: 4px 0;
+	}
+
+    /*-- /Section 4 - Broker Page --*/
+
+    /*-- Section 3 - Broker Page --*/
+
+    .sect_3_bp {
+	    padding: 16px 0;
+	}
+
+    .video_box {
+	    height: 185px;
+	}
+
+	.video_box iframe {
+		height: 185px;
+	}
+
+	/*-- /Section 3 - Broker Page --*/
+
+	/*-- Section 1 - Developer Page --*/
+
+    .developer_cards_wrapp .object_cards {
+	    margin: 10px 0;
+	}
+
+	.developer_cards_wrapp .object_cards .object_card {
+		width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 1 - Developer Page --*/
 
 }
 
@@ -4761,6 +5026,23 @@
 	}
 
 	/*-- /Add Object --*/
+
+	/*-- Tab Bar Menu --*/
+
+	.inlines_3_2_resp > div:nth-child(1) {
+		width: 72px;
+	}
+
+	.inlines_3_2_resp > div:nth-child(2) {
+		width: calc(100% - 72px);
+	}
+
+	.inlines_3_2_resp .orange_pill {
+		width: 100%;
+		min-width: 100%;
+	}
+
+	/*-- /Tab Bar Menu --*/
 	
 }
 
