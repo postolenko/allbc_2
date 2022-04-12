@@ -3168,6 +3168,26 @@
 
 	/*-- /Section 1 - Developer Page --*/
 
+	/*-- Favorite Search Result --*/
+
+	.favorities_item {
+	    padding: 11px 15px 15px 15px;
+	}
+
+	.favorities_item_header > div:nth-child(1) {
+	    width: 100%;
+	}
+
+	.favorities_item_inlines {
+	    padding-top: 11px;
+	}
+
+	.favorities_dr {
+	    width: 207px;
+	}
+
+	/*-- /Favorite Search Result --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -3532,6 +3552,22 @@
 	}
 
 	/*-- /Section 1 - Developer Page --*/
+
+	/*-- Refill --*/
+
+	.step_thumb {
+	    margin: 5px 12px;
+	}
+
+	.step_thumb:after {
+	    width: 25px;
+	}
+
+	.orange_tabs li {
+	    width: calc(33.33% - 4px);
+	}
+
+	/*-- /Refill --*/
 
 }
 
@@ -5043,6 +5079,61 @@
 	}
 
 	/*-- /Tab Bar Menu --*/
+
+	/*-- Refill --*/
+
+	.steps_wrapp {
+		margin: 0 -12px;
+	}
+
+	.step_thumb {
+	    margin: 5px 8px;
+	}
+
+	.step_thumb:after {
+	    width: 18px;
+	}
+
+	.step_num {
+	    margin-right: 7px;
+	}
+
+	.step_num p {
+	    font-size: 12px;
+	}
+
+	.payment_type_sect.payment_type_sect_2 {
+	    margin-top: 16px;
+	    margin-bottom: 50px;
+	}
+
+	.refill_sum_wrapp {
+		display: block;
+	}
+
+	.refill_sum_wrapp > div:nth-child(1) {
+	    width: 100%;
+	    padding: 6px 0 15px;
+	}
+
+	.refill_sum_wrapp > div:nth-child(2) {
+	    width: 100%;
+	    padding: 0 0 7px 0;
+	}
+
+	.reffil_input_wrapp {
+	    max-width: 100%;
+	}
+
+	/*-- /Refill --*/
+
+	/*-- Payment And Account --*/
+
+	.succes_message.payment_message {
+	    margin: 40px auto;
+	}
+
+	/*-- /Payment And Account --*/
 	
 }
 

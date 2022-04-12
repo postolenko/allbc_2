@@ -1496,4 +1496,10 @@ $(document).ready(function() {
 
   });
 
+  $(".del_btn").on("click", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".del_item");
+    parent.remove();
+  });  
+
 });

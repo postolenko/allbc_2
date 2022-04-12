@@ -53,3 +53,11 @@
 # http://postolenko.github.io/allbc_2/company_page.html
 # http://postolenko.github.io/allbc_2/broker_page.html
 # http://postolenko.github.io/allbc_2/broker_page_2.html
+# http://postolenko.github.io/allbc_2/favorites.html
+# http://postolenko.github.io/allbc_2/favorities_search_result.html
+# http://postolenko.github.io/allbc_2/payments_and_account.html
+# http://postolenko.github.io/allbc_2/payments_and_account_2.html
+# http://postolenko.github.io/allbc_2/payments_and_account_bonuses_returns.html
+# http://postolenko.github.io/allbc_2/payments_and_account_electronic_bills.html
+# http://postolenko.github.io/allbc_2/payments_and_account_electronic_bills_2.html
+# http://postolenko.github.io/allbc_2/refill.html

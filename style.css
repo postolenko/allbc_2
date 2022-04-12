@@ -14531,12 +14531,595 @@ p.p_3 {
     max-width: 90%;
 }
 
-
 /*-- /Section 4 - Broker Page --*/
 
+/*-- Favorite Search Result --*/
 
+.favorities_items_wrapp {
+    padding: 5px 0 90px 0;
+}
 
+.favorities_item {
+    background: #FFF;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    max-width: 924px;
+    margin: 10px 0;
+    padding: 11px 20px 15px 20px;
+}
 
+.favorities_item_header {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding: 5px 0 5px 0;
+}
+
+.favorities_item_header > div:nth-child(1) {
+    width: 60%;
+}
+
+.favorities_item_header > div:nth-child(2) {
+    width: 40%;
+}
+
+.favorities_item_title {
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 -3px;
+}
+
+.favorities_item_title > div {
+    padding: 0 3px;
+}
+
+.favorities_item_title h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.tags_list {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 0 -3px;
+    padding: 2px 0 2px 0;
+}
+
+.tags_list > div {
+    padding: 0 3px;
+}
+
+.static_tag {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    min-width: 58px;
+    height: 25px;
+    background: rgba(134, 196, 70, 0.2);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.static_tag > div {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 0 5px;
+}
+
+.static_tag p {
+    padding-right: 3px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: #86C446;
+}
+
+.blue_tag {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    min-width: 58px;
+    height: 25px;
+    padding: 0 8px;
+    background: #51B4E8;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.blue_tag p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: #FFF;
+}
+
+.grey_tags_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 -4.5px;
+    padding: 10px 0 10px 0;
+}
+
+.grey_tags_wrapp > div {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    padding: 4.5px;
+}
+
+.grey_tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 12px;
+    min-height: 32px;
+    background: rgba(233, 238, 241, .4);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #2A3842;
+}
+
+.grey_tag .sq {
+    position: relative;
+    top: -3px;
+    font-size: 9px;
+}
+
+.favorities_item_inlines {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.favorities_item_inlines > div {
+    padding: 4px;
+}
+
+.favorities_dr {
+    width: 234px;
+}
+
+.favorities_dr .dropdown_title p {
+    font-weight: 500;
+    color: #2A3842;
+}
+
+.object_dr.favorities_dr .dropdown_content .checkout_list p {
+    font-size: 12px;
+    line-height: 24px;
+    color: #2A3842;
+}
+
+.object_dr.favorities_dr .dropdown_content {
+    padding: 2px 0 2px 0;
+}
+
+.object_dr.favorities_dr .dropdown_content .checkout_list p {
+    padding: 4px 15px;
+}
+
+.object_dr.favorities_dr .dropdown_content .checkout_list p:hover {
+    background-color: #F5F5F5;
+}
+
+.static_tag.red {
+    background: rgba(239, 83, 80, .2);
+}
+
+.static_tag.red p {
+    color: #EF5350;
+}
+
+.tags_list_2 {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+/*-- /Favorite Search Result --*/
+
+/*-- Payment And Account --*/
+
+.payments_table {
+    min-width: 750px;
+}
+
+.payments_table .table_row {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    min-height: 73px;
+    background: #FFF;
+    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 12px 0;
+}
+
+.payments_table .table_row.table_header {
+    min-height: 49px;
+    background-color: #F1F5F8;
+}
+
+.payments_table .table_row .cell {
+    padding: 0 10px;
+}
+
+.payments_table .table_row .cell:nth-child(1) {
+    width: 13%;
+    padding-left: 20px;
+}
+
+.payments_table .table_row .cell:nth-child(2) {
+    width: 17%;
+}
+
+.payments_table .table_row .cell:nth-child(3) {
+    width: 51%;
+}
+
+.payments_table .table_row .cell:nth-child(4) {
+    width: 19%;
+    padding-right: 20px;
+}
+
+.payments_table .sort_link_2 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    color: #2A3842;
+}
+
+.sort_link_2:after {
+    top: 7px;
+    right: 3px;
+}
+
+.payments_table h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.succes_message.payment_message {
+    margin: 78px auto;
+}
+
+.payments_table p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.payments_inner p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.payments_inner .blue_link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #05ADE5;
+}
+
+.payments_table p.red {
+    color: #E53935;
+}
+
+.payments_table p.green {
+    color: #86C446;
+}
+
+/*-- /Payment And Account --*/
+
+/*-- Payment And Account Electronic Bills --*/
+
+.payments_table_2 .table_row .cell:nth-child(1) {
+    width: 17%;
+    padding-left: 20px;
+}
+
+.payments_table_2 .table_row .cell:nth-child(2) {
+    width: 14%;
+}
+
+.payments_table_2 .table_row .cell:nth-child(3) {
+    width: 22%;
+}
+
+.payments_table_2 .table_row .cell:nth-child(4) {
+    width: 14%;
+}
+
+.payments_table_2 .table_row .cell:nth-child(5) {
+    width: 14%;
+    text-align: center;
+}
+
+.payments_table_2 .table_row .cell:nth-child(6) {
+    width: 19%;
+    padding-right: 20px;
+}
+
+.payments_table_2 p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #141F27;
+}
+
+.payments_table p.orange {
+    color: #F9A825;
+}
+
+/*-- /Payment And Account Electronic Bills --*/
+
+/*-- Payment And Account Bonuces Returns --*/
+
+.payments_table_3 .table_row .cell:nth-child(1) {
+    width: 66%;
+    padding-left: 20px;
+}
+
+.payments_table_3 .table_row .cell:nth-child(2) {
+    width: 15%;
+}
+
+.payments_table_3 .table_row .cell:nth-child(3) {
+    width: 19%;
+    padding-right: 20px;
+}
+
+/*-- /Payment And Account Bonuces Returns --*/
+
+/*-- Refill --*/
+
+.payment_type_sect.payment_type_sect_2 {
+    margin-top: 33px;
+    margin-bottom: 40px;
+}
+
+.steps_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 6px 0 1px 0;
+}
+
+.step_thumb {
+    display: flex;
+    display: -webkit-flex;
+    margin: 5px 35px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.step_thumb:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 70px;
+    background-color: #E6E7E9;
+    position: absolute;
+    top: 12px;
+    left: 100%;
+    margin-left: -1px;
+}
+
+.step_thumb:last-child:after {
+    display: none;
+}
+
+.step_thumb p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(24, 24, 25, .32);
+}
+
+.step_num {
+    margin-right: 13px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #E6E7E9;
+    text-align: center;
+}
+
+.step_num p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #181819;
+    opacity: .5;
+}
+
+.step_thumb.active p {
+    color: #121212;
+}
+
+.step_thumb.active .step_num {
+    background: #05ADE4;
+}
+
+.step_thumb.active .step_num p {
+    color: #fff;
+    opacity: 1;
+}
+
+.refill_sum_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    border: 1px solid #E9EEF1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 14px 0 14px 0;
+    padding: 12px 20px 12px 20px;
+}
+
+.refill_sum_wrapp > div:nth-child(1) {
+    width: 50%;
+    padding: 19px 5px 5px 0;
+}
+
+.refill_sum_wrapp > div:nth-child(2) {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    width: 50%;
+    padding: 5px 0 5px 5px;    
+}
+
+.refill_sum_wrapp h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.reffil_input_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    max-width: 293px;
+    padding: 10px 12px;
+    background: #FCFCFC;
+    border: 1px solid #E9EEF1;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.reffil_input_wrapp > div:nth-child(1) {
+    width: calc(100% - 30px);
+    padding-right: 10px;
+}
+
+.reffil_input_wrapp > div:nth-child(2) {
+    width: 30px;
+    text-align: right;
+}
+
+.reffil_input_wrapp input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(24, 24, 25, 0.9);
+}
+
+.reffil_input_wrapp p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(24, 24, 25, .9);
+}
+
+.orange_tabs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 3px -2px 17px -2px;
+}
+
+.orange_tabs li {
+    width: calc(20% - 4px);
+    margin: 2px;
+}
+
+.orange_tab {    
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.orange_tab input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.orange_tab span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 4px 8px;
+    background: rgba(255, 79, 0, .1);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #5E7B8F;
+    position: relative;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.orange_tab input:checked + span {
+    background: rgba(255, 79, 0, 1);
+    color: #fff;
+}
+
+/*-- /Refill --*/
 
 
 
