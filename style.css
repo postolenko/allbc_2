@@ -14628,7 +14628,7 @@ p.p_3 {
     color: #86C446;
 }
 
-.blue_tag {
+.blue_tag_3 {
     display: inline-flex;
     display: -webkit-inline-flex;
     justify-content: center;
@@ -14642,7 +14642,7 @@ p.p_3 {
     -webkit-border-radius: 6px;
 }
 
-.blue_tag p {
+.blue_tag_3 p {
     font-weight: 700;
     font-size: 12px;
     line-height: 140%;
