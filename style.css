@@ -14188,6 +14188,8 @@ p.p_3 {
 .user_promo_2 {
     margin: 0;
     border-radius: 0;
+    z-index: 3;
+    position: relative;
 }
 
 .user_promo_2 > .row {
