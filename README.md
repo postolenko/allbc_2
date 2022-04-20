@@ -6,6 +6,7 @@
 # http://postolenko.github.io/allbc_2/catalog_2.html
 # http://postolenko.github.io/allbc_2/object.html
 # http://postolenko.github.io/allbc_2/object_2.html
+# http://postolenko.github.io/allbc_2/object_3.html
 # http://postolenko.github.io/allbc_2/office_page.html
 # http://postolenko.github.io/allbc_2/reg_email.html
 # http://postolenko.github.io/allbc_2/reg_email_2.html

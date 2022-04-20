@@ -651,14 +651,20 @@
 	}
 
 	.green_pill_3_wrapp {
-		padding: 9px 0 10px 0;
+		padding: 9px 0 23px 0;
 		text-align: center;
 	}
 
 	.green_pill_3_wrapp .green_pill_3 {
-		display: inline-block;
-		vertical-align: top;
+		display: inline-flex;
+		display: -webkit-inline-flex;
+		align-items: center;
+		-webkit-align-items: center;
+		justify-content: center;
+		-webkit-justify-content: center;
 		max-width: 300px;
+		min-height: 40px;
+		font-size: 14px;
 	}
 
 	/*-- /Section 4 - Main Page --*/
@@ -785,6 +791,11 @@
 
 	/*-- Section 1 - Object Page --*/
 
+	.object_info_wrapp.fixedBox {
+		position: relative !important;
+		top: 0 !important;
+	}
+
 	.object_info > div {
 	    width: 100%;
 	    padding: 7px 0;
@@ -792,6 +803,10 @@
 
 	.object_info > div:nth-child(2) {
 	    text-align: left;
+	}
+
+	.object_info > div:after {
+		display: none;
 	}
 
 	/*-- /Section 1 - Object Page --*/
@@ -945,6 +960,8 @@
 		box-shadow: 0 4px 8px rgba(42, 56, 66, .1);
 		-webkit-box-shadow: 0 4px 8px rgba(42, 56, 66, .1);
 		margin-bottom: 7px;
+		border-radius: 0 0 6px 6px;
+		-webkit-border-radius: 0 0 6px 6px;
 	}
 
 	.filters_fixed.fixed .resp_filter_nav {
@@ -2284,6 +2301,15 @@
 	    position: relative;
 	}
 
+	.catalog_thumb:active,
+	.catalog_thumb.active {
+	    background: #fff;
+	}
+
+	.catalog_thumb:hover {
+	    background: #fff;
+	}
+
 	/*-- /Section 2 - Catalog Page --*/
 
 	/*-- Section 1 - Main Page Arend --*/
@@ -2342,9 +2368,9 @@
 	    padding: 0;
 	    width: 100% !important;
 	    min-width: 100% !important;
-	    height: 100%;
-	    position: fixed;
-	    top: 0;
+		height: calc(100% - 52px);
+		position: fixed;
+		top: 52px;
 	    border-radius: 0;
 	    -webkit-border-radius: 0;
 	    z-index: 10;
@@ -5151,16 +5177,6 @@
 	    padding: 8px 0;
 	}
 
-	.pills_wrapp > div:nth-child(odd) {
-	    width: 100%;
-	    padding: 8px 0;
-	}
-
-	.pills_wrapp > div:nth-child(even) {
-	    width: 100%;
-	    padding: 8px 0;
-	}
-
 	/*-- /Resp Menu --*/
 
 	/*-- Section 3 - Object Page --*/
@@ -5476,6 +5492,20 @@
 	}
 
 	/*-- /Section 1 - Company Page --*/
+
+	/*-- Resp Menu --*/
+
+	.pills_wrapp > div:nth-child(odd) {
+	    width: 100%;
+	    padding: 8px 0;
+	}
+
+	.pills_wrapp > div:nth-child(even) {
+	    width: 100%;
+	    padding: 8px 0;
+	}
+
+	/*-- /Resp Menu --*/
 
 }
 

@@ -204,6 +204,35 @@ function getFiltersScrollParams() {
   }
 }
 
+function getFixedScrollBoxParams() {
+  if($(".fixedBox").length > 0) {
+    $(".fixedBox").each(function() {
+      parent = $(this).closest(".heigthWrapp");
+      height = $(this).height();
+      if($("#witeHeader").length > 0) {
+        topCoord = $(document).scrollTop() + $("#witeHeader").height();
+      } else {
+        topCoord = $(document).scrollTop();
+      }
+      if(topCoord >= parent.offset().top) {
+        parent.height(height);
+        $(this).addClass("fixed");
+        $(this).css({
+          "top" : $("#witeHeader").height() + "px"
+        });
+      } else {
+        parent.css({
+          "height" : "auto"
+        });
+        $(this).removeClass("fixed");
+        $(this).css({
+          "top" : 0
+        });
+      }
+    });
+  }
+}
+
 function getAdaptivePositionElements() {
     $(".append_elem").each(function() {
         screenParam = parseInt( $(this).attr("data-min-screen") );
@@ -227,9 +256,14 @@ function getContactsPosition() {
         bottomCoord = $(".contactsScrollBotttomCoord").offset().top;
         if($(document).scrollTop() >= contactsScrollWrappCoord ) {
             $(".contacts_scroll").addClass("fixed");
+            if(bodyWidth > 1024) {
+              objectInfoOffset = $("#objectInfo").height();
+            } else {
+              objectInfoOffset = 0;
+            }
             $(".contacts_scroll").css({
                 "left" : $("#contactsScrollWrapp").offset().left + "px",
-                "padding-top" : $("#witeHeader").height() + "px"
+                "padding-top" : $("#witeHeader").height() + objectInfoOffset + "px"
             });
             if( ($(document).scrollTop() + $(".contacts_scroll").height() ) >= bottomCoord ) {
                 $(".contacts_scroll").addClass("bottom_position");
@@ -388,6 +422,7 @@ $(window).resize(function() {
   getItemBgParams();
   getScrollbar();
   getFixedBoxParams();
+  getFixedScrollBoxParams();
   if(bodyWidth >= 768 && $(".more_filter_popup").is(":visible") > 0) {
     $(".more_filter_popup .close_popup").trigger("click");
   }
@@ -401,6 +436,7 @@ $(document).scroll(function() {
   getContactsPosition();
   getWrapperBottomPadding();
   getFixedBoxParams();
+  getFixedScrollBoxParams();
   // console.log($(document).scrollTop());
 });
 
@@ -413,6 +449,7 @@ $(document).ready(function() {
   getWrapperBottomPadding();
   getItemBgParams();
   getFixedBoxParams();
+  getFixedScrollBoxParams();
 
   $(".dr_title").on("click", function(e) {
     e.preventDefault();
@@ -614,6 +651,8 @@ $(document).ready(function() {
     parent.find(".checkout_val p").text(val);
     parent.find("input[type='hidden']").val(val);
     parent.removeClass("active");
+    parent.find("p").removeClass("active");
+    $(this).addClass("active");
   });
 
   // ---------
