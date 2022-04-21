@@ -1539,6 +1539,13 @@ $(document).ready(function() {
     e.preventDefault();
     parent = $(this).closest(".del_item");
     parent.remove();
-  });  
+  });
+
+  // --------------
+
+  $(".switch_btn_wrapp").on("click", function(e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+  });
 
 });

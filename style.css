@@ -1664,7 +1664,7 @@ textarea:focus {
 .account_dropdown_content {
     width: 249px;
     top: calc(100% + 8px);
-    padding: 7px 0;
+    padding: 10px 0;
 }
 
 .dr.active > .dr_content.account_dropdown_content {
@@ -1673,10 +1673,15 @@ textarea:focus {
 }
 
 .account_dropdown_content > div {
-    padding: 4px 13px;
+    display: flex;
+    display: -webkit-flex;
+    min-height: 32px;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 5px 13px 6px 13px;
 }
 
-.grey_item {
+.account_dropdown_content > div:hover {
     background-color: #F5F5F5;
 }
 
@@ -1723,9 +1728,9 @@ textarea:focus {
     fill: #FF5722;
 }
 
-.account_dropdown_content .grey_link {
+/*.account_dropdown_content .grey_link {
     margin-bottom: 8px;
-}
+}*/
 
 .red_link {
     font-weight: 500;
@@ -2452,9 +2457,10 @@ textarea:focus {
 }
 
 .orange_pill:hover {
-    background-color: #ff9900;
-    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
-    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
+    background-color: #FF4A11;
+    box-shadow: none;
+/*    box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);
+    -webkit-box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 18px -1px rgba(50, 50, 71, .3);*/
 }
 
 .search_box > div:nth-child(2) .orange_pill {
@@ -2704,6 +2710,100 @@ textarea:focus {
     color: #9E9E9E;
 }
 
+.price_dr_wrapp.price_dr_wrapp_2 > div:nth-child(2) {
+    width: 117px;
+}
+
+.switch_btn_wrapp {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    height: 28px;
+    background: #FFF;
+    border: 1px solid #E9EEF1;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.switch_btn_wrapp > div:nth-child(1) {
+    padding: 1px 8px;
+}
+
+.switch_btn_wrapp > div:nth-child(2) {
+    width: 32px;
+    height: 20px;
+}
+
+.switch_btn_wrapp > div:nth-child(3) {
+    padding: 1px 8px;
+}
+
+.switch_btn_wrapp p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #546E7A;
+}
+
+.switch_btn_wrapp > div:nth-child(1) p {
+    color: #121212;
+}
+
+.switch_btn_wrapp.active > div:nth-child(1) p {
+    color: #546E7A;
+}
+
+.switch_btn_wrapp.active > div:nth-child(3) p {
+    color: #121212;
+}
+
+.switch_btn {
+    width: 32px;
+    height: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #05ADE5;
+    position: relative;
+    top: 3px;
+}
+
+.switch_btn:before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    -webkit-transition-property: left;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: left;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: left;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: left;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: left;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.switch_btn_wrapp.active .switch_btn:before {
+    left: 13px;
+}
+
 .dr_title_4 {
     height: 28px;
     padding: 1px 12px 0 12px;
@@ -2732,10 +2832,6 @@ textarea:focus {
 
 .dr_conten_4 {
     width: 99px;
-}
-
-.dr_conten_4 .checkout_list {
-
 }
 
 .dr_conten_4 .checkout_list p {
@@ -3834,6 +3930,7 @@ textarea:focus {
 }
 
 .blue_pill.blue_pill_2 {
+    min-height: 40px;
     font-size: 14px;
 }
 
@@ -4151,7 +4248,8 @@ textarea:focus {
     width: 100%;
     border: none;
     cursor: pointer;
-    padding: 10px 15px 9px 15px;
+    /*padding: 5px 15px 5px 15px;*/
+    padding: 3px 15px 5px 15px;
     align-items: center;
     -webkit-align-items: center;
     justify-content: center;
@@ -9531,6 +9629,10 @@ a.tel_link_4:hover {
     color: #141F27;
 }
 
+.scroll_menu_wrapp_2 .mCSB_draggerContainer {
+    opacity: 0;
+}
+
 /*-- /Section 1 - Ofice Page --*/
 
 /*-- Registration Form --*/
@@ -9546,7 +9648,7 @@ a.tel_link_4:hover {
 
 .sign_form_sect {
     flex: 1;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 70px 0;
 }
 
 .sign_form_sect > div {
@@ -9555,7 +9657,7 @@ a.tel_link_4:hover {
 
 .sign_form_box {
     max-width: 510px;
-    margin: 0 auto 10px auto;    
+    margin: 64px auto 10px auto;    
     padding: 50px 55px 26px 55px;
     background: #FFF;
     box-shadow: 0 0 1px rgba(12, 26, 75, .24), 0 3px 8px -1px rgba(50, 50, 71, .05);
@@ -10158,6 +10260,10 @@ a.tel_link_4:hover {
     padding: 0 0 50px 20px;
 }
 
+.sidebar_menu_scroll .mCSB_scrollTools {
+    opacity: 0 !important;
+}
+
 .sidebar_menu {
     padding: 23px 0;
 }
@@ -10410,10 +10516,18 @@ a.tel_link_4:hover {
 }
 
 .notification > div:nth-child(2) p {
-    font-weight: 600;
+    font-weight: normal;
     font-size: 14px;
     line-height: 140%;
     color: #141F27;
+}
+
+.notification.new > div:nth-child(1) p {
+    font-weight: 500;
+}
+
+.notification.new > div:nth-child(2) p {
+    font-weight: 600;
 }
 
 .notification .notification_dropdown {
@@ -10454,7 +10568,11 @@ a.tel_link_4:hover {
 }
 
 .notification_dropdown.active .notification_content {
-    right: 0;
+    right: -15px;
+}
+
+.list_4 {
+    text-align: left;
 }
 
 .list_4 li a {
@@ -10624,6 +10742,10 @@ button.basket_pill {
 
 .basket_pill:hover svg path {
     fill: #fff;
+}
+
+.tabs_scroll .mCSB_scrollTools {
+    opacity: 0 !important;
 }
 
 .tabs_links {
@@ -13020,9 +13142,10 @@ h3 .tooltip {
 }
 
 .my_brokers_table .table_row .notification_dropdown {
-    position: absolute;
+/*    position: absolute;
     top: 19px;
-    right: 72px;
+    right: 72px;*/
+    margin: 0 auto;
 }
 
 .my_brokers_table .table_row:nth-child(1) h3 {
@@ -13082,6 +13205,11 @@ h3 .tooltip {
 }
 
 .white_icon_pill:hover {
+    background: #E9EEF1;
+}
+
+.white_icon_pill:active,
+.white_icon_pill.active {
     border-bottom: 1px solid #000;
     background: #000;
 }
@@ -13108,7 +13236,8 @@ h3 .tooltip {
     transition-timing-function: ease;
 }
 
-.white_icon_pill:hover svg path {
+.white_icon_pill:active svg path,
+.white_icon_pill.active svg path {
     fill: #fff;
 }
 

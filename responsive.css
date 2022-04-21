@@ -1890,6 +1890,13 @@
 	    right: 30px;
 	}
 
+	.my_brokers_table .table_row .notification_dropdown {
+	    position: absolute;
+	    top: 19px;
+	    right: 72px;
+	    margin: 0;
+	}
+
 	/*-- /All Brokers --*/
 
 	/*-- Section 2 - Company Page --*/
@@ -3000,8 +3007,13 @@
 	    min-height: auto;
 	}
 
+	.white_box_2_3 {
+		padding: 23px 16px 25px 16px;
+	}
+
 	.white_box_2_2 {
 		min-height: 254px;
+		padding-top: 6px;
 	}
 
 	.user_data_input input {
