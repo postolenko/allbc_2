@@ -204,6 +204,41 @@ function getFiltersScrollParams() {
   }
 }
 
+function getFixedMenuSidebar() {
+  if( $(".fixedScroll").length > 0 ) {
+    fixedParent = $(".fixedParent");
+    fixedScroll = $(".fixedScroll");
+    fixedBottomCoord = $(".fixedBottomCoord").offset().top;
+    fixedScrollWidth = $(".fixedScrollWidth");
+    if($("#witeHeader").length > 0) {
+      topCoord = fixedParent.offset().top - $("#witeHeader").height();
+    } else {
+      topCoord = fixedParent.offset().top;
+    }
+    if($(document).scrollTop() > topCoord) {
+      fixedScroll.addClass("fixed");
+      fixedScroll.css({
+        "top" : $("#witeHeader").height() + "px",
+        "left" : fixedParent.offset().left + "px",
+        "width" : fixedScrollWidth.width() + "px"
+      });
+    } else {
+      fixedScroll.removeClass("fixed");
+      fixedScroll.css({
+        "top" : "auto",
+        "left" : "auto",
+        "width" : "auto"
+      });
+    }
+    fixedScrollBottomCoord = $(document).scrollTop() + fixedScroll.height() + $("#witeHeader").height();
+    if( fixedScrollBottomCoord >= fixedBottomCoord ) {
+        fixedScroll.addClass("bottom_position");
+    } else {
+        fixedScroll.removeClass("bottom_position");
+    }
+  }
+}
+
 function getFixedScrollBoxParams() {
   if($(".fixedBox").length > 0) {
     $(".fixedBox").each(function() {
@@ -366,6 +401,13 @@ function getScrollbar() {
 
 }
 
+function getChartWidth() {
+  $(".static_chart").each(function() {
+    parent = $(this).closest("#chartWidth");
+    $(this).width(parent.width() + 15);
+  });
+}
+
 // function filterFunction() {
 //   var input, filter, ul, li, a, i;
 //   input = document.getElementById("myInput");
@@ -423,6 +465,8 @@ $(window).resize(function() {
   getScrollbar();
   getFixedBoxParams();
   getFixedScrollBoxParams();
+  getFixedMenuSidebar();
+  getChartWidth();
   if(bodyWidth >= 768 && $(".more_filter_popup").is(":visible") > 0) {
     $(".more_filter_popup .close_popup").trigger("click");
   }
@@ -437,6 +481,7 @@ $(document).scroll(function() {
   getWrapperBottomPadding();
   getFixedBoxParams();
   getFixedScrollBoxParams();
+  getFixedMenuSidebar();
   // console.log($(document).scrollTop());
 });
 
@@ -450,6 +495,8 @@ $(document).ready(function() {
   getItemBgParams();
   getFixedBoxParams();
   getFixedScrollBoxParams();
+  getFixedMenuSidebar();
+  getChartWidth();
 
   $(".dr_title").on("click", function(e) {
     e.preventDefault();
@@ -1547,5 +1594,112 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).toggleClass("active");
   });
+
+  // ---------------
+
+  $(document).on("click", "[data-popup-link = 'slider_popup']", function(e) {
+    e.preventDefault();
+    currentSlide = $('.office_big_slider .slick-active').attr("data-slick-index");
+    $('.popup_office_big_slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      fade: true,
+      asNavFor: '.popup_office_miniature_slider',
+      initialSlide: currentSlide
+    });
+    $('.popup_office_miniature_slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.popup_office_big_slider',
+      dots: false,
+      arrows: true,
+      focusOnSelect: true,
+      initialSlide: currentSlide,
+      prevArrow: '<button class="slick-prev tr_arr" aria-label="Previous" type="button">'+
+         '<svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">'+
+         '<path d="M5.04671 10.9992L13.2967 19.2492L10.94 21.6059L0.333374 10.9992L10.94 0.392578L13.2967 2.74924L5.04671 10.9992Z" fill="white"/>'+
+        '</svg></button>',
+      nextArrow: '<button class="slick-next tr_arr" aria-label="Next" type="button">'+
+        '<svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">'+
+        '<path d="M8.95332 11.0008L0.703327 2.75075L3.05999 0.394088L13.6667 11.0008L3.05999 21.6074L0.703325 19.2508L8.95332 11.0008Z" fill="white"/>'+
+        '</svg></button>',
+      responsive: [
+        {
+          breakpoint: 1040,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
+    });
+  });
+
+  // -------------------
+
+      if( $("[data-static-chart]").length> 0 ) {
+
+        var chart;
+
+        $("[data-static-chart]").each(function() {
+            chartName = $(this).attr("data-static-chart");
+            chartLabels = [];
+            chartSeries = [];
+            $("[data-static-chart-values = '"+chartName+"'] .dataVal").each(function() {
+                chartLabels.push($(this).attr("data-val-x"));
+                chartSeries.push( parseInt($(this).attr("data-val-y")) );
+            });
+            chart = new Chartist.Line("[data-static-chart = '"+chartName+"']", {
+              labels: chartLabels,
+              series: [
+                chartSeries
+              ]
+                }, {
+                // high: 30,
+                low: 0,
+                showArea: true,
+                fullWidth: true,
+                lineSmooth: false,
+                axisY: {
+                    offset: 3
+                },
+                axisX: {
+                    offset: 60
+                }
+            });
+
+            chart.on('draw', function(data) {
+              if(data.type === 'point') {
+                var circle = new Chartist.Svg('circle', {
+                  r:"4",
+                  cx: data.x,
+                  cy: data.y,          
+                  style: 'fill:#fff'
+                }, 'ct-point');
+                data.element.replace(circle);
+              }
+            });
+
+        });
+    }
 
 });

@@ -475,6 +475,27 @@
 
 	/*-- /User Data --*/
 
+	/*-- Section 4 2 - Catalog Page --*/
+
+	.chart_index_templ > .left_col {
+	    width: 290px;
+	}
+
+	.chart_index_templ > .right_col {
+	    width: calc(100% - 290px);
+	}
+
+	.index_tab {
+	    padding: 10px;
+	    font-size: 14px;
+	}
+
+	.index_tab_2 {
+	    padding: 10px 10px;
+	}
+
+	/*-- /Section 4 2 - Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -870,6 +891,49 @@
 	}
 
 	/*-- /Section 1 - Developer Page --*/
+
+	/*-- Section 4 2 - Catalog Page --*/
+
+	.chart_index_templ {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.chart_index_templ > .left_col {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.chart_index_templ > .right_col {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.index_left_tabs {
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+
+	.index_left_tabs li {
+	    padding: 5px;
+	}
+
+	.index_tab {
+	    padding: 5px 13px;
+	    font-size: 14px;
+	    line-height: 17px;
+	    min-height: 40px;
+	}
+
+	.index_tab_2 {
+	    padding: 5px 17px;
+	    min-height: 40px;
+	}
+
+	/*-- /Section 4 2 - Catalog Page --*/
 
 }
 
@@ -1675,6 +1739,13 @@
 		padding: 0;
 	}
 
+	.fixedScroll.fixed {
+	    position: relative !important;
+	    top: 0 !important;
+	    left: 0 !important;
+	    bottom: 0 !important;
+	}
+
 	.sidebar_menu li span {
 	    display: none;
 	}
@@ -1945,6 +2016,18 @@
 	}
 
 	/*-- /Section 1 - Developer Page --*/
+
+	/*-- Slider Popup --*/
+
+	.slider_popup {
+		height: 600px;
+	}
+
+	.popup_office_big_slider .slide {
+	    height: 600px;
+	}
+
+	/*-- /Slider Popup --*/
 
 }
 
@@ -3226,6 +3309,52 @@
 
 	/*-- /Favorite Search Result --*/
 
+	/*-- Section 4 2 - Catalog Page --*/
+
+	.chart_index_sect {
+		margin-top: 0;
+	    padding: 19px 15px 19px 15px;
+	}
+
+	.static_chart {
+		width: 740px !important;
+	}
+
+	.static_chart svg {
+		width: 740px !important;
+		max-width: 740px !important;
+	}
+	/*-- /Section 4 2 - Catalog Page --*/
+
+	/*-- Slider Popup --*/
+
+	.slider_popup {
+		height: 400px;
+	}
+
+	.popup_office_big_slider .slide {
+	    height: 400px;
+	}
+
+	.popup_office_miniature_slider {
+	    bottom: 115px;
+	}
+
+	.popup_office_miniature_slider .slide {
+	    max-width: 100px;
+	    height: 74px;
+	}
+
+	.popup_office_miniature_slider .slick-prev.tr_arr {
+	    top: 56px;
+	}
+
+	.popup_office_miniature_slider .slick-next.tr_arr {
+	    top: 56px;
+	}
+
+	/*-- /Slider Popup --*/
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -3504,6 +3633,48 @@
 
 	/*-- /Section 1 - Developer Page --*/
 
+	/*-- Section 4 2 - Catalog Page --*/
+
+	.index_left_tabs li {
+	    width: 50%;
+	}
+
+	/*-- /Section 4 2 - Catalog Page --*/
+
+	/*-- Slider Popup --*/
+
+	.slider_popup {
+		height: auto;
+	}
+
+	.popup_office_big_slider .slide {
+	    height: 400px;
+	}
+
+	.slider_popup_templ {
+		display: block;
+	}
+
+	.slider_popup_templ > .left_col {
+	    width: 100%;
+	}
+
+	.slider_popup_templ > .right_col {
+	    width: 100%;
+	    padding: 10px 20px 20px 20px;
+	}
+
+	.popup_office_miniature_slider { 
+	    bottom: 17px;
+		position: absolute !important;
+	}
+
+	.popup_office_slider_title h3 {
+	    font-size: 20px;
+	}
+
+	/*-- /Slider Popup --*/
+
 }
 
 @media only screen and (max-width: 660px) {
@@ -3590,6 +3761,14 @@
 	}
 
 	/*-- /Section 1 - Developer Page --*/
+
+	/*-- Section 4 2 - Catalog Page --*/
+
+	.index_left_tabs li {
+	    width: 100%;
+	}
+
+	/*-- /Section 4 2 - Catalog Page --*/
 
 	/*-- Refill --*/
 
@@ -4543,6 +4722,14 @@
 
     /*-- /Section 1 - Company Page --*/
 
+    /*-- Slider Popup --*/
+
+    .popup_content .person_info_thumb > div:nth-child(1) {
+	    width: 105px;
+	}
+
+	/*-- /Slider Popup --*/
+
 }
 
 @media only screen and (max-width: 510px) {
@@ -5172,6 +5359,25 @@
 	}
 
 	/*-- /Payment And Account --*/
+
+	/*-- Slider Popup --*/
+
+	.slider_popup_templ > .right_col {
+	    padding: 0;
+	    position: relative;
+	    z-index: 3;
+	}
+
+	.slider_popup_templ .person_info_box {
+	    margin-top: 0;
+	    box-shadow: none;
+	}
+
+	.popup_office_big_slider .slide {
+	    height: 288px;
+	}
+
+	/*-- /Slider Popup --*/
 	
 }
 
