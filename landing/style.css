@@ -1568,6 +1568,7 @@ a:active {
 }
 
 .lp_h2_wrapp h2 span {
+    display: inline-block;
     background: #86C446;
     background: -webkit-linear-gradient(to bottom right, #86C446 0%, #05ADE4 100%);
     background: -moz-linear-gradient(to bottom right, #86C446 0%, #05ADE4 100%);
