@@ -935,6 +935,18 @@
 
 	/*-- /Section 4 2 - Catalog Page --*/
 
+	/*-- Section 4 3 - Catalog Page --*/
+
+	.order_callback_descript {
+	    left: 0;
+	}
+
+	.order_callback_img {
+	    right: 0;
+	}
+
+	/*-- /Section 4 3 - Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -3313,18 +3325,63 @@
 
 	.chart_index_sect {
 		margin-top: 0;
-	    padding: 19px 15px 19px 15px;
+	    padding: 19px 15px 10px 15px;
 	}
 
 	.static_chart {
 		width: 740px !important;
+		margin: 0 -10px -20px -5px;
 	}
 
 	.static_chart svg {
 		width: 740px !important;
 		max-width: 740px !important;
 	}
+
+	.order_callback_btn {
+		text-align: center;
+	}
+
+	.order_callback_btn .orange_pill {
+		width: 100%;
+		max-width: 300px;
+	}
+
 	/*-- /Section 4 2 - Catalog Page --*/
+
+	/*-- Section 4 3 - Catalog Page --*/
+
+	.order_callback_img {
+	    right: auto;
+	    left: 50%;
+	    top: 21px;
+	    height: 171px;
+	    transform: translate(-50%, 0);
+	    -webkit-transform: translate(-50%, 0);
+	}
+
+	.order_callback_descript {
+	    text-align: center;
+	}
+
+	.order_callback_descript h3 {
+	    padding: 2px 0;
+	}
+
+	.order_callback_descript p {
+	    padding: 4px 0;
+	}
+
+	.order_callback {
+	    margin: 10px 0;
+	    padding: 201px 18px 18px 18px;
+	}
+
+	.order_callback_descript .orange_pill {
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 4 3 - Catalog Page --*/
 
 	/*-- Slider Popup --*/
 
@@ -5359,6 +5416,15 @@
 	}
 
 	/*-- /Payment And Account --*/
+
+	/*-- Section 4 3 - Catalog Page --*/
+
+	.order_callback_descript .orange_pill {
+	    width: 100%;
+	    min-width: 100%;
+	}
+
+	/*-- /Section 4 3 - Catalog Page --*/
 
 	/*-- Slider Popup --*/
 
