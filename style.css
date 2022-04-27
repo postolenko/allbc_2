@@ -314,7 +314,7 @@ textarea:focus {
 }
 
 .visible_600 {
-    display: none;
+    display: none !important;
 }
 
 .visible_480 {
@@ -4248,8 +4248,7 @@ textarea:focus {
     width: 100%;
     border: none;
     cursor: pointer;
-    /*padding: 5px 15px 5px 15px;*/
-    padding: 3px 15px 5px 15px;
+    padding: 5px 15px 5px 15px;
     align-items: center;
     -webkit-align-items: center;
     justify-content: center;

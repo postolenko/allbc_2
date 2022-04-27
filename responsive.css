@@ -3857,7 +3857,7 @@
 	}
 
 	.visible_600 {
-		display: block;
+		display: block !important;
 	}
 
 	.row {
@@ -4619,11 +4619,17 @@
 		border-radius: 50%;
 		-webkit-border-radius: 50%;
 		background-color: #FF5722;
+		position: relative;
 	}
 
 	.orange_pill.circle span {
 		width: 20px;
 		height: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
 	}
 
 	.chat_message_area_footer .orange_pill.circle {
